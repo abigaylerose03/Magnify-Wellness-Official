@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("/navbar/navbar.css");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+#home{
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(180deg, #33CCCC 12%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #ADF4AC 0.01%, #ADF4AC 3%, rgba(255, 255, 255, 0) 100%), #FFCC00;
+}
+
+#home .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+}
+
+#home .content h1{
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 8rem;
+    margin-bottom: -4.5rem;
+    
+}
+
+#home .content h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding-left: 6px;
+    letter-spacing: 2px;
+    
+}
+
+#home .content .text img{
+    width: 150px;
+    padding-left: 6px;
+    cursor: pointer;
+}
+#home .content p{
+    color: #fff;
+    padding: 30px 0;
+    padding-left: 6px;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    max-width: 550px;
+
+}
+#home .content .image img{
+    width: 35vw;
+}
+
+.custom-shape-divider-bottom-1608227026 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1608227026 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1608227026 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #home .content{
+        flex-direction: column;
+    }
+
+    #home .content .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        width: 100%;
+    }
+
+
+    #home .content p{
+        padding: 20px 0 0 0 0;
+    }
+
+    #home .content .text img{
+        margin-top: -30px;
+    }
+
+    #home .content .image img{
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    #home .content{
+        padding: 0 20px;
+    }
+    #home .content h1{
+        display: none;
+        
+    }
+
+    #home .content .image{
+        display: none;
+    }
+    
+}
