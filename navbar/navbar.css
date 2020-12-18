@@ -9,8 +9,6 @@ header{
     transition: .7s;
 }
 
-
-
 header a{
     color: #0F1C33;
 }
@@ -25,13 +23,11 @@ header .btn{
 
 header .btn:hover{
     cursor: pointer;
-    /* background-color: #f7f7f7; */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 
 }
 
 .nav-bar-container {
-    /* max-width: 65rem; */
     padding: 0 8vw;
     margin: 0 auto;
     display: flex;
@@ -121,7 +117,7 @@ header .btn:hover{
 
 
 
-/* ------------------------ SOCIAL MEDIA ICONS ----------------------------- */
+/* ------------------------ DONATE BUTTON ----------------------------- */
 .donate{
     display: flex;
     justify-content: flex-end;
@@ -131,10 +127,6 @@ header .btn:hover{
     
     
 }
-
-
-
-/* ------------X----------------------- TOP MENU ----------------X------------------------------------------------ */
 
 /* -------------------------------------- HAMBURGER MENU -------------------------------------------------- */
 .hamburger-menu-container{
@@ -211,9 +203,6 @@ header .btn:hover{
 }
 
 
-/* -----------XX----------HAMBURGER MENU-----------XX-------------- */
-
-
 /* --------------------------------- MEDIA QUERIES -------------------------------- */
 
 @keyframes menuGradualAppear{
@@ -257,7 +246,6 @@ header .btn:hover{
         overflow-y: auto;
         transform: translateX(400%);
         transition: 1.5s;
-        /* padding-bottom: 8vh; */
         padding-right: 30px!important;
         padding-top: 15px!important;
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="home.css">
     <title>Magnify Wellness</title>
 </head>
@@ -127,13 +128,13 @@
 
         <div class="metrics-container">
             <div class="metric">
-                <h2><span>400+</span> users</h2>
+                <h2><span class="counter">400</span>+ users</h2>
             </div>
             <div class="metric">
-                <h2><span>80+</span> active leaders</h2>
+                <h2><span span class="counter">80</span>+ active leaders</h2>
             </div>
             <div class="metric">
-                <h2><span>8+</span> countries reached</h2>
+                <h2><span span class="counter">8</span>+ countries reached</h2>
             </div>
         </div>
     </section>
@@ -167,16 +168,26 @@
     </section>
     <footer class="footer">
         <div id="footer"></div>
-      </footer>
+        <p id="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+
+    </footer>
 </body>
 
-
+<script src="./home-assets/jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function () {
     // LOAD THE HEADER AND FOOTER
     $('#navbar').load('/navbar/navbar.html');
     $('#footer').load('/footer/footer.html');
+
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+    });
+
 })
 
     
