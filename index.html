@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="home.css">
-    <title>Document</title>
+    <title>Magnify Wellness</title>
 </head>
 <body>
 
@@ -83,6 +83,90 @@
         <a href="#" class="btn">Learn More</a>
     </section>
     
+    <section id="press">
+        <h1>Press</h1>
+        <div class="articles-container">
+            <div class="article">
+                <div class="img-container">
+                    <img src="./home-assets/press/press1.png" alt="">
+                </div>
+                
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <a href="#" class="btn">View Article</a>
+            </div>
+            <div class="article">
+                <div class="img-container">
+                    <img src="./home-assets/press/press2.png" alt="">
+                </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <a href="#" class="btn">View Article</a>
+            </div>
+            <div class="article">
+                <div class="img-container">
+                    <img src="./home-assets/press/press3.png" alt="">
+                </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <a href="#" class="btn">View Article</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact">
+        <div class="custom-shape-divider-top-1608248637">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1608248687">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="metrics-container">
+            <div class="metric">
+                <h2><span>400+</span> users</h2>
+            </div>
+            <div class="metric">
+                <h2><span>80+</span> active leaders</h2>
+            </div>
+            <div class="metric">
+                <h2><span>8+</span> countries reached</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h1>Blog</h1>
+        <div class="articles-container">
+            <div class="article">
+                <div class="img-container">
+                    <img src="" alt="">
+                </div>
+                
+                <h2>Meet the Writers</h2>
+                <a href="#" class="btn">View Article</a>
+            </div>
+            <div class="article">
+                <div class="img-container">
+                    <img src="" alt="">
+                </div>
+                <h2>Spotlight on Magnify's Founder: Abigayle Peterson</h2>
+                <a href="#" class="btn">View Article</a>
+            </div>
+            
+        </div>
+        <a href="#" class="btn blog-btn">View Blog</a>
+    </section>
+    
+    <section id="join-us">
+        <h1>More than just an app... Join the Magnify Movement</h1>
+        <a href="#" class="btn">Our Programs</a>
+    </section>
+    <footer class="footer">
+        <div id="footer"></div>
+      </footer>
 </body>
 
 
@@ -91,6 +175,7 @@
 $(document).ready(function () {
     // LOAD THE HEADER AND FOOTER
     $('#navbar').load('/navbar/navbar.html');
+    $('#footer').load('/footer/footer.html');
 })
 
     
