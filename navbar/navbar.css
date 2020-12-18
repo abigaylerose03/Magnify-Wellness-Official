@@ -28,7 +28,7 @@ header .btn:hover{
 }
 
 .nav-bar-container {
-    padding: 0 8vw;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -36,10 +36,11 @@ header .btn:hover{
 }
 
 .logo-container{
+    padding: 0 3vw;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
    
 
 }
@@ -88,9 +89,12 @@ header .btn:hover{
 
 
 .nav-links > ul{
+    padding: 0 3vw;
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    
 }
 .nav-link{
     position: relative;

@@ -58,7 +58,9 @@ section .btn:hover{
 
 #home .content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 3vw;
+    margin-top: -2rem;
     align-items: center;
     position: relative;
     width: 100vw;
@@ -96,8 +98,12 @@ section .btn:hover{
     max-width: 550px;
 
 }
+#home .content .image{
+    margin-top: -1rem;
+    
+}
 #home .content .image img{
-    width: 35vw;
+    width: 30vw;
 }
 
 .custom-shape-divider-bottom-1608227026 {
@@ -128,6 +134,7 @@ section .btn:hover{
 
     #home .content{
         flex-direction: column;
+        margin-top: 0;
     }
 
     #home .content .text{
@@ -150,7 +157,11 @@ section .btn:hover{
     }
 
     #home .content .image img{
-        width: 45vw;
+        width: 25vw;
+    }
+
+    #home .content .image{
+        margin: 0;
     }
 }
 
@@ -162,7 +173,15 @@ section .btn:hover{
     }
 
     #home .content .image{
-        display: none;
+        order: 2 
+    }
+
+    #home .content .image img{
+        width: 50vw;
+    }
+
+    .custom-shape-divider-bottom-1608227026 svg {
+        height: 75px;
     }
     
 }
@@ -304,8 +323,8 @@ section .btn:hover{
 /* -------------------------------- PRESS PAGE ------------------------------- */   
 
 #press, #blog{
-    min-height: 100vh;
-    padding-top: 3.5rem;
+    min-height: 80vh;
+    padding-bottom: 3.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -369,13 +388,13 @@ section .btn:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3.5rem 0;
 }
 
 #impact .metrics-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 80vw; */
     margin-top: 30px;
 }
 
@@ -455,21 +474,36 @@ section .btn:hover{
     fill: #FFFFFF;
 }
 
-@media only screen and (max-width: 700px){
-    #impact{
-        min-height: 500px;
-        padding-top: 20px;
-    }
+@media only screen and (max-width: 1000px){
     #impact .metric{
         transform: scale(0.8);
         margin: 0;
     }
 }
+@media only screen and (max-width: 800px){
+    #impact{
+        min-height: 500px;
+        /* padding-top: 10px; */
+    }
+
+    #impact .metrics-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
 
 @media only screen and (max-width: 440px){
     #impact{
-        min-height: 700px;
+        min-height: 830px;
     }
+
+    #impact .metrics-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 0;
+        padding-top: 40px;
+    }
+
+    
 }
 
 /* -------------------------------- JOIN MAGNIFY MOVEMENT PAGE ------------------------------- */
@@ -509,6 +543,7 @@ section .btn:hover{
     font-size: 0.85rem;
     color: rgba(0, 0, 0, 0.7);
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .footer #attribution a{
