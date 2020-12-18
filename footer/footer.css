@@ -9,6 +9,15 @@
     padding: 0 30px;
 }
 
+.footer::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
 .footer-container{
     width: 100%;
     display: grid;
@@ -91,12 +100,12 @@
     }
 
     .footer .socials{
-        justify-content: left;
+        /* justify-content: left; */
         padding-bottom: 30px;
     }
 
     .footer .download-btn{
-        justify-content: flex-start;
+        justify-content: center;
         padding-left: 10px;
     }
 }

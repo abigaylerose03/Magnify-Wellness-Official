@@ -399,6 +399,8 @@ section .btn:hover{
     border-radius: 50%;
     background-color: #fff;
     margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+
     
 }
 
@@ -484,6 +486,7 @@ section .btn:hover{
 #join-us{
     background-color:#FFCC00;
     margin: 70px 0 ;
+    margin-bottom: 150px;
     padding: 30px;
     min-height: 300px;
     text-align: center;
@@ -499,4 +502,14 @@ section .btn:hover{
     max-width: 800px;
     margin-bottom: 50px;
     color: #fff;
+}
+
+.back-to-top i{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: #FFCC00;
+    padding: 20px 10px;
+    border-radius: 20px;
+    
 }
