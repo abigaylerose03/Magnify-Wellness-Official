@@ -1,0 +1,347 @@
+header{
+    position: sticky;
+    top: 0px;
+    background-color:#33CCCC;
+    ;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1001;
+    transition: .7s;
+}
+
+header a{
+    color: #0F1C33;
+}
+
+header .btn{
+    font-weight: 700;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+header .btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+
+}
+
+.nav-bar-container {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    
+}
+
+.logo-container{
+    padding: 0 3vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   
+
+}
+
+.logo-container img{
+    height: 2.5rem;
+    
+}
+
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+
+
+}
+
+.logo-container:hover{
+    transform: scale(1.05);
+}
+
+/* ------------------------- NAVIGATION LINKS ------------------------------ */
+
+.nav-links-container{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    padding: 0!important;    
+    
+}
+
+
+
+.nav-links-container > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 2;
+}
+
+
+.nav-links > ul{
+    padding: 0 3vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.nav-link{
+    position: relative;
+    
+}
+
+
+.nav-link > a{
+    line-height: 3.5rem;
+    padding: 0 .8rem;
+    font-size: .95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+
+.nav-link:hover > a{
+    transform: scale(1.1);
+}
+
+
+
+/* ------------------------ DONATE BUTTON ----------------------------- */
+.donate{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: .65;
+    position: relative;
+    
+    
+}
+
+/* -------------------------------------- HAMBURGER MENU -------------------------------------------------- */
+.hamburger-menu-container{
+    flex: 1;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu div{
+    width: 1.6rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #0F1C33;
+    position: relative;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.hamburger-menu div:before,
+.hamburger-menu div:after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #0F1C33;
+    border-radius: inherit;
+    transition: 0.5s;
+}
+
+
+.hamburger-menu div:before{
+    transform: translateY(-7px);
+}
+
+.hamburger-menu div:after{
+    transform: translateY(7px);
+}
+
+#check{
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 3.25rem;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0;
+
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div{
+    background-color: transparent;
+
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
+    transform: rotate(45deg);
+
+}
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
+    transform: rotate(-45deg);
+
+}
+
+
+/* --------------------------------- MEDIA QUERIES -------------------------------- */
+
+@keyframes menuGradualAppear{
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+ /* --------------------- NAVIGATION ------------------------- */
+    .hamburger-menu-container{
+        display: flex;
+    }
+
+    #check{
+        display: block;
+    }
+
+    .nav-bar-container{
+        padding-left: 10px;
+    }
+    
+    .nav-links-container{
+        position: fixed;
+        height: calc(100vh -  3.5rem);
+        top:  3.5rem;
+        left: 0;
+        width: 300px;
+        background-color: #33CCCC;
+       
+        flex-direction: column;
+       justify-content: space-between;
+        align-items: flex-end;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(400%);
+        transition: 1.5s;
+        padding-right: 30px!important;
+        padding-top: 15px!important;
+
+
+    }
+
+
+.nav-bar-container .donate:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 200px;
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .nav-links-container .donate{
+        align-self: center;
+        margin-right: -30px;
+    }
+
+    #check:checked ~ .nav-links-container{
+        transform: translateX(calc(100vw - 300px));
+        box-shadow: -10px 150px 50vh rgba(0,0,0,1);
+    }
+
+   
+
+    #check:checked ~ .nav-links-container .nav-link{
+        animation: menuGradualAppear .5s ease forwards var(--i);
+
+    }
+
+
+    .nav-links{
+        flex: 3;
+        padding-bottom: 0;
+        
+        
+    }
+
+    .nav-links > ul{
+        flex-direction: column;
+        height: 70vh;
+        justify-content: space-around;
+        align-items: flex-end;
+   
+        
+    }
+
+    .nav-link{ 
+        opacity: 0;
+        transform: translateY(15px);
+        
+    }
+
+    .nav-link > a{
+        text-transform: uppercase;
+        font-weight: 700;
+                
+    }
+
+    .nav-link:hover > a{
+        transform: scale(1.1);
+    }
+
+}
+
+@media only screen and (min-height: 800px){
+    .nav-links-container{
+        padding-bottom: 4vh;
+    }
+
+}
+
+
+@media only screen and (min-width: 1950px){
+    .logo{
+        line-height: 5.5rem;
+        font-size: 2rem;
+    }
+
+    .nav-link > a{
+        line-height: 5.5rem;
+        padding: 0 .8rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+}
