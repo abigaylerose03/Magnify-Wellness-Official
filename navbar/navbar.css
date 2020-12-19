@@ -182,9 +182,9 @@ header .btn:hover{
     position: absolute;
     display: none;
     top: 50%;
-    right: 3.25rem;
+    right: 0;
     transform: translateY(-50%);
-    width: 4rem;
+    width: 5rem;
     height: 2.5rem;
     cursor: pointer;
     z-index: 3;
