@@ -1,0 +1,27 @@
+/* Import Heading 1 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+/* @import url("/navbar/navbar.css");
+@import url("/footer/footer.css"); */
+
+/* body{
+    
+} */
+
+#title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+#banner{
+    text-align: center;  
+}
+
+#search{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    overflow-x: hidden;
+}
