@@ -60,7 +60,7 @@ section .btn:hover{
     display: flex;
     justify-content: space-between;
     padding: 0 3vw;
-    margin-top: -2rem;
+    margin-top: -3.5rem;
     align-items: center;
     position: relative;
     width: 100vw;
