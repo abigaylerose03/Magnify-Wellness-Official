@@ -13,9 +13,11 @@
 </head>
 
 <body>
-<header>
+<!-- header code -->
+  <header>
   <div id="navbar"></div>
 </header>
+
       <div class="container">
         <h1 class="text-center">Magnify Wellness Blog</h1><br>
         <p class="text-center">Check out more posts! We write about mental health in the media, motivation, Magnify Mondays, lifestyle, and more!</p>
@@ -154,12 +156,18 @@
  </div>
 </div>
 
+<!-- footer code -->
 <footer class="footer">
   <div id="footer"></div>
 </footer>
 
-  </body>
-  <script type="text/javascript">
+</body>
+
+<script src="./home-assets/jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script type="text/javascript">
+
     $(document).ready(function () {
        // LOAD THE HEADER AND FOOTER
        $('#navbar').load('/navbar/navbar.html');
@@ -167,5 +175,4 @@
     }) 
   </script>
 
-  </script>
   </html>

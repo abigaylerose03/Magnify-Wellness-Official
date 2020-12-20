@@ -1,3 +1,8 @@
+/* Import Heading */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Import Body */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
+
 @import url("/navbar/navbar.css");
 @import url("/footer/footer.css");
 
