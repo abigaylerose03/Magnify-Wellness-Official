@@ -1,9 +1,13 @@
-ul {
+.footer ul {
     list-style: none;
+    
 }
-  
 
-a {
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
     text-decoration: none;
 }
 
