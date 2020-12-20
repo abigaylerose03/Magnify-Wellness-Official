@@ -13,6 +13,8 @@
     padding-bottom: 30px;
     width: 100%;
     height: auto;
+    z-index: 1;
+
   }
 
   .card:hover {

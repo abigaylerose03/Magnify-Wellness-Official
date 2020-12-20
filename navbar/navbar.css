@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 
-* {
+header {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -77,21 +77,19 @@ header .logo {
     line-height: 3.5rem;
     white-space: nowrap;
     cursor: pointer;
-    text-decoration: none;
     margin: 0;
 
 
 }
-
 
 header .logo-container:hover{
     transform: scale(1.05);
     
 }
 
-header .logo-container:hover .logo{
-    text-decoration: none!important;
+header a .logo:hover{
     color: #000;
+    text-decoration: none;
 }
 
 /* ------------------------- NAVIGATION LINKS ------------------------------ */
@@ -274,17 +272,16 @@ header #check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
         left: 0;
         width: 300px;
         background-color: #33CCCC;
-       
         flex-direction: column;
-       justify-content: space-between;
+        justify-content: space-between;
         align-items: flex-end;
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(400%);
         transition: 1.5s;
-        padding-right: 30px!important;
+        /* padding-right: 30px!important; */
         padding-top: 15px!important;
-
+        z-index: 10000;
 
     }
 
