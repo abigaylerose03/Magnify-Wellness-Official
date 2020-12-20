@@ -54,6 +54,7 @@
     display: block;
     margin: 0 auto;
     text-decoration: none;
+    padding: 3px;
   }
 
   .button:hover {
