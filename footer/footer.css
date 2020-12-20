@@ -1,3 +1,9 @@
+footer ul {
+    list-style: none;
+    
+}
+
+
 .footer{
     min-height: 300px;
     display: flex;
