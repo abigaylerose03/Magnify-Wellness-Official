@@ -1,3 +1,12 @@
+ul {
+    list-style: none;
+}
+  
+
+a {
+    text-decoration: none;
+}
+
 header{
     position: sticky;
     top: 0px;
@@ -252,6 +261,7 @@ header .btn:hover{
         transition: 1.5s;
         padding-right: 30px!important;
         padding-top: 15px!important;
+        z-index: 1000;
 
 
     }
