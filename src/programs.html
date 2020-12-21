@@ -16,9 +16,15 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Scroll-To-Top.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="d-flex flex-column">
+    <header>
+        <div id='navbar'></div>
+   </header>
+
     <div class="container align-self-center" style="margin: 0px 50px;">
         <h1 class="text-center" style="margin-top: 100px;font-family: Montserrat, sans-serif;font-size: 64px;text-align: center;line-height: 78px;margin-bottom: 180px;">Our Programs</h1>
         <div class="row" style="margin-bottom: 60px;"><img class="d-lg-flex justify-content-lg-start" style="width: 250px;height: 250px;" src="assets/img/Chapters.png">
@@ -61,8 +67,20 @@
     <div class="col">
         <h1></h1>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+        <div id="footer"></div>
+    </footer>
 </body>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+        // LOAD THE HEADER AND FOOTER
+        $('#navbar').load('/navbar/navbar.html');
+        $('#footer').load('/footer/footer.html');
+     }) 
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 </html>
