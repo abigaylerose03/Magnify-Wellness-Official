@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:default;
+}
+header ul {
+    list-style: none;
+    padding-bottom: none!important;
+    margin: 0!important;
+}
+  
+
+header a {
+    text-decoration: none;
+}
+
 header{
     position: sticky;
     top: 0px;
@@ -7,6 +26,7 @@ header{
     width: 100%;
     z-index: 1001;
     transition: .7s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header a{
@@ -27,7 +47,7 @@ header .btn:hover{
 
 }
 
-.nav-bar-container {
+header .nav-bar-container {
     padding: 0 20px;
     margin: 0 auto;
     display: flex;
@@ -35,7 +55,7 @@ header .btn:hover{
     
 }
 
-.logo-container{
+header .logo-container{
     padding: 0 3vw;
     flex: 1;
     display: flex;
@@ -45,29 +65,36 @@ header .btn:hover{
 
 }
 
-.logo-container img{
+header .logo-container img{
     height: 2.5rem;
     
 }
 
 
-.logo {
+header .logo {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 3.5rem;
     white-space: nowrap;
     cursor: pointer;
+    margin: 0;
 
 
 }
 
-.logo-container:hover{
+header .logo-container:hover{
     transform: scale(1.05);
+    
+}
+
+header a .logo:hover{
+    color: #000;
+    text-decoration: none;
 }
 
 /* ------------------------- NAVIGATION LINKS ------------------------------ */
 
-.nav-links-container{
+header .nav-links-container{
     flex: 3;
     display: flex;
     align-items: center;
@@ -77,18 +104,18 @@ header .btn:hover{
 
 
 
-.nav-links-container > ul{
+header .nav-links-container > ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-links{
+header .nav-links{
     flex: 2;
 }
 
 
-.nav-links > ul{
+header .nav-links > ul{
     padding: 0 3vw;
 
     display: flex;
@@ -96,13 +123,14 @@ header .btn:hover{
     align-items: center;
     
 }
-.nav-link{
+header li.nav-link{
     position: relative;
+    padding: 0;
     
 }
 
 
-.nav-link > a{
+header .nav-link > a{
     line-height: 3.5rem;
     padding: 0 .8rem;
     font-size: .95rem;
@@ -115,14 +143,16 @@ header .btn:hover{
 }
 
 
-.nav-link:hover > a{
+header .nav-link:hover > a{
     transform: scale(1.1);
+    text-decoration: none;
+    color: #000;
 }
 
 
 
 /* ------------------------ DONATE BUTTON ----------------------------- */
-.donate{
+header .donate{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -133,14 +163,14 @@ header .btn:hover{
 }
 
 /* -------------------------------------- HAMBURGER MENU -------------------------------------------------- */
-.hamburger-menu-container{
+header .hamburger-menu-container{
     flex: 1;
     display: none;
     justify-content: flex-end;
     align-items: center;
 }
 
-.hamburger-menu{
+header .hamburger-menu{
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
@@ -148,7 +178,7 @@ header .btn:hover{
     justify-content: center;
 }
 
-.hamburger-menu div{
+header .hamburger-menu div{
     width: 1.6rem;
     height: 3px;
     border-radius: 3px;
@@ -158,8 +188,8 @@ header .btn:hover{
     z-index: 2;
 }
 
-.hamburger-menu div:before,
-.hamburger-menu div:after{
+header .hamburger-menu div:before,
+header .hamburger-menu div:after{
     content: '';
     position: absolute;
     width: inherit;
@@ -170,15 +200,15 @@ header .btn:hover{
 }
 
 
-.hamburger-menu div:before{
+header .hamburger-menu div:before{
     transform: translateY(-7px);
 }
 
-.hamburger-menu div:after{
+header .hamburger-menu div:after{
     transform: translateY(7px);
 }
 
-#check{
+header #check{
     position: absolute;
     display: none;
     top: 50%;
@@ -192,16 +222,16 @@ header .btn:hover{
 
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div{
+header #check:checked ~ .hamburger-menu-container .hamburger-menu div{
     background-color: transparent;
 
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
+header #check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
     transform: rotate(45deg);
 
 }
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
+header #check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
     transform: rotate(-45deg);
 
 }
@@ -223,41 +253,40 @@ header .btn:hover{
 @media only screen and (max-width: 1100px) {
 
  /* --------------------- NAVIGATION ------------------------- */
-    .hamburger-menu-container{
+ header  .hamburger-menu-container{
         display: flex;
     }
 
-    #check{
+    header #check{
         display: block;
     }
 
-    .nav-bar-container{
+    header  .nav-bar-container{
         padding-left: 10px;
     }
     
-    .nav-links-container{
+    header .nav-links-container{
         position: fixed;
         height: calc(100vh -  3.5rem);
         top:  3.5rem;
         left: 0;
         width: 300px;
         background-color: #33CCCC;
-       
         flex-direction: column;
-       justify-content: space-between;
+        justify-content: space-between;
         align-items: flex-end;
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(400%);
         transition: 1.5s;
-        padding-right: 30px!important;
+        /* padding-right: 30px!important; */
         padding-top: 15px!important;
-
+        z-index: 10000;
 
     }
 
 
-.nav-bar-container .donate:before{
+    header .nav-bar-container .donate:before{
     content: '';
     position: absolute;
     background-color: rgba(0,0,0,0.2);
@@ -268,32 +297,32 @@ header .btn:hover{
     transform: translateX(-50%);
 }
 
-    .nav-links-container .donate{
+header  .nav-links-container .donate{
         align-self: center;
         margin-right: -30px;
     }
 
-    #check:checked ~ .nav-links-container{
+    header  #check:checked ~ .nav-links-container{
         transform: translateX(calc(100vw - 300px));
         box-shadow: -10px 150px 50vh rgba(0,0,0,1);
     }
 
    
 
-    #check:checked ~ .nav-links-container .nav-link{
+    header  #check:checked ~ .nav-links-container .nav-link{
         animation: menuGradualAppear .5s ease forwards var(--i);
 
     }
 
 
-    .nav-links{
+    header  .nav-links{
         flex: 3;
         padding-bottom: 0;
         
         
     }
 
-    .nav-links > ul{
+    header  .nav-links > ul{
         flex-direction: column;
         height: 70vh;
         justify-content: space-around;
@@ -302,26 +331,26 @@ header .btn:hover{
         
     }
 
-    .nav-link{ 
+    header  .nav-link{ 
         opacity: 0;
         transform: translateY(15px);
         
     }
 
-    .nav-link > a{
+    header .nav-link > a{
         text-transform: uppercase;
         font-weight: 700;
                 
     }
 
-    .nav-link:hover > a{
+    header .nav-link:hover > a{
         transform: scale(1.1);
     }
 
 }
 
 @media only screen and (min-height: 800px){
-    .nav-links-container{
+    header .nav-links-container{
         padding-bottom: 4vh;
     }
 
@@ -329,12 +358,12 @@ header .btn:hover{
 
 
 @media only screen and (min-width: 1950px){
-    .logo{
+    header .logo{
         line-height: 5.5rem;
         font-size: 2rem;
     }
 
-    .nav-link > a{
+    header .nav-link > a{
         line-height: 5.5rem;
         padding: 0 .8rem;
         font-size: 1.6rem;

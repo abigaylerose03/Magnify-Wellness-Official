@@ -1,3 +1,16 @@
+.footer ul {
+    list-style: none;
+    
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
 .footer{
     min-height: 300px;
     display: flex;
