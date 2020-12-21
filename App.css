@@ -1,0 +1,84 @@
+* {
+  padding: 20px;
+}
+
+#mainHeader {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoHeaders {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#mainQuote {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-top: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reviews {
+  width: 450px;
+  height: 400px;
+}
+
+.column {
+  flex: 50%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#downloadHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#downloadSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#downloadRightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  /* margin: 4px 2px; */
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.downloadButton {
+  border-radius: 40px;
+}
