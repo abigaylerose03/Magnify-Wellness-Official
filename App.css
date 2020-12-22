@@ -1,0 +1,112 @@
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
+
+
+* {
+  padding: 0; 
+  margin: 0;
+  
+}
+.footer{
+  box-sizing: border-box;
+}
+#mainHeader {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#firstInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#secondInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-right: 4%;
+}
+
+#thirdInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-right: 5%;
+}
+
+#fourthInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-left: 2%;
+}
+
+#mainQuote {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-top: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reviews {
+  width: 450px;
+  height: 400px;
+}
+
+.column {
+  flex: 50%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#downloadHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#downloadSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#downloadRightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  padding: 20px
+}
+
+.downloadButton {
+  border-radius: 40px;
+}

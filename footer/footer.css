@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
 .footer ul {
     list-style: none;
     
@@ -20,6 +23,8 @@
     position: relative;
     width: 100vw;
     padding: 0 30px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .footer::before{

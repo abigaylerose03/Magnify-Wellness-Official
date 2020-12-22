@@ -13,10 +13,6 @@ header ul {
 }
   
 
-header a {
-    text-decoration: none;
-}
-
 header{
     position: sticky;
     top: 0px;
@@ -31,6 +27,11 @@ header{
 header a{
     color: #0F1C33;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
 }
 
 header .btn{
@@ -39,6 +40,10 @@ header .btn{
     border-radius: 20px;
     padding: 5px 15px;
     transition: 0.3s;
+    line-height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .btn:hover{
