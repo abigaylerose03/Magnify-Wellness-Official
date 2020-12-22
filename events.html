@@ -34,7 +34,6 @@
             <option value="workshops">Workshops</option>
         </select> 
     </div>
-
     <div id="filter">
         <button class="filterbuttons">Online</button>
         <button class="filterbuttons">At a Venue</button>
@@ -49,6 +48,9 @@
 
 
 <!-- Header/Footer Commented Code -->
+<script src="./home-assets/jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -56,7 +58,10 @@
         $('#navbar').load('/navbar/navbar.html');
         $('#footer').load('/footer/footer.html');
     
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+        });
     
     })
 </script>
-
