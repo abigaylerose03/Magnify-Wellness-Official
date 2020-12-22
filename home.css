@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    
+}
+body section{
+    padding: 0 20px;
+}
+ul {
+    list-style: none;
+}
+  
+
+a {
+    text-decoration: none;
+}
+
+section .btn{
+    color: #fff;
+    background: #33CCCC;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+section .btn:hover{
+    box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
+}
+
+
+/* -------------------------------- LANDING PAGE ------------------------------- */
+#home{
+    position: relative;
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
+}
+
+#home .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    margin-top: -3.5rem;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+}
+
+#home .content h1{
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 8rem;
+    margin-bottom: -4.5rem;
+    
+}
+
+#home .content h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding-left: 6px;
+    letter-spacing: 2px;
+    
+}
+
+#home .content .text img{
+    width: 150px;
+    padding-left: 6px;
+    cursor: pointer;
+}
+#home .content p{
+    color: #fff;
+    padding: 30px 0;
+    padding-left: 6px;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    max-width: 550px;
+
+}
+#home .content .image{
+    margin-top: -1rem;
+    
+}
+#home .content .image img{
+    width: 30vw;
+}
+
+.custom-shape-divider-bottom-1608227026 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+}
+
+.custom-shape-divider-bottom-1608227026 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1608227026 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    #home .content{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #home .content .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        width: 100%;
+    }
+
+
+    #home .content p{
+        padding: 20px 0 0 0 0;
+    }
+
+    #home .content .text img{
+        margin-top: -30px;
+    }
+
+    #home .content .image img{
+        width: 25vw;
+    }
+
+    #home .content .image{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    #home .content h1{
+        display: none;
+        
+    }
+
+    #home .content .image{
+        order: 2 
+    }
+
+    #home .content .image img{
+        width: 50vw;
+    }
+
+    .custom-shape-divider-bottom-1608227026 svg {
+        height: 75px;
+    }
+    
+}
+
+/* -------------------------------- MISSION STATEMENT PAGE ------------------------------- */
+
+#mission {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#mission h1{
+    font-size: 2.5rem;
+    top: 20vh;
+}
+
+#mission h2{
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    max-width: 800px;
+    line-height: 2.5rem;
+}
+/* -------------------------------- ABOUT PAGE ------------------------------- */
+
+#about{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3.5rem;
+    position: relative;
+}
+
+
+#mag{
+    position: absolute;
+    width: 10vw;
+    max-width: 150px;
+    bottom: 50vh;
+    right: 0;
+    z-index:2;
+}
+
+#blob{
+    position: absolute;
+    width: 30vw;
+    max-width: 475px;
+    min-width: 200px;
+    bottom: 0;
+    right: 0;
+    
+}
+#target{
+    position: absolute;
+    width: 15vw;
+    max-width: 300px;
+    min-width: 100px;
+    top: 10vh;
+    left: 0;
+    
+}
+#about .features-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 60px;
+}
+
+#about h1, #press h1, #blog h1{
+    margin: 8vh;
+    text-align: center;
+    font-size: 1.75rem;
+    position: relative;
+}
+
+#about h1::before, #press h1::before, #blog h1::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    height: 4px;
+    background-color: #33CCCC;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#press h1::before, #blog h1::before{
+    width: 60px;
+}
+#about .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 220px;
+    height: 175px;
+    text-align: center;
+}
+
+#about .feature img{
+    width: 70px;
+}
+
+#about .feature p{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5rem;
+}
+
+#about .btn{
+    margin: calc(max(4vh, 30px));
+}
+@media only screen and (max-width: 850px){
+    #about .features-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 460px){
+    #about .features-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #mag{
+        display: none;
+    }
+}
+
+/* -------------------------------- PRESS PAGE ------------------------------- */   
+
+#press, #blog{
+    min-height: 80vh;
+    padding-bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#press .articles-container, #blog .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+#press .article, #blog .article{
+    width: 300px;
+    max-width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#press .article:hover, #blog .article:hover{
+    transform: scale(1.05);
+}
+
+#press .article h2, #blog .article h2{
+    font-size: 1.25rem;
+}
+#press .article .img-container, #blog .article .img-container{
+    max-width: 220px;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#press .article .img-container img, #blog .article .img-container img{
+    max-width: 220px;
+    max-height: 170px;
+}
+
+@media only screen and (max-width: 1060px){
+    #press{
+        margin-bottom: 50px;
+    }
+}
+
+/* -------------------------------- IMPACT/METRICS PAGE ------------------------------- */
+
+#impact{
+    min-height: 400px;
+    background: linear-gradient(297.34deg, #FFCC00 28.5%, rgba(255, 205, 7, 0.973958) 28.5%, #33CCCC 63.66%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem 0;
+}
+
+#impact .metrics-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 80vw; */
+    margin-top: 30px;
+}
+
+#impact .metric{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    
+}
+
+#impact .metric h2{
+    font-weight: 400;
+}
+#impact .metric h2 span{
+    font-weight: 800;
+}
+
+#blog .blog-btn{
+    margin: calc(max(5vh, 40px));
+    color: #33CCCC;
+    background-color: #fff;
+    border: 2px solid #33CCCC;
+}
+
+#blog .blog-btn:hover{
+    color: #fff;
+    background-color: #33CCCC;
+}
+.custom-shape-divider-top-1608248637 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1608248637 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-top-1608248637 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1608248687 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1608248687 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-bottom-1608248687 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media only screen and (max-width: 1000px){
+    #impact .metric{
+        transform: scale(0.8);
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 800px){
+    #impact{
+        min-height: 500px;
+        /* padding-top: 10px; */
+    }
+
+    #impact .metrics-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 440px){
+    #impact{
+        min-height: 830px;
+    }
+
+    #impact .metrics-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 0;
+        padding-top: 40px;
+    }
+
+    
+}
+
+/* -------------------------------- JOIN MAGNIFY MOVEMENT PAGE ------------------------------- */
+
+#join-us{
+    background-color:#FFCC00;
+    margin: 70px 0 ;
+    margin-bottom: 150px;
+    padding: 30px;
+    min-height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#join-us h1{
+    font-size: 2.75rem;
+    max-width: 800px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.back-to-top i{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: #FFCC00;
+    padding: 20px 10px;
+    border-radius: 20px;
+    
+}
+
+.footer #attribution{
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer #attribution a{
+    color: #000;
+    cursor: pointer;
+}

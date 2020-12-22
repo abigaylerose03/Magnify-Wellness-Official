@@ -1,0 +1,125 @@
+/* Import Heading */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Import Body */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
+
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /*Abigayle feature*/
+
+  .abby-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding-bottom: 30px;
+  }
+
+  .abby-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .abby-card img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+  }
+
+  .container {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  /* read more button (top only) */
+  .button {
+    border-radius: 10px;
+    border: 2px solid #33CCCC;
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 3px;
+  }
+
+  .button:hover {
+    background-color: #33CCCC;
+    text-decoration: none;
+  }
+
+/* continue reading buttons */
+
+.buttonC {
+  display: block;
+  border-radius: 0px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.buttonC span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: .5s;
+  color: #000000;
+}
+
+.buttonC span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: .5s;
+  color: #33CCCC;
+  text-decoration: underline;
+}
+
+.buttonC:hover span {
+  padding-right: 25px;
+  color: #33CCCC;
+  text-decoration: underline;
+}
+
+.buttonC:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #33CCCC;
+  text-decoration: underline;
+}
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .spotlight {
+    margin: auto;
+    width: 80%;
+  }
