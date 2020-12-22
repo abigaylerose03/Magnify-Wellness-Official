@@ -17,7 +17,6 @@ header{
     position: sticky;
     top: 0px;
     background-color:#33CCCC;
-    ;
     white-space: nowrap;
     width: 100%;
     z-index: 1001;
@@ -27,6 +26,7 @@ header{
 
 header a{
     color: #0F1C33;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
@@ -83,6 +83,7 @@ header .logo {
     white-space: nowrap;
     cursor: pointer;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 
 
 }
