@@ -1,3 +1,29 @@
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
+
+.headshot{
+    width: 100%;
+    border-bottom: 3px solid rgba(0, 0, 0,0.2);
+}
+a{
+    
+}
+.card{
+    width: 80%;
+    border:2px solid #FFCC00;
+}
+.name{
+    font-size:1.9em;
+    padding:10%;
+    text-align: center;
+}
+.bio{
+    display:inline-block;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+
 .Middle{
     width: 100%;
     text-align: center;
@@ -21,15 +47,6 @@
     border-color: rgb(142, 151, 150);
     border-width: thick;
 }
-#header{ /* to be 0 on smaller screen sizes*/
-    margin-left: 10%;
-    margin-right:10%;
-}
-.small{
-    text-align: justify;
-    font-size: 120%;
-    margin-left: 14%; /* to be 0 on smaller screen sizes*/
-}
 .big{
     text-align: center;
     font-size:300%;
@@ -39,43 +56,34 @@
     font-size: 150%;
     font-style: italic;
 }
-
+.small{
+    text-align: justify;
+    font-size: 120%;
+}
 .abby .big{
     margin-top:0em;
     
 }
 .col-card{
     margin-bottom: 2em;
+    
 }
 @media only screen and (max-width:991px){
     .abby-photo{
-        margin-left:25%;
+        margin-left:30%;
     }
     .Middle{
         font-size:300%;
     }
-    /*#header{  to be 0 on smaller screen sizes
-        margin-left: 10%;
-        margin-right:10%;
-    }*/
-    .small{
-        text-align: justify;
-        font-size: 120%;
-        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
-    }
+    
 }
 @media only screen and (max-width:767px){
     .abby-photo{
-        margin-left:22%;
+        margin-left:24%;
         width:50%;
     }
-    #header{  /*to be 0 on smaller screen sizes*/
-        margin-left: 0%;
-        margin-right:0%;
-    }
-    .small{
-        
-        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
+    .col-card{
+        padding-left: 20%;
     }
 }
 /*@media only screen and (max-width:1200px){
