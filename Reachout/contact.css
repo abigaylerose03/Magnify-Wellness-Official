@@ -1,0 +1,202 @@
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    
+}
+body section{
+    padding: 0 20px;
+}
+ul {
+    list-style: none;
+}
+  
+
+a {
+    text-decoration: none;
+}
+
+section .btn{
+    color: #fff;
+    background: #33CCCC;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+section .btn:hover{
+    box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
+}
+
+h1{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 78px;
+align-items: center;
+text-align: center;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 919px;
+  height: 163px;
+  left: 232px;
+  top: 112px;
+}
+
+#maggie img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 528px;
+  height: 441px;
+  left: 423px;
+  top: 275px;
+}
+
+/*Contact Form CSS*/
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+body {
+	background: #ffffff;  /* Set background color to #263238*/
+}
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal
+}
+/* Add styles to 'container' class */
+.container {
+  max-width: 918px;
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: rgb(255, 255, 255);
+	border-radius: 25px;
+  
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-color: #33cccc;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid #33cccc;
+}
+
+/* Style 'hover' property */
+input[type=text]:hover,input[type=email]:hover, textarea:hover {
+	border-color: #00AAE4;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #33cccc;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 45px;
+	border-radius: 15px;
+	transition: all ease-in-out 0.1s;
+	display: inline-block;
+	text-align: center;
+  position: absolute;
+  left: 750px;
+  right: 10px;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #FFCC00;
+}
+
+input[type=join] {
+  background: #33cccc;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 1px;
+	border-radius: 15px;
+	transition: all ease-in-out 0.1s;
+	display: inline-block;
+	text-align: center;
+  postion: relative;
+}
+
+/* Add styles for 'focus' property */
+input[type=join]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+input[type=join]:hover {
+	background: #FFCC00;
+}
+  
+/* Align items to center of the 'div' with the class 'center' */
+  
+  
+  
+.center {
+	text-align: center;
+}
+
