@@ -362,15 +362,15 @@ section .btn:hover{
     font-size: 1.25rem;
 }
 #press .article .img-container, #blog .article .img-container{
-    max-width: 200px;
-    height: 150px;
+    max-width: 220px;
+    height: 170px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 #press .article .img-container img, #blog .article .img-container img{
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 220px;
+    max-height: 170px;
 }
 
 @media only screen and (max-width: 1060px){
