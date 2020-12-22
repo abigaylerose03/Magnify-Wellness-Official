@@ -6,6 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,6 +17,9 @@
     <link rel="stylesheet" href="App.css" />
   </head>
   <body>
+    <header> 
+      <div id='navbar'></div>
+  </header>
     <h1 id="mainHeader">The Magnify Wellness App</h1>
 
     <div class="sections">
@@ -85,5 +89,20 @@
         <button class="button downloadButton">Download on iOS</button>
       </div>
     </div>
+    <footer class="footer">
+      <div id="footer"></div>
+  </footer>
   </body>
+  
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // LOAD THE HEADER AND FOOTER
+    $('#navbar').load('/navbar/navbar.html');
+    $('#footer').load('/footer/footer.html');
+
+})
+
+    
+</script>
 </html>

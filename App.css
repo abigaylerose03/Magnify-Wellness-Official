@@ -1,7 +1,15 @@
-* {
-  padding: 20px;
-}
+@import url("/navbar/navbar.css");
+@import url("/footer/footer.css");
 
+
+* {
+  padding: 0; 
+  margin: 0;
+  
+}
+.footer{
+  box-sizing: border-box;
+}
 #mainHeader {
   color: black;
   text-align: center;
@@ -96,6 +104,7 @@
   width: 150px;
   height: 45px;
   cursor: pointer;
+  padding: 20px
 }
 
 .downloadButton {
