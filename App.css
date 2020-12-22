@@ -15,10 +15,31 @@
   align-items: center;
 }
 
-.infoHeaders {
+#firstInfoHeader {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+
+#secondInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-right: 4%;
+}
+
+#thirdInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-right: 5%;
+}
+
+#fourthInfoHeader {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-left: 2%;
 }
 
 #mainQuote {
@@ -68,14 +89,12 @@
   background-color: black;
   border: none;
   color: white;
-  margin-top: 20px;
+  display: flex;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  align-items: center;
   font-size: 14px;
-  /* margin: 4px 2px; */
   width: 150px;
-  height: 40px;
+  height: 45px;
   cursor: pointer;
 }
 
