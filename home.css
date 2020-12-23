@@ -171,7 +171,7 @@ section .btn:hover{
     }
 
     #home .content .image{
-        order: 2 
+        margin-bottom: 30px; 
     }
 
     #home .content .image img{
