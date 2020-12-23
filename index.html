@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Ayana Griffin">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
     <link rel="stylesheet" href="./footer/footer.css">
@@ -182,8 +181,6 @@
     </footer>
 </body>
 
-<script src="./home-assets/jquery.counterup.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function () {
@@ -191,10 +188,6 @@ $(document).ready(function () {
     $('#navbar').load('./navbar/navbar.html');
     $('#footer').load('./footer/footer.html');
 
-    $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-    });
 
 
     const backToTopButton = document.querySelector("#back-to-top-btn");
