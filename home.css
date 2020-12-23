@@ -241,6 +241,12 @@ section .btn:hover{
     right: 0;
     
 }
+
+@media only screen and (max-width: 400px){
+    #target{
+        display: none;
+    }
+}
 #target{
     position: absolute;
     width: 15vw;
@@ -337,7 +343,7 @@ section .btn:hover{
 }
 
 #press .article, #blog .article{
-    width: 300px;
+    width: 275px;
     max-width: 300px;
     height: 350px;
     display: flex;
