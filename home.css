@@ -587,7 +587,7 @@ button i{
   }
   @media(max-width:768px) {
     
-    #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+    #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 15px; right: 15px; }
   }
   
   /* Animations */
