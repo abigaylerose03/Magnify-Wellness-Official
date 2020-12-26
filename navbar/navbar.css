@@ -62,12 +62,22 @@ header .nav-bar-container {
 
 header .logo-container{
     padding: 0 3vw;
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: left;
    
 
+}
+
+header .logo-container a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+header .logo-container a h3, header .logo-container a img{
+    cursor: pointer;
 }
 
 header .logo-container img{
@@ -81,7 +91,6 @@ header .logo {
     font-weight: 700;
     line-height: 3.5rem;
     white-space: nowrap;
-    cursor: pointer;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 
@@ -256,6 +265,19 @@ header #check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
     }
 }
 
+@media only screen and (max-width: 325px){
+    header .logo-container a h3{
+        display: none;
+    }
+
+    header .nav-bar-container{
+        justify-content: space-between;
+    }
+    header .hamburger-menu-container{
+        flex: 0;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
 
  /* --------------------- NAVIGATION ------------------------- */
@@ -330,7 +352,7 @@ header  .nav-links-container .donate{
 
     header  .nav-links > ul{
         flex-direction: column;
-        height: 70vh;
+        height: 75vh;
         justify-content: space-around;
         align-items: flex-end;
    

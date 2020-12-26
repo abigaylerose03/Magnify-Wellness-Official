@@ -344,8 +344,8 @@ section .btn:hover{
 
 #press .article, #blog .article{
     width: 275px;
-    max-width: 300px;
-    height: 350px;
+    
+    height: 375px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -380,6 +380,12 @@ section .btn:hover{
 @media only screen and (max-width: 1060px){
     #press{
         margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #press .article, #blog .article{
+        margin: 20px 0;
     }
 }
 
