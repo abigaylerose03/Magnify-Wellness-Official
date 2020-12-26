@@ -37,7 +37,7 @@
 }
 
 .footer-container{
-    padding-top: 50px;
+    padding: 50px 0 0 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,11 +57,14 @@
     color: #000;
 }
 .footer .socials{
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 .footer .socials ul{
     display: flex;
+    padding: 0;
+
     
 }
 
@@ -115,7 +118,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
-        padding-left: 15px;
+        /* padding-left: 15px; */
     }
 
     .footer .socials{
@@ -125,7 +128,7 @@
 
     .footer .download-btn{
         justify-content: center;
-        padding-left: 10px;
+        margin-left: 10px;
     }
 
 
