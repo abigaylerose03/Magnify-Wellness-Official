@@ -67,7 +67,7 @@
 }
 @media only screen and (max-width:767px){
     .abby-photo{
-        margin-left:22%;
+        margin-left:12%;
         width:50%;
     }
     #header{  /*to be 0 on smaller screen sizes*/
