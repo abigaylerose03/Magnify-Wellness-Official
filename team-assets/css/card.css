@@ -20,6 +20,9 @@
     z-index: 2;
     color:black;
 }
+.nopic:hover > .headshot{
+    content: url("team-assets/Headshots/headGold.png");
+}
 .kard:hover > .bio{
     display: inline-block;
     color:black;
