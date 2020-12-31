@@ -1,5 +1,4 @@
-@import url("/navbar/navbar.css");
-@import url("/footer/footer.css");
+
 
 * {
     padding: 0;
@@ -8,13 +7,11 @@
     cursor:default;
 }
 
+
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     
-}
-body section{
-    padding: 0 20px;
 }
 ul {
     list-style: none;
@@ -42,6 +39,10 @@ section .btn:hover{
     box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
 }
 
+.container{
+  padding: 20px;
+  padding-bottom: 3rem;
+}
 h1{
 font-family: 'Montserrat';
 font-style: normal;
@@ -101,14 +102,37 @@ h4 {
   font-style: normal;
   font-weight: normal
 }
-/* Add styles to 'container' class */
-.container {
-  max-width: 918px;
-	padding: 12px 24px 24px 24px;
-	margin: 48px 12px;
-	background: rgb(255, 255, 255);
-	border-radius: 25px;
-  
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title img{
+  padding: 4rem 0;
+  height: 50vh;
+  /* width:auto; */
+
+}
+
+h2{
+  text-align: center;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 3rem 0;
+  margin-bottom: 5rem;
+}
+form{
+ width: 50%;
+ 
+position: relative;
 }
 
 /* Add styles to 'label' selector */
@@ -151,10 +175,13 @@ input[type=submit] {
 	border-radius: 15px;
 	transition: all ease-in-out 0.1s;
 	display: inline-block;
-	text-align: center;
+  text-align: center;
   position: absolute;
-  left: 750px;
-  right: 10px;
+  right: 0;
+  bottom: -20px;
+  transform: translateY(50%)
+  
+  
 }
 
 /* Add styles for 'focus' property */
@@ -179,7 +206,7 @@ input[type=join] {
 	transition: all ease-in-out 0.1s;
 	display: inline-block;
 	text-align: center;
-  postion: relative;
+  position: relative;
 }
 
 /* Add styles for 'focus' property */
@@ -192,11 +219,21 @@ input[type=join]:hover {
 	background: #FFCC00;
 }
   
-/* Align items to center of the 'div' with the class 'center' */
-  
-  
-  
-.center {
-	text-align: center;
+.slack{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+@media only screen and (max-width: 1100px){
+  form{
+    width: 80%;
+   }
+}
+
+@media only screen and (max-width: 500px){
+  form{
+    width: 95%;
+   }
+}
