@@ -47,14 +47,12 @@ section .btn:hover{
 
 
 #title{
-    padding-top: 100px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 2.00rem;
-    overflow-x: hidden;
+    margin-top: 3rem;
+    margin-bottom: 100px;
+    font-family: Montserrat, sans-serif;
+    font-size: 64px;
     text-align: center;
-    margin-top: -90px;
-    margin-bottom: 10px;
+    line-height: 78px;
 }
 
 #banner{
