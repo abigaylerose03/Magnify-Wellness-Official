@@ -44,6 +44,7 @@ header .btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.1s;
 }
 
 header .btn:hover{
@@ -74,6 +75,7 @@ header .logo-container a{
     display: flex; 
     justify-content: center; 
     align-items: center;
+    transition-duration: 0.1s;
 }
 
 header .logo-container a h3, header .logo-container a img{
@@ -93,6 +95,7 @@ header .logo {
     white-space: nowrap;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.1s;
 
 
 }

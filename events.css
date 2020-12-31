@@ -51,6 +51,7 @@ section .btn:hover{
     flex-direction: column;
 }
 
+
 #title{
     /* padding-top: 100px; */
     padding-top: 3rem;
@@ -61,7 +62,6 @@ section .btn:hover{
     text-align: center;
     /* margin-top: -90px; */
     margin-bottom: 10px;
-}
 
 #banner{
     text-align: center;  
