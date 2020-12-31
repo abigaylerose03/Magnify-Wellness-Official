@@ -46,7 +46,7 @@ section .btn:hover{
 /* -------------------------------- UPCOMING EVENTS PAGE ------------------------------- */
 
 
-#title{
+h1{
     margin-top: 3rem;
     margin-bottom: 100px;
     font-family: Montserrat, sans-serif;
