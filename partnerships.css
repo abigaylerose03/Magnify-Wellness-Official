@@ -54,16 +54,7 @@ section .btn:hover{
     overflow-x: hidden;
     text-align: center;
     margin-top: -90px;
-    margin-bottom: 10px;
-}
-
-#banner{
-    text-align: center;  
-    margin-bottom: 30px;
-}
-
-#calendar{
-    align-content: center;
-    text-align: center;
     margin-bottom: 50px;
 }
+
+
