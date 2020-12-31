@@ -44,16 +44,24 @@ section .btn:hover{
 } 
 
 /* -------------------------------- UPCOMING EVENTS PAGE ------------------------------- */
-
-
-h1{
-    margin-top: 3rem;
-    margin-bottom: 100px;
-    font-family: Montserrat, sans-serif;
-    font-size: 64px;
-    text-align: center;
-    line-height: 78px;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+
+#title{
+    /* padding-top: 100px; */
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    overflow-x: hidden;
+    text-align: center;
+    /* margin-top: -90px; */
+    margin-bottom: 10px;
 
 #banner{
     text-align: center;  
@@ -64,4 +72,21 @@ h1{
     align-content: center;
     text-align: center;
     margin-bottom: 50px;
+}
+
+iframe{
+    width: 800px;
+    height: 600px;
+}
+
+@media only screen and (max-width: 1000px){
+    #banner img{
+        max-width: 90vw;
+        text-align: center;  
+    }
+
+    iframe{
+        max-width: 90vw;
+        /* max-height: 600px; */
+    }
 }

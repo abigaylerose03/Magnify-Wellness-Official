@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./home-assets/logo.png" />
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-    <link rel="stylesheet" href="App.css" />
-    <link rel="stylesheet" href="./navbar/navbar.css">
-    <link rel="stylesheet" href="./footer/footer.css">
-  </head>
-  <body>
-    <header> 
-      <div id='navbar'></div>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./home-assets/logo.png" />
+
+  <link rel="stylesheet" href="App.css" />
+  <link rel="stylesheet" href="./navbar/navbar.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <title>Magnify Wellness App</title>
+</head>
+
+<body>
+  <header>
+    <div id='navbar'></div>
   </header>
-    <h1 id="mainHeader">The Magnify Wellness App</h1>
+
+  <h1>The Magnify Wellness App</h1>
+  <div class="app-container">
+    <div class="app-section">
+      <img src="./app-assets/Maggie.png" alt="">
+      <h2>Talk to Maggie the AI-driven Chatbot who provides emotional support and much more</h2>
+    </div>
+
+    <div class="app-section">
+      <h2>Practice mindfulness through guided breathing exercises</h2>
+      <img src="./app-assets/Help.png" alt="">
+
+    </div>
+
+    <div class="app-section">
+      <img src="./app-assets/Support.png" alt="">
+      <h2>Connect with a real counselor within the app for professional support</h2>
+    </div>
+
+    <div class="app-section">
+      <h2>Reflect on your thoughts in a gratitude journal with randomized prompts</h2>
+      <img src="./app-assets/Journal.png" alt="">
+
+    </div>
+
+    <div class="reviews-container">
+      <div class="title">
+        <h1>"Magnify changed my life"</h1>
+      </div>
+
+      <div class="reviews">
+        <div class="review-section">
+          <img src="./app-assets/stars.png" alt="five stars">
+          <p>"There are so many cool things included in this app! Talking to Maggie
+            is so much fun. She's so cute! I love the journal as well. My favorite
+            tab is the tab to reach out to a counselor. This makes getting
+            emotional support from someone so easy for me. Of course, Maggie's Big
+            Adventure is a ton of fun too! Everything is well-designed and really
+            though out, super amazing!"</p>
+          <br><br>
+          <div class="author">
+            <p>Katie&Kookies</p>
+            <p>08/19/2020</p>
+          </div>
+
+        </div>
+        <div class="review-section">
+          <img src="./app-assets/stars.png" alt="five stars">
+          <p>"Great mental health resource! LOVE the journal feature, and I can
+            tell so much effort was put into this app!! Really impressed by all
+            the features! :)"</p>
+          <br><br>
+          <div class="author">
+            <p>Jessicaa Z</p>
+            <p>08/19/2020</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="download-container">
+      <img src="./app-assets/Clearer Maggie.png" alt="maggie">
+      <div class="text">
+        <h1>Magnify is here for you</h1>
+        <div class="button"> <a href="https://apps.apple.com/in/app/magnify-wellness/id1526188573">Download on iOS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <h1 id="mainHeader">The Magnify Wellness App</h1>
 
     <div class="sections">
         <img src="./app-assets/Maggie.png" width="300" height="600" />
@@ -91,21 +158,22 @@
         </h1>
         <button class="button downloadButton">Download on iOS</button>
       </div>
-    </div>
-    <footer class="footer">
-      <div id="footer"></div>
+    </div> -->
+  <footer class="footer">
+    <div id="footer"></div>
   </footer>
-  </body>
-  
+</body>
+
 <script type="text/javascript">
 
-$(document).ready(function () {
+  $(document).ready(function () {
     // LOAD THE HEADER AND FOOTER
     $('#navbar').load('./navbar/navbar.html');
     $('#footer').load('./footer/footer.html');
 
-})
+  })
 
-    
+
 </script>
+
 </html>

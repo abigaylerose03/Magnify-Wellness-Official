@@ -1,13 +1,185 @@
-@import url("/navbar/navbar.css");
-@import url("/footer/footer.css");
-
-
 * {
   padding: 0; 
   margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
   
 }
-.footer{
+
+h1{ 
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0 2.5rem;
+  padding-bottom: 6rem;
+}
+
+.app-section{
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 2000px; */
+  
+}
+
+.app-section h2{
+  /* flex: 1; */
+  font-weight: 400;
+  font-size: 2rem;
+  /* width: 50vw; */
+
+}
+
+.app-section h2:nth-child(2){
+  padding-left: 3rem;
+}
+
+.app-section h2:nth-child(1){
+  padding-right: 3rem;
+}
+
+.app-section img{
+  max-height: 75vh;
+  max-width: 40vw;
+  
+}
+
+.reviews{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+
+.review-section{
+  width: 42%;
+  max-width: 800px;
+  position: relative;
+}
+
+.review-section img{
+  width: 100%;
+}
+
+.download-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.download-container .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-container .text h1{
+  font-weight: 500;
+}
+.button{
+  background: #000;
+  padding: 15px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button a{
+  color: #fff;
+}
+
+.button:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+}
+.download-container img{
+  height: 30vh;
+}
+
+@media only screen and (max-width: 1000px){
+  .app-section{
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .app-section{
+    flex-direction: column;
+  }
+
+  .app-section img{
+    max-height: 75vh;
+    max-width: 70vw;
+    
+  }
+  .app-section h2{
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+    font-size: 1.5rem;
+  }
+
+  .app-section h2:nth-child(2){
+    padding-left: 0;
+    
+  }
+  
+  .app-section h2:nth-child(1){
+    padding-right: 0;
+    order: 2;
+  }
+
+  .app-section{
+    width: 100vw;
+  }
+
+  .reviews{
+    flex-direction: column;
+   
+    text-align: center;
+    
+  }
+
+  .review-section{
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem 0;
+    
+  }
+
+  .review-section img{
+    width: 60%;
+    
+  }
+
+  .download-container{
+    flex-direction: column;
+  }
+
+ 
+}
+/* .footer{
   box-sizing: border-box;
 }
 #mainHeader {
@@ -109,4 +281,4 @@
 
 .downloadButton {
   border-radius: 40px;
-}
+} */
