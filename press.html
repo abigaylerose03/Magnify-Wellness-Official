@@ -60,31 +60,6 @@
         // LOAD THE HEADER AND FOOTER
         $('#navbar').load('./navbar/navbar.html');
         $('#footer').load('./footer/footer.html');
-
-        // dynamically parse csv and generate cards
-        const json = Papa.parse(press-card-data.csv, {
-            comments: "#", // ignore comments
-            header: true, // If true, the first row of parsed data will be interpreted as field names. An array of field names will be returned in meta, and each row of data will be an object of values keyed by field name instead of a simple array. Rows with a different number of fields from the header row will produce an error.
-            complete: function(results) { // callback func on-complete
-                console.log(results);
-            }
-        });
-        
-        // for (let dataArray in json) {
-        //     for (let i = 0; i < dataArray.length; i++) {
-        //         console.log(`element ${i}: ${dataArray[i]}`);
-        //     }
-        // }
-
-        for (let obj in json) {
-            console.log(
-                `Source: ${obj.source}`
-                `href-link: ${obj.href-link}`
-                `Date: ${obj.date}`
-                `Title: ${obj.title}`
-            );
-        }
-
      }) 
 </script>
 <script src="assets/js/jquery.min.js"></script>
