@@ -98,7 +98,21 @@ section .btn:hover{
 }
 #home .content .image{
     margin-top: -1rem;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
+}
+
+#home .content .image h2{
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #ffffff;
 }
 #home .content .image img{
     width: 30vw;
@@ -155,13 +169,20 @@ section .btn:hover{
     }
 
     #home .content .image img{
-        width: 25vw;
+        width: 50vw;
+        max-width: 350px;
     }
 
     #home .content .image{
         margin: 0;
+        width: 80vw;
     }
+    #home .content .image h2{
+        display: none;
+    }
+
 }
+
 
 @media only screen and (max-width: 650px) {
     
@@ -174,9 +195,7 @@ section .btn:hover{
         margin-bottom: 30px; 
     }
 
-    #home .content .image img{
-        width: 50vw;
-    }
+    
 
     .custom-shape-divider-bottom-1608227026 svg {
         height: 75px;
