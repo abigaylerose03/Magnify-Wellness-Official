@@ -25,28 +25,8 @@
         <div id='navbar'></div>
     </header>
 
-    <div class="container">
-        <h1>Press</h1>
-
-        <!-- I want to dynamically create card that look like this, starting here -->
-        <div class="row d-xl-flex flex-column flex-lg-row">
-            <div class="col press-card">
-                <p class="press-card-source">Western Today</p>
-                <hr /><a href="https://westerntoday.wwu.edu/features/honors-student-abigayle-peterson-develops-new-wellness-app-for-the-apple-store">
-                    <p class="press-card-title">Honors student Abigayle Peterson develops new wellness app for the Apple Store</p>
-                </a>
-                <p class="press-card-date">November 4, 2020</p>
-            </div>
-            <div class="col press-card">
-                <p class="press-card-source">Source</p>
-                <hr /><a href="https://link.edu">
-                    <p class="press-card-title">gkeaogaejewagpijewajie  wewpogjeawopgeawgpie fwqfwqjqwj  johiohoioj hjb wqoifwqijf fne fjwiofjewoi jfeiw fefe</p>
-                </a>
-                <p class="press-card-date">Date</p>
-            </div>
-        </div>
-        <!-- and ending here -->
-
+    <div class="container text-center text-lg-left text-xl-left align-self-center">
+        <!-- html gets dynamically added here -->
     </div>
 
     <footer class="footer">
@@ -54,13 +34,9 @@
     </footer>
 </body>
 
-<script type="text/javascript">
-     $(document).ready(function () {
-        // LOAD THE HEADER AND FOOTER
-        $('#navbar').load('./navbar/navbar.html');
-        $('#footer').load('./footer/footer.html');
-     }) 
-</script>
+<!-- JS for this page -->
+<script src="press.js"></script> 
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
