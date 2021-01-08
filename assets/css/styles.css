@@ -1,7 +1,7 @@
 @import url("/navbar/navbar.css");
 @import url("/footer/footer.css");
 
-.container.text-center.text-lg-left.text-xl-left.align-self-center {
+.container {
   margin: 0px 28px 100px 28px;
 }
 
@@ -40,4 +40,8 @@ hr {
 .press-card-date {
   font-size: 18px;
   font-family: Open Sans;
+}
+
+.filler-card {
+  visibility: hidden;
 }
