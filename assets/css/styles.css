@@ -38,6 +38,7 @@ h3 {
 #programs-content-container p {
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
+  margin: 0px;
 }
 
 #programs-content-container .btn {
@@ -55,7 +56,7 @@ h3 {
 }
 
 #programs-content-container .btn-div {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 #upcoming-programs {
