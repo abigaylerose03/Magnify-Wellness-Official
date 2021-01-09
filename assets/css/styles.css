@@ -8,6 +8,62 @@
     font-size: 64px;
     text-align: center;
     line-height: 78px;
-  }
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 55px;
+  text-align: center;
+  line-height: 78px;
+  margin: 60px 0px;
+}
+
+h3 {
+  font-size: 36px;font-family: Montserrat, sans-serif;
+}
+
+#programs-content-container {
+  margin: 50px 0px;
+}
   
-  
+.program-row{
+  margin-bottom: 60px;
+} 
+
+#programs-content-container img {
+  width: 250px;
+  padding-bottom: 10px;
+}
+
+#programs-content-container p {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#programs-content-container .btn {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+#programs-content-container .btn:hover {
+  color: white;
+}
+
+#programs-content-container .btn-div {
+  padding-top: 8px;
+}
+
+#upcoming-programs {
+  background: #FFCC00;
+}
+
+#upcoming-programs p {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 60px 0px;
+}
