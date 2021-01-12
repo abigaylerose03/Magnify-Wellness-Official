@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="./navbar/navbar.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="icon" href="./home-assets/logo.png" />
+
+  <title>Magnify Wellness</title>
+</head>
+
+<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <header>
+    <div id="navbar"></div>
+  </header>
+
+  <body>
+
+    <div class="container">
+      <div class="title">
+        <h1>
+          Reach out to us
+        </h1>
+
+
+        <img src="./home-assets/maggie.png" alt="">
+
+        <h2>
+          Thanks for choosing to reach out to us.
+        </h2>
+        <h2>
+          We typically respond within 2-3 business days.
+        </h2>
+
+
+      </div>
+
+
+      <!-- Contact form-->
+
+      <div class="form-container">
+        <form action="#" name="contact_form">
+
+          <input name="first_name" type="text" required placeholder="Name" />
+
+          <input name="email" type="email" required placeholder="Email" />
+          <br>
+
+          <textarea name="message" cols="30" rows="10" required placeholder="Enter your message here ..."></textarea>
+
+          <input type="submit" value="Send">
+        </form>
+      </div>
+
+      <!--Slack-->
+      <div class="slack">
+        <h4>
+          Join Our Slack Community
+        </h4>
+        <br>
+        <br>
+        <div>
+          <input type="join" value="Join">
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div id="footer"></div>
+
+    </footer>
+  </body>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      // LOAD THE HEADER AND FOOTER
+      $('#navbar').load('./navbar/navbar.html');
+      $('#footer').load('./footer/footer.html');
+
+    })
+
+  </script>
+
+</html>

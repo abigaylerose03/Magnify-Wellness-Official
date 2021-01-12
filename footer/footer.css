@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
 .footer ul {
     list-style: none;
+    padding: 0;
     
 }
 
@@ -20,6 +24,8 @@
     position: relative;
     width: 100vw;
     padding: 0 30px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .footer::before{
@@ -32,7 +38,7 @@
 }
 
 .footer-container{
-    padding-top: 50px;
+    padding: 50px 0 0 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,11 +58,14 @@
     color: #000;
 }
 .footer .socials{
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 .footer .socials ul{
     display: flex;
+    padding: 0;
+
     
 }
 
@@ -109,17 +118,21 @@
     .footer .footer-container .navigation ul{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 30px;
-        padding-left: 15px;
+        padding: 0 0 30px 0;
+        /* padding-left: 15px; */
     }
 
     .footer .socials{
         /* justify-content: left; */
-        padding-bottom: 30px;
+        padding: 0 0 30px 0;
     }
 
     .footer .download-btn{
         justify-content: center;
-        padding-left: 10px;
+        margin-left: 10px;
     }
+
+
+
 }
+
