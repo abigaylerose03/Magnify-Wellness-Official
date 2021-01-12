@@ -107,12 +107,15 @@ section .btn:hover{
     
 }
 
-#home .content .image h2{
+#home .content .image h3, #home .content .text h3{
     padding-top: 1rem;
     font-size: 2rem;
     font-style: italic;
     font-weight: 600;
     color: #ffffff;
+}
+#home .content .text h3{
+    display: none;
 }
 #home .content .image img{
     width: 30vw;
@@ -147,6 +150,8 @@ section .btn:hover{
     #home .content{
         flex-direction: column;
         margin-top: 0;
+        padding-bottom: calc(max(10vw, 120px));
+       
     }
 
     #home .content .text{
@@ -177,8 +182,12 @@ section .btn:hover{
         margin: 0;
         width: 80vw;
     }
-    #home .content .image h2{
+    #home .content .image h3{
         display: none;
+    }
+    #home .content .text h3{
+        display: block;
+        margin-top: -35px;
     }
 
 }
@@ -186,6 +195,9 @@ section .btn:hover{
 
 @media only screen and (max-width: 650px) {
     
+    #home .content{
+        padding-bottom: 0;
+    }
     #home .content h1{
         display: none;
         
@@ -199,6 +211,19 @@ section .btn:hover{
 
     .custom-shape-divider-bottom-1608227026 svg {
         height: 75px;
+    }
+
+    #home .content .text h3{
+        display: none;
+    }
+    #home .content .image h3{
+        display: block;
+        order: 1;
+        padding-bottom: 2rem;
+        width: 90vw;
+    }
+    #home .content .image img{
+        order: 2;
     }
     
 }
