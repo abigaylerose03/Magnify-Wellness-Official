@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="authors" content="Ayana Griffin">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="footer/footer.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="./navbar/navbar.css">
-    <link rel="stylesheet" href="./footer/footer.css">
-    <link rel="icon" href="./home-assets/logo.png" />
     <title>Magnify Wellness</title>
 </head>
 
@@ -19,8 +17,6 @@
     <header>
         <div id='navbar'></div>
     </header>
-
-    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
 
     <section id="home">
         <div class="custom-shape-divider-bottom-1608227026">
@@ -42,11 +38,12 @@
                 </p>
                 <a href="https://apps.apple.com/in/app/magnify-wellness/id1526188573"><img
                         src="./home-assets/download.png"></a>
+                <h3>Version 2 coming in March!</h3>
             </div>
 
             <div class="image">
                 <img src="./home-assets/phones.png">
-                <h2>Version 2 coming in March!</h2>
+                <h3>Version 2 coming in March!</h3>
             </div>
         </div>
 
@@ -58,6 +55,8 @@
         <img id="blob" src="./home-assets/blob.png" alt="">
         <h1>Our Mission</h1>
         <h2>Our mission is to ensure that everyone gains <span>equal access</span> to mental health support.</h2>
+        <!-- <div class="back-to-top"><i class="fas fa-arrow-up"></i></div> -->
+
     </section>
 
     <section id="about">
@@ -166,20 +165,20 @@
         <div class="articles-container">
             <div class="article">
                 <div class="img-container">
-                    <img src="./home-assets/press/meet-the-writers.png" alt="">
+                    <img src="/home-assets/press/meet-the-writers.png" alt="">
                 </div>
 
                 <h2>Meet the Writers</h2>
-                <a href="blog.html" class="btn">View Post</a>
+                <a href="blog.html" class="btn">View Article</a>
             </div>
             <div class="article">
                 <div class="img-container">
-                    <img src="./home-assets/press/spotlight.png" alt="Abigayle Peterson" width="100%">
+                    <img src="/home-assets/press/spotlight.png" alt="Abigayle Peterson" width="100%">
 
                 </div>
                 <h2>Spotlight on Magnify's Founder: Abigayle Peterson</h2>
                 <a href=" https://magnifywellnessblog.wordpress.com/2020/12/07/spotlight-abigayle-peterson-the-stories-within-magnifys-code/"
-                    class="btn">View Post</a>
+                    class="btn">View Article</a>
             </div>
 
         </div>
@@ -200,70 +199,18 @@
 
 <script src="./home-assets/jquery.counterup.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-
+<script src="jquery.counterup.min.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
         // LOAD THE HEADER AND FOOTER
-        $('#navbar').load('./navbar/navbar.html');
-        $('#footer').load('./footer/footer.html');
+        $('#navbar').load('/navbar/navbar.html');
+        $('#footer').load('/footer/footer.html');
 
-        // ANIMATED COUNTERS FOR METRICS SECTION
         $('.counter').counterUp({
             delay: 10,
-            time: 1250
+            time: 1000
         });
-
-        // HANDLES THE BACK TO TOP BUTTON
-        const backToTopButton = document.querySelector("#back-to-top-btn");
-
-        window.addEventListener("scroll", scrollFunction);
-
-        function scrollFunction() {
-            if (window.pageYOffset > 300) { // Show backToTopButton
-                if (!backToTopButton.classList.contains("btnEntrance")) {
-                    backToTopButton.classList.remove("btnExit");
-                    backToTopButton.classList.add("btnEntrance");
-                    backToTopButton.style.display = "block";
-                }
-            }
-            else { // Hide backToTopButton
-                if (backToTopButton.classList.contains("btnEntrance")) {
-                    backToTopButton.classList.remove("btnEntrance");
-                    backToTopButton.classList.add("btnExit");
-                    setTimeout(function () {
-                        backToTopButton.style.display = "none";
-                    }, 250);
-                }
-            }
-        }
-
-        backToTopButton.addEventListener("click", smoothScrollBackToTop);
-
-
-        function smoothScrollBackToTop() {
-            const targetPosition = 0;
-            const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition;
-            const duration = 750;
-            let start = null;
-
-            window.requestAnimationFrame(step);
-
-            function step(timestamp) {
-                if (!start) start = timestamp;
-                const progress = timestamp - start;
-                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-                if (progress < duration) window.requestAnimationFrame(step);
-            }
-        }
-
-        function easeInOutCubic(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t * t + b;
-            t -= 2;
-            return c / 2 * (t * t * t + 2) + b;
-        };
 
     })
 
