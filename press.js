@@ -31,17 +31,29 @@ $(document).ready(function () {
         ]//END
         //DO NOT EDIT THE LINE ABOVE
 
-        const cardCount = Object.keys(cards).length;
-        const rowCount = Math.ceil(cardCount/2);
-        console.log(rowCount);
+        const totalCardCount = Object.keys(cards).length;
+        const totalRowCount = Math.ceil(totalCardCount/2);
+
+        // Count number of feature cards
+        let numFeatureCards = 0;
+        for (let objIndex=0; objIndex < totalCardCount; objIndex++) {
+            if (cards[objIndex]) {
+                numFeatureCards++;
+            }
+        }
+        const numWorkshopCards = totalCardCount - numFeatureCards;
+        
+        const featureRowCount = Math.ceil(featureCardCount/2)
+        const workshopRowCount = Math.ceil(workshopCardCount/2)
+        console.log("There are " + totalRowCount + " rows in total: " + featureRowCount + " feature rows and " + workshopRowCount + " workshop rows.");
+        
         let cardIndex = 0;
         let html = "<h1>Press</h1>";
-
-        for (let row=0; row<rowCount; row++) {
+        for (let row=0; row<totalRowCount; row++) {
             html += `
             <div class="row d-xl-flex flex-column flex-lg-row">`
             for (let col=0; col<2; col++) {
-                if (cardIndex==cardCount) {
+                if (cardIndex==totalCardCount) {
                     html = addEmptyCard(html);
                     break;
                 } else {
