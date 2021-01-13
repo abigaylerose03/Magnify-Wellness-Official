@@ -1,11 +1,14 @@
 $(document).ready(function () {
     const addEmptyCard = (html) => {
-        html += '<div class="col press-card filler-card" ><p class="press-card-source"></p><hr/><a href=""><p class="press-card-title"></p></a><p class="press-card-date"></p></div>';
+        html += '<div class="col press-card filler-card"><p class="press-card-source"></p><hr/><a href=""><p class="press-card-title"></p></a><p class="press-card-date"></p></div>';
         return html;
     }
 
     const makeCards = () => {
-    // TO ADD ANOTHER CARD, COPY-PASTE THE COMMENTED-OUT TEMPLATE, UNCOMMMENT, FILL IT IN
+        // DO NOT EDIT THESE CARDS DIRECTLY OR YOUR CHANGES MAY BE OVERWRITTEN.
+        // Read the README to see the process or ask Katie Taylor
+
+        // DO NOT EDIT THE LINE BELOW
         const cards = [
             { 
                 source: "Western Today",
@@ -24,21 +27,9 @@ $(document).ready(function () {
                 href: "https://westerntoday.wwu.edu/features/honors-student-abigayle-peterson-develops-new-wellness-app-for-the-apple-store",
                 title: "Honors student Abigayle Peterson develops new wellness app for the Apple Store",
                 date: "November 4, 2020"
-            },
-            // {
-            //     source: "Western Today",
-            //     href: "https://westerntoday.wwu.edu/features/honors-student-abigayle-peterson-develops-new-wellness-app-for-the-apple-store",
-            //     title: "Honors student Abigayle Peterson develops new wellness app for the Apple Store",
-            //     date: "November 4, 2020"
-            // }
-            // COPY THE COMMENT BELOW, PASTE IT ABOVE THIS LINE AS A CARD DATA TEMPLATE
-            // {
-            //     source: "",
-            //     href: "",
-            //     title: "",
-            //     date: ""
-            // },
-        ]
+            }, 
+        ]//END
+        //DO NOT EDIT THE LINE ABOVE
 
         const cardCount = Object.keys(cards).length;
         const rowCount = Math.ceil(cardCount/2);
@@ -56,12 +47,12 @@ $(document).ready(function () {
                 } else {
                     html += `
                     <div class="col press-card">
-                        <p class="press-card-source">` + cards[cardIndex].source + `</p>
+                        <p class="press-card-source">` + cards[cardIndex].Organization + `</p>
                         <hr/>
-                        <a href="` + cards[cardIndex].href + `">
-                            <p class="press-card-title">` + cards[cardIndex].title + `</p>
+                        <a href="` + cards[cardIndex].Link + `">
+                            <p class="press-card-title">` + cards[cardIndex].Title + `</p>
                         </a>
-                        <p class="press-card-date">` + cards[cardIndex].date + `</p>
+                        <p class="press-card-date">` + cards[cardIndex].Date + `</p>
                     </div>
                     `
                     cardIndex++
