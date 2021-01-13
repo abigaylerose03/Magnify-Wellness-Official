@@ -12,6 +12,12 @@
   line-height: 78px;
 }
 
+.h2, h2 {
+  padding: 16px 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+}
+
 /* Press page stuff */
 
 #press-content-container {
@@ -44,6 +50,20 @@ hr {
 .press-card-date {
   font-size: 18px;
   font-family: Open Sans;
+}
+
+#press-content-container .btn {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+#press-content-container .btn:hover {
+  color: white;
 }
 
 .filler-card {
