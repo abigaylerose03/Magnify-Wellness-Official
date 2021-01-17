@@ -1,7 +1,6 @@
 /* Import Heading 1 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/* Import Body */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
+
 
 @import url("/navbar/navbar.css");
 @import url("/footer/footer.css");
@@ -45,6 +44,12 @@ section .btn:hover{
 
 /* -------------------------------- UPCOMING EVENTS PAGE ------------------------------- */
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 h1{
     margin-top: 3rem;
@@ -55,13 +60,19 @@ h1{
     line-height: 78px;
 }
 
-#banner{
-    text-align: center;  
-    margin-bottom: 30px;
+#row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#row-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#photos{
+    padding-bottom: 110px;
 }
 
-#calendar{
-    align-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-}

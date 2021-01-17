@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,18 +21,34 @@
     HEARO UW
     Girl Genius Magazine
     Hack Club -->
-    <div id='title'>
-        <h1>Partnerships</h1>
+    <div class="container">
+        <div id='title'>
+            <h1>Partnerships</h1>
+        </div>
+        <div id="photos">
+            <div id="row-1">
+                
+            <a href="https://www.ruhacks.com/"><img src="/images/Ryerson University Hacks.png" alt="Ryerson University Hacks" style="padding-right: 40px;"></a>
+            <img src="/images/Creator Tribe.png" alt="Creator Tribe">
+            <a href="https://girlgeniusmagazine.wixsite.com/official"><img src="/images/Girl Genius Magazine.png" alt="Girl Genius Magazine"></a>
+        </div> <br>
+        <div id="row-2">
+            <a href="https://hackclub.com/"><img src="/images/Hack Club.png" alt="Hack Club"></a>
+            <a href="https://beacons.ai/hearo.uw"><img src="/images/HEARO UW.png" alt="HEARO UW" width="400" height="400"></a>
+            <a href="https://www.instagram.com/the__paris__project/?hl=en"><img src="/images/The Paris Project.png" alt="The Paris Project" width="400" height="400"></a>
+        </div>
+        <div id="row-2">
+            <a href="https://www.stickergiant.com/"><img src="/images/StickerGiant.png" href="https://www.google.com" alt="StickerGiant" width="472" height="300"></a>
+            
+        </div>
+        </div>
     </div>
-    <div id=photos>
-        <img src="/images/Ryerson University Hacks.png" alt="Ryerson University Hacks">
-    </div>
-    
 
     <!-- FOOTER CODE BELOW -->
     <footer class="footer">
         <div id="footer"></div>
-        <p id="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        <p id="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
 
     </footer>
 </body>
@@ -47,12 +64,11 @@
         // LOAD THE HEADER AND FOOTER
         $('#navbar').load('/navbar/navbar.html');
         $('#footer').load('/footer/footer.html');
-    
+
         $('.counter').counterUp({
-        delay: 10,
-        time: 1000
+            delay: 10,
+            time: 1000
         });
-    
+
     })
 </script>
-
