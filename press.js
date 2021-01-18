@@ -53,7 +53,7 @@ $(document).ready(function () {
 
         // Generate Features section
         html += `
-            <h2>Features</h2>`;
+            <h3>Features</h3>`;
         for (let row=0; row<featureRowCount; row++) {
             html += `
             <div class="row d-xl-flex flex-column flex-lg-row">`
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
         // Generate Workshops section
         html += `
-            <h2>Workshops</h2>`;
+            <h3>Workshops</h3>`;
         for (let row=0; row<workshopRowCount; row++) {
             html += `
             <div class="row d-xl-flex flex-column flex-lg-row">`
