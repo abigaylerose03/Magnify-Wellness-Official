@@ -21,7 +21,7 @@ h2 {
   margin: 60px 0px;
 }
 
-.btn:not(header, footer) {
+.btn:not(header .btn):not(footer .btn) {
   font-family: 'Open Sans',sans-serif;
   color: white;
   background: #33CCCC;
@@ -31,7 +31,7 @@ h2 {
   width: fit-content;
 }
 
-.btn:hover:not(header, footer) {
+.btn:hover:not(header .btn:hover):not(footer .btn:hover) {
   color: white;
 }
 
@@ -77,10 +77,6 @@ hr {
   font-size: 18px;
   font-family: Open Sans;
 }
-
-/* #press-content-container .btn:hover {
-  color: white;
-} */
 
 .filler-card {
   visibility: hidden;
