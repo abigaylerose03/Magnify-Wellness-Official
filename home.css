@@ -83,7 +83,8 @@ section .btn:hover{
 }
 
 #home .content .text img{
-    width: 150px;
+    margin: 45px 0;
+    width: 175px;
     padding-left: 6px;
     cursor: pointer;
 }
@@ -170,7 +171,7 @@ section .btn:hover{
     }
 
     #home .content .text img{
-        margin-top: -30px;
+        margin-top: 0;
     }
 
     #home .content .image img{
