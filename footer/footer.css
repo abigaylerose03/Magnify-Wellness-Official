@@ -196,12 +196,19 @@ textarea:focus, input:focus{
 @media only screen and (max-width: 850px){
     .footer-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .footer .footer-container .navigation ul{
         display: flex;
         justify-content: space-between;
+        width: 280px;
         padding: 0 0 30px 0;
 
+    }
+
+    .footer .footer-container .navigation ul li{
+        /* margin: 10px; */
     }
 
     .footer .newsletter{

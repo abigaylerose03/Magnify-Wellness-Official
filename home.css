@@ -681,3 +681,11 @@ button i{
       transform: translate3d(0, 100%, 0);
     }
   }
+
+
+@media only screen and (min-height: 1024px){
+    #about, #press, #blog{
+        max-height: 1000px!important;
+       min-height: 800px!important;
+    }
+}
