@@ -21,8 +21,21 @@ h2 {
   margin: 60px 0px;
 }
 
+.btn:not(header, footer) {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
 
-#programs-content-container h3 {
+.btn:hover:not(header, footer) {
+  color: white;
+}
+
+h3 {
   font-size: 36px;
   font-family: Montserrat, sans-serif;
 }
@@ -65,9 +78,9 @@ hr {
   font-family: Open Sans;
 }
 
-#press-content-container .btn:hover {
+/* #press-content-container .btn:hover {
   color: white;
-}
+} */
 
 .filler-card {
   visibility: hidden;
@@ -96,21 +109,6 @@ hr {
 #programs-content-container .btn-div {
   padding-top: 10px;
 }
-
-#programs-content-container .btn {
-  font-family: 'Open Sans',sans-serif;
-  color: white;
-  background: #33CCCC;
-  border-color: #33CCCC;
-  border-radius: 25px;
-  padding-bottom: 10px;
-  width: fit-content;
-}
-
-#programs-content-container .btn:hover {
-  color: white;
-}
-
 
 #upcoming-programs {
   background: #FFCC00;
