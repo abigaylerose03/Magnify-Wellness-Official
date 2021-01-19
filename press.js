@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const addEmptyCard = (html) => {
-        html += '<div class="col press-card filler-card"><p class="press-card-source"></p><hr/><a href=""><p class="press-card-title"></p></a><p class="press-card-date"></p></div>';
+        html += '<div class="col press-card filler-card"></div>';
         return html;
     }
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
                 } else {
                     html += `
                     <div class="col press-card">
-                        <p class="press-card-source">` + cards[cardIndex].Organization + `</p>
+                        <p class="press-card-organization">` + cards[cardIndex].Organization + `</p>
                         <hr/>
                         <p class="press-card-title">` + cards[cardIndex].Title + `</p>
                         <p class="press-card-date">` + cards[cardIndex].Date + `</p>
@@ -93,7 +93,7 @@ $(document).ready(function () {
                 } else {
                     html += `
                     <div class="col press-card">
-                        <p class="press-card-source">` + cards[cardIndex].Organization + `</p>
+                        <p class="press-card-organization">` + cards[cardIndex].Organization + `</p>
                         <hr/>
                         <p class="press-card-title">` + cards[cardIndex].Title + `</p>
                         <p class="press-card-date">` + cards[cardIndex].Date + `</p>
