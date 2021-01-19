@@ -476,16 +476,16 @@ section .btn:hover{
     font-weight: 800;
 }
 
-#blog .blog-btn{
+.btn.blog-btn{
     margin: calc(max(5vh, 40px));
-    color: #33CCCC;
-    background-color: #fff;
-    border: 2px solid #33CCCC;
+    color: #33CCCC!important;
+    background-color: #fff!important;
+    border: 2px solid #33CCCC!important;
 }
 
-#blog .blog-btn:hover{
-    color: #fff;
-    background-color: #33CCCC;
+.btn.blog-btn:hover{
+    color: #fff!important;
+    background-color: #33CCCC!important;
 }
 .custom-shape-divider-top-1608248637 {
     position: absolute;
