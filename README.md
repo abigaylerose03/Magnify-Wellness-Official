@@ -1,4 +1,4 @@
-# Magnify-Wellness-Official-Website
+# Magnify Wellness Official Website
 Ignore the "andrew-Magnify" folder
 
 # How to update content on press cards
