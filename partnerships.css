@@ -66,12 +66,7 @@ h1{
     align-items: center;
     
 }
-#row-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 #photos{
     padding-bottom: 110px;
 }
