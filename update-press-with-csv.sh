@@ -33,12 +33,11 @@ START=$(sed -n '\#const cards = \[# =' $PRESS_JS)
 END=$(sed -n '\#\]//END# =' $PRESS_JS)
 DELETE_START=$(( $START+1 ))
 DELETE_END=$(( $END-1 ))
-#echo $START ; echo $END
 # if errors, make sure the exact lines `const cards = [` and  `]//END` exist in press.js
 
 if [ $DELETE_START -le $DELETE_END ] ; then
     # delete all lines between DELETE_START and DELETE_END
-    echo "Deleting objects located from line ${DELETE_START} to line ${DELETE_END}."
+    echo "Deleting objects located from line ${DELETE_START} to line ${DELETE_END} of ${PRESS_JS}."
     sed -i.bak "${DELETE_START},${DELETE_END}d" $PRESS_JS
 else
     echo "No objects to delete."
@@ -46,7 +45,7 @@ fi
 
 if [ -s $PRESS_OBJS_PATH ] ; then 
     # insert contents of press-data.json at START
-    echo "Adding new data objects."
+    echo "Adding new data objects to ${PRESS_JS}."
     sed -i.bak "${START}r ${PRESS_OBJS_PATH}" $PRESS_JS
 else 
     echo "No objects in ${PRESS_OBJS_PATH} to add."
