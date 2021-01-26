@@ -1,12 +1,8 @@
-
-
 .headshot{
     width: 100%;
     border-bottom: 3px solid rgba(0, 0, 0,0.2);
 }
-a{
-    
-}
+
 .card{
     width: 80%;
     border:2px solid #FFCC00;
@@ -30,11 +26,7 @@ a{
     font-weight: 750;
     margin-top: 1em;
 }
-.abby{
-    
-    
-    float: left;
-}
+
 .free-space{
     height:3em;
     
