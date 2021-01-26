@@ -21,7 +21,12 @@ h2 {
   margin: 60px 0px;
 }
 
-.btn:not(header .btn):not(footer .btn) {
+h3 {
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+}
+
+#programs-content-container .btn, #press-content-container .btn {
   font-family: 'Open Sans',sans-serif;
   color: white;
   background: #33CCCC;
@@ -31,13 +36,8 @@ h2 {
   width: fit-content;
 }
 
-.btn:hover:not(header .btn:hover):not(footer .btn:hover) {
+#programs-content-container .btn:hover, #press-content-container .btn:hover {
   color: white;
-}
-
-h3 {
-  font-size: 36px;
-  font-family: Montserrat, sans-serif;
 }
 
 /* Press page stuff */
