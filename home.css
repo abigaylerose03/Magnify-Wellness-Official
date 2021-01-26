@@ -477,18 +477,19 @@ section .btn:hover{
 }
 
 .btn.blog-btn{
-    /* margin: calc(max(5vh, 40px)); */
-    color: #33CCCC;
+    margin: calc(max(5vh, 40px));
+    color: #000;
+    font-weight: 600;
     background-color: #fff;
     border: 2px solid #33CCCC;
+    width: fit-content;
+    padding: 0px 30px;
+    height: 45px;
 }
-.btn.btm-btn{
-    margin: calc(max(5vh, 40px));
-    border: 2px solid #33CCCC;
-}
+
 .btn.blog-btn:hover{
-    color: #fff;
-    background-color: #33CCCC;
+    color: #33cccc;
+    /* background-color: #33CCCC; */
 }
 .custom-shape-divider-top-1608248637 {
     position: absolute;
