@@ -148,8 +148,6 @@ textarea:focus, input:focus{
 }
 
 .footer .socials ul{
-    /* width: 50px; */
-    /* padding: 0; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -210,10 +208,6 @@ textarea:focus, input:focus{
 
     }
 
-    .footer .footer-container .navigation ul li{
-        /* margin: 10px; */
-    }
-
     .footer .newsletter{
         margin: 30px 0;
     }
@@ -222,7 +216,13 @@ textarea:focus, input:focus{
     }
 
     .footer .newsletter p{
-        max-width: 90vw;
+        max-width: 80vw;
+    }
+    .footer .newsletter p span{
+        display: none;
+    }
+    .footer .newsletter p:before{
+        content: "Receive monthly emails with amazing opportunities for high school and college students, advice, app updates, mental health news, and more!";
     }
 
     .footer .socials ul{
