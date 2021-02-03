@@ -83,7 +83,8 @@ section .btn:hover{
 }
 
 #home .content .text img{
-    width: 150px;
+    margin: 45px 0;
+    width: 175px;
     padding-left: 6px;
     cursor: pointer;
 }
@@ -170,7 +171,7 @@ section .btn:hover{
     }
 
     #home .content .text img{
-        margin-top: -30px;
+        margin-top: 0;
     }
 
     #home .content .image img{
@@ -475,16 +476,16 @@ section .btn:hover{
     font-weight: 800;
 }
 
-#blog .blog-btn{
+.btn.blog-btn{
     margin: calc(max(5vh, 40px));
-    color: #33CCCC;
-    background-color: #fff;
-    border: 2px solid #33CCCC;
+    color: #33CCCC!important;
+    background-color: #fff!important;
+    border: 2px solid #33CCCC!important;
 }
 
-#blog .blog-btn:hover{
-    color: #fff;
-    background-color: #33CCCC;
+.btn.blog-btn:hover{
+    color: #fff!important;
+    background-color: #33CCCC!important;
 }
 .custom-shape-divider-top-1608248637 {
     position: absolute;
@@ -680,3 +681,11 @@ button i{
       transform: translate3d(0, 100%, 0);
     }
   }
+
+
+@media only screen and (min-height: 1024px){
+    #about, #press, #blog{
+        max-height: 1000px!important;
+       min-height: 800px!important;
+    }
+}
