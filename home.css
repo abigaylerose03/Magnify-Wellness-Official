@@ -488,7 +488,7 @@ section .btn:hover{
 }
 
 .btn.blog-btn:hover{
-    color: #33cccc;
+    /* color: #33cccc; */
     /* background-color: #33CCCC; */
 }
 .custom-shape-divider-top-1608248637 {
