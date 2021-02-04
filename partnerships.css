@@ -47,13 +47,6 @@ section .btn:hover{
 
 /* -------------------------------- PARTNERSHIPS PAGE ------------------------------- */
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 h1{
     margin-top: 3rem;
     margin-bottom: .5rem;
@@ -66,14 +59,42 @@ h1{
     text-align: center;
     }
 
-#row{
+.row {
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#photos{
-    padding-bottom: 110px;
-}
-
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* 4 columns */
+  .column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* turn into 2 columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* stack the two columns into one */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
