@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="partnerships.css">
+    <title>Partnerships</title>
+</head>
+
+<body>
+    <!-- HEADER CODE BELOW -->
+    <header>
+        <div id='navbar'></div>
+    </header>
+
+    <div class="container">
+        <div id='title'>
+            <h1>Partnerships</h1>
+        </div>
+         <!-- begin logo grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="/images/Ryerson University Hacks.png" style="width:100%">
+                <img src="/images/Creator Tribe.png" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/images/HEARO UW.png" style="width:100%">
+                <img src="/images/The Paris Project.png" style="width:100%">
+                
+            </div> 
+            <div class="column">
+                <img src="/images/GoFundTeen.jpg" style="width:100%">
+                <img src="/images/Girl Genius Magazine.png" style="width:100%">
+                
+            </div>
+            <div class="column">
+                <img src="images/Hack Club.png" style="width:100%">
+                <img src="/images/StickerGiant.png" style="width:100%">
+            </div>  
+        </div>
+  <!-- end logo grid-->
+    </div><br>
+
+    <!-- FOOTER CODE BELOW -->
+    <footer class="footer">
+        <div id="footer"></div>
+        <p id="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+
+    </footer>
+</body>
+
+
+<!-- Header/Footer Commented Code -->
+<script src="./home-assets/jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        // LOAD THE HEADER AND FOOTER
+        $('#navbar').load('/navbar/navbar.html');
+        $('#footer').load('/footer/footer.html');
+
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+
+    })
+</script>
