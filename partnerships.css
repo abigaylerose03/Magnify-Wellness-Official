@@ -1,5 +1,8 @@
 /* Import Heading 1 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Import Body */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
+
 
 
 @import url("/navbar/navbar.css");
@@ -42,7 +45,7 @@ section .btn:hover{
     box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
 } 
 
-/* -------------------------------- UPCOMING EVENTS PAGE ------------------------------- */
+/* -------------------------------- PARTNERSHIPS PAGE ------------------------------- */
 
 .container{
     display: flex;
@@ -53,12 +56,15 @@ section .btn:hover{
 
 h1{
     margin-top: 3rem;
-    margin-bottom: 100px;
-    font-family: Montserrat, sans-serif;
+    margin-bottom: .5rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
     font-size: 64px;
-    text-align: center;
     line-height: 78px;
-}
+    align-items: center;
+    text-align: center;
+    }
 
 #row{
     display: flex;
