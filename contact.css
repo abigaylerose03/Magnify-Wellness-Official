@@ -162,7 +162,7 @@ input[type=text]:hover,input[type=email]:hover, textarea:hover {
 }
 
 /* Add styles to the submit button */
-input[type=submit] {
+button {
 	background: #33cccc;
 	margin: 0 auto;
 	outline: 0;
@@ -181,14 +181,8 @@ input[type=submit] {
   
 }
 
-/* Add styles for 'focus' property */
-input[type=submit]:focus {
-	background: #A5D6A7;
-	color: whitesmoke;
-}
-
 /* Style 'hover' property */
-input[type=submit]:hover {
+button:hover {
 	background: #FFCC00;
 }
 
