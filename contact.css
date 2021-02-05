@@ -181,14 +181,10 @@ button {
   
 }
 
-/* Add styles for 'focus' property */
-input[type=submit]:focus {
-	background: #A5D6A7;
-	color: whitesmoke;
-}
+
 
 /* Style 'hover' property */
-input[type=submit]:hover {
+button:hover {
 	background: #FFCC00;
 }
 
