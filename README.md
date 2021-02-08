@@ -10,4 +10,4 @@ Do NOT directly edit the objects and surrounding comments in the press.js file.
 If you have any questions, please ask Katie Taylor.
 
 # Updating Slack Invite links
-The Slack invite link expires every 3-4 weeks. In order to keep it up to date and ensure that potential community members do not get deterred by a invalid link, we need to update it every so often. To update it, generate a new link from the Slack workspace and edit the links on `programs.html` and `contact.html`.
+The Slack invite link expires every 3-4 weeks. In order to keep it up to date and ensure that potential community members do not get deterred by a invalid link, we need to update it every so often. To update it, generate a new link from the Slack workspace and edit the links on `get-involved.html` and `contact.html`.
