@@ -1,0 +1,108 @@
+$blue : #33CCCC;
+$black: #000;
+$imgWidth: 200px;
+$imgHeight: 200px;
+$cardWidth: 400px;
+
+@mixin flexCenter ($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title (){
+    margin-top: 3rem; 
+    margin-bottom: .5rem; 
+    font-size: 64px; 
+    text-align: center; 
+    line-height: 78px; 
+    font-weight: 500;
+}
+
+@mixin text($size, $weight, $margin){
+    font-size: $size;
+    font-weight: $weight;
+    margin: $margin;
+}
+
+@mixin button(){
+    background-color: $blue;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    transition: 0.3s;
+    @include flexCenter(row);
+
+    &:hover{
+        box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
+    }
+    img{
+        margin-left: 10px;
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+.header{
+    @include flexCenter(column);
+    h1{
+        @include title();
+    }
+
+    h2{
+        @include text(1.5rem, 400, 2rem);
+    }
+
+    a{
+        @include button();
+    }
+}
+main{
+    @include flexCenter(row)
+}
+.shop-items{
+    width: 100vw;
+    max-width: $cardWidth * 3; // limits to three per row
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($cardWidth, 1fr));
+    justify-items: center;
+    gap: 50px 0;
+    padding: 80px 0;
+    margin-bottom: 50px;
+
+    #{&}__item{
+        .shop-items__item__img{
+            width: $imgWidth;
+            height: $imgHeight;
+            @include flexCenter(row);
+            justify-content: flex-start;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .shop-items__item__text{
+            margin: 10px 0;
+        }
+        
+    }
+}
+
