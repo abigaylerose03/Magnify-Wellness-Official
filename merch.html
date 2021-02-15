@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="./merch/merch.css">
+    <title>Merch Store</title>
+</head>
+
+
+<body>
+    <header>
+        <div id='navbar'></div>
+    </header>
+    <div class="header">
+        <h1>Magnify Store</h1>
+        <h2>Please PayPal us with your <strong>Address, Name, and Phone Number</strong></h2>
+        <a href="#" target="_blank">PayPal<img src="./home-assets/arrow.svg" alt=""></a>
+    </div>
+    <main>
+        <div class="shop-items">
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div id="footer"></div>
+    </footer>
+
+  
+</body>
+<script src="./merch/merch.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        // LOAD THE HEADER AND FOOTER
+        $('#navbar').load('/navbar/navbar.html');
+        $('#footer').load('/footer/footer.html');
+
+    })
+
+
+</script>
+
+</html>
