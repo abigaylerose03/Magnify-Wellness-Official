@@ -1,3 +1,17 @@
+/* TO ADD A MERCH ITEM: 
+
+copy the following (including the curly braces), add in the proper info, and add it to merchItems
+
+    {
+        name: "item name",
+        price: "$item price",
+        imgSrc: "link to the image that will be displayed",
+        itemLink: "link to the item page",
+    },
+
+
+*/
+
 const merchItems = [
     {
         name: "hoodie",
@@ -37,14 +51,27 @@ const merchItems = [
     }
 ]
 
+
+
+
+
+
+
+
+
+
+
+
 const makeCards = (merchItems) => {
     let shop = document.getElementsByClassName('shop-items')[0];
     merchItems.map(item => {
         const { name, price, imgSrc, itemLink } = item;
+
         let card = document.createElement("a");
         card.href=itemLink;
         card.target="_blank";
         card.classList.add('shop-items__item');
+
         card.appendChild(createImage(imgSrc));
         card.appendChild(createTextElements(name, price))
         shop.appendChild(card);
@@ -54,9 +81,11 @@ const makeCards = (merchItems) => {
 const createImage = (imgSrc) => {
     let imgBox = document.createElement('div');
     imgBox.classList.add('shop-items__item__img');
+
     let img = document.createElement('img');
     img.src = imgSrc;
-    imgBox.appendChild(img)
+    imgBox.appendChild(img);
+
     return imgBox;
 }
 
@@ -73,7 +102,7 @@ const createTextElements = (itemName, itemPrice) => {
     textBox.appendChild(name);
     textBox.appendChild(price);
 
-    return textBox
+    return textBox;
 }
 
 window.onload = () => {
