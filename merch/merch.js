@@ -14,41 +14,35 @@ copy the following (including the curly braces), add in the proper info, and add
 
 const merchItems = [
     {
-        name: "hoodie",
-        price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-    },
-    {
         name: "shirt",
         price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
+        imgSrc: "https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80",
+        itemLink: "https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80",
+    },
+    {
+        name: "hoodie",
+        price: "$xx",
+        imgSrc: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        itemLink: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
     },
     {
         name: "sticker",
         price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
+        imgSrc: "https://images.unsplash.com/photo-1500576992153-0271099def59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        itemLink: "https://images.unsplash.com/photo-1500576992153-0271099def59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     },
     {
         name: "notes",
         price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
+        imgSrc: "https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        itemLink: "https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
     },
     {
         name: "popsocket",
         price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
+        imgSrc: "https://images.unsplash.com/photo-1549298620-833e1e37670b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        itemLink: "https://images.unsplash.com/photo-1549298620-833e1e37670b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
     },
-    {
-        name: "other",
-        price: "$xx",
-        imgSrc: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-        itemLink: "https://cdn.shopify.com/s/files/1/0055/1242/products/IND5000P-GHR_2048x.jpg?v=1559238178",
-    }
 ]
 
 

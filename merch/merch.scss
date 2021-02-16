@@ -1,8 +1,16 @@
 $blue : #33CCCC;
 $black: #000;
-$imgWidth: 200px;
-$imgHeight: 200px;
 $cardWidth: 400px;
+$smallScreen: 600px; // breakpoint for small screen size
+$cardGap: 75px; // horizontal margin between cards
+$cardsPerRow: 3;
+
+/* NOTE ABOUT THE IMAGE SIZES: It looks a lot cleaner to have all of the images be the same size, which is why
+    these values are hardcoded and the images get cropped. 
+    These specific values can be changed as needed, but if they are greater than 400px, increase the cardWidth variable above.
+*/
+$imgWidth: 250px;
+$imgHeight: 300px;
 
 @mixin flexCenter ($direction) {
     display: flex;
@@ -40,9 +48,13 @@ $cardWidth: 400px;
 
     &:hover{
         box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
+        img{
+            transform: translateX(2px);
+        }
     }
     img{
         margin-left: 10px;
+        transition: 0.3s
     }
 
 }
@@ -78,29 +90,47 @@ main{
 }
 .shop-items{
     width: 100vw;
-    max-width: $cardWidth * 3; // limits to three per row
+    max-width: $imgWidth * $cardsPerRow + ($cardGap * $cardsPerRow); // limits to three per row
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($cardWidth, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($imgWidth, 1fr));
     justify-items: center;
-    gap: 50px 0;
-    padding: 80px 0;
+    gap: 80px $cardGap;
+    padding: 80px 20px;
     margin-bottom: 50px;
 
     #{&}__item{
+       
         .shop-items__item__img{
             width: $imgWidth;
             height: $imgHeight;
+            overflow: hidden;
+            position: relative;
             @include flexCenter(row);
             justify-content: flex-start;
+            align-items: flex-end;
+            border-radius: 10px;
+            
 
             img {
-                max-width: 100%;
-                max-height: 100%;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: cover;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 10px;
+                transition: 0.3s;
+                &:hover{
+                    transform: scale(1.2) translateY(-40%);
+                }
+                
             }
         }
 
         .shop-items__item__text{
             margin: 10px 0;
+            text-transform: capitalize;
         }
         
     }
