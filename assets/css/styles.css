@@ -132,7 +132,8 @@ h3 {
 }
 
 #main-img-row {
-  padding: 1rem, 0rem;
+  /* padding: 1rem, 0rem, 2rem, 0rem; */
+  padding-bottom: 1rem;
   /* justify-content: center; */
   align-items: center;
 }
@@ -151,7 +152,9 @@ h3 {
 }
 
 .events-card {
-  padding: 16px 40px;
+  /* display: flex; */
+  /* justify-content: start; */
+  margin: 16px 40px;
   font-size: 18px;
   font-family: 'Open Sans';
 }
@@ -180,16 +183,15 @@ h3 {
 
 .img-col {
   display: flex;
-  padding: 16px 40px 0px 0px;
-  justify-content: center;
   align-items: center;
-  height: 180px;
+  /* justify-content: center; */
+  width: auto;
 }
 
 /* temp img size */
 #events-content-container img { 
-  width: 250px;
-  height: 250px;
+  max-width: 50%; /* need to figure out sizing better */
+  height: auto;
   padding-bottom: 10px;
 }
 
