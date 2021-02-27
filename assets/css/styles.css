@@ -7,8 +7,8 @@
 
 /* All of Katie's pages stuff */
 h1 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
   font-family: Montserrat, sans-serif;
   font-size: 64px;
   text-align: center;
@@ -123,4 +123,78 @@ h3 {
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
   margin: 60px 0px;
+}
+
+/* Events page stuff */
+
+#events-content-container {
+  margin: 0px 28px 100px 28px;
+}
+
+#main-img-row {
+  padding: 1rem, 0rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#main-img {
+  /* flex-direction: row; */
+  align-self: center;
+}
+
+#events-content-container h2 {
+  text-align: left;
+}
+
+#events-content-container .row {
+  flex-direction: column;
+}
+
+.events-card {
+  padding: 16px 40px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+}
+
+#events-content-container .btn, #press-content-container .btn {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+#events-content-container .btn:hover, #press-content-container .btn:hover {
+  color: white;
+}
+
+/* .event-card-btn {
+  font-family: 'Open Sans', sans-serif;
+  background: #33CCCC;
+  border-radius: 25px;
+  border-color: #33CCCC;
+  font-size: 16px;
+} */
+
+.img-col {
+  display: flex;
+  padding: 16px 40px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+/* temp img size */
+#events-content-container img { 
+  width: 250px;
+  height: 250px;
+  padding-bottom: 10px;
+}
+
+#events-content-container hr {
+  border: 1px solid #FFCC00;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }

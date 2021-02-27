@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Katie Taylor and Labib Joarder">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!-- <link rel="stylesheet" href="events.css"> -->
     <link rel="stylesheet" href="./navbar/navbar.css">
     <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="./home-assets/logo.png" />
 
     <title>Upcoming Events</title>
@@ -23,38 +28,79 @@
 </script>
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <!-- HEADER CODE BELOW -->
     <header>
         <div id='navbar'></div>
     </header>
 
-    <div class="container">
-        <div id='title'>
-            <h1>Upcoming Events</h1>
+    <div id="events-content-container" class="container align-self-center">
+        <h1>Upcoming Events</h1>
+        <div id="main-img-row"  class="row d-flex">
+            <img id="main-img" src="assets/img/magnifyXcommunity.png" />
         </div>
-        <div id='banner'>
-            <img src="images/events banner.png" alt="Events Banner Image" />
+        <div class="row flex-md-row">
+            <div class="col events-card">
+                <h2>Event Name 1</h2>
+                <div class="row flex-lg-row">
+                    <div class="col">
+                        <div><span><i class="fa fa-map-marker"></i> Event Type</span></div>
+                    </div>
+                    <div class="col">
+                        <div><span><i class="fa fa-clock-o"></i> Month Day, Year | Time</span></div>
+                    </div>
+                </div>
+                <p class="event-card-description">Descrip<br />tion<br /></p>
+                <div><a class="btn btn-primary justify-content-lg-center event-card-btn" role="button">Register</a></div>
+            </div>
+            <div class="col-auto img-col"><img class="d-lg-flex" src="assets/img/magnifyXcommunity.png" style="" /></div>
         </div>
-        <div id='calendar'>
-            <iframe
-                src="https://calendar.google.com/calendar/embed?src=c_pbkqb0ujkoapv3iae0uo92vj6k%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+        <div class="row flex-md-row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+        <div class="row flex-md-row">
+            <div class="col events-card">
+                <h2>Time to Talk Day</h2>
+                <div class="row flex-lg-row">
+                    <div class="col-auto">
+                        <div><span><i class="fa fa-map-marker"></i> Conference</span></div>
+                    </div>
+                    <div class="col">
+                        <div><span><i class="fa fa-clock-o"></i> May 20th, 2021 | 8:00-9:00pm</span></div>
+                    </div>
+                </div>
+                <p class="event-card-description">Description: beep boopbeep boopbeep boopbeep boopbeep boopbeep boop<br /></p>
+                <div><a class="btn btn-primary justify-content-lg-center event-card-btn" role="button">Register</a></div>
+            </div>
+            <div class="col-auto img-col"><img class="d-lg-flex" src="assets/img/magnifyXcommunity.png" /></div>
+        </div>
+        <div class="row flex-md-row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+        <div class="row flex-md-row">
+            <div class="col events-card">
+                <h2>Time to Talk Day</h2>
+                <div class="row flex-lg-row">
+                    <div class="col">
+                        <div><span><i class="fa fa-map-marker"></i> Conference </span><span><i class="fa fa-clock-o"></i> May 20th, 2021 | 8:00-9:00pm</span></div>
+                    </div>
+                </div>
+                <p class="event-card-description">Description: beep boopbeep boopbeep boopbeep boopbeep boopbeep boop<br /></p>
+                <div><a class="btn btn-primary justify-content-lg-center event-card-btn" role="button">Register</a></div>
+            </div>
+            <div class="col-auto d-flex justify-content-center align-items-center img-col"><img class="d-lg-flex" src="assets/img/magnifyXcommunity.png" /></div>
+        </div>
+        <div class="row flex-md-row">
+            <div class="col">
+                <hr>
+            </div>
         </div>
 
     </div>
-    <!-- <div id="category">
-        <select name="event" id="event" placeholder="test">
-            <option disabled hidden selected>All Categories</option>
-            <option value="conferences">Conferences</option>
-            <option value="webinars">Webinars</option>
-            <option value="workshops">Workshops</option>
-        </select> 
-    </div>
-    <div id="filter">
-        <button class="filterbuttons">Online</button>
-        <button class="filterbuttons">At a Venue</button>
-    </div> -->
 
     <!-- FOOTER CODE BELOW -->
     <footer class="footer">
@@ -68,6 +114,7 @@
 <script src="./home-assets/jquery.counterup.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="jquery.counterup.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
