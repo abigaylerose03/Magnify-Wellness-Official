@@ -11,3 +11,24 @@ If you have any questions, please ask Katie Taylor.
 
 # Updating Slack Invite links
 The Slack invite link expires every 3-4 weeks. In order to keep it up to date and ensure that potential community members do not get deterred by a invalid link, we need to update it every so often. To update it, generate a new link from the Slack workspace and edit the links on `get-involved.html` and `contact.html`.
+
+# Adding/Editing Merch Store Items
+1. Navigate to merch/merch.js
+2. Copy the following and add in the proper information, making sure to leave quotation marks are curly braces where they are. It's okay to leave the imgSrc and itemLink blank if they are not available: 
+
+
+     {
+     
+        name: "INSERT ITEM NAME",
+        
+        price: "$INSERT ITEM PRICE",
+        
+        imgSrc: "INSERT LINK TO THE IMAGE",
+        
+        itemLink: "INSERT LINK TO THE ITEM WEBPAGE",
+        
+    },
+    
+    
+3. Add the item to the end of the merchItems array
+    
