@@ -14,20 +14,25 @@ The Slack invite link expires every 3-4 weeks. In order to keep it up to date an
 
 # Adding/Editing Merch Store Items
 1. Navigate to `merch` folder, then open `merch.js`
-2. Copy the following and add in the proper information, making sure to leave quotation marks are curly braces where they are. It's okay to leave the imgSrc and itemLink blank if they are not available: 
+2. Copy the following and add in the proper information, making sure to leave quotation marks, commas, and curly braces where they are. It's okay to leave the imgSrc and itemLink blank if they are not available: 
 
 
-     {
+  
      
-        name: "INSERT ITEM NAME",
+       { 
+       
+             name: "INSERT ITEM NAME",
+
+             price: "$INSERT ITEM PRICE",
+
+             imgSrc: "INSERT LINK TO THE IMAGE",
+
+             itemLink: "INSERT LINK TO THE ITEM WEBPAGE", 
+             
         
-        price: "$INSERT ITEM PRICE",
+        },
         
-        imgSrc: "INSERT LINK TO THE IMAGE",
-        
-        itemLink: "INSERT LINK TO THE ITEM WEBPAGE",
-        
-    },
+   
     
     
 3. Add the item to the end of the merchItems array
