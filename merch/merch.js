@@ -9,40 +9,31 @@ copy the following (including the curly braces), add in the proper info, and add
         itemLink: "link to the item page",
     },
 
+if no imgSrc is given, it will default to a picture of maggie
+if no itemLink is give, it will default to the same link as the img
 
 */
 
 const merchItems = [
     {
-        name: "shirt",
-        price: "$xx",
-        imgSrc: "https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80",
-        itemLink: "https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80",
-    },
-    {
         name: "hoodie",
-        price: "$xx",
-        imgSrc: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-        itemLink: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        price: "$30",
+        imgSrc: "",
+        itemLink: "",
     },
     {
-        name: "sticker",
-        price: "$xx",
-        imgSrc: "https://images.unsplash.com/photo-1500576992153-0271099def59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-        itemLink: "https://images.unsplash.com/photo-1500576992153-0271099def59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        name: "stickers",
+        price: "1 for $2, 2 for $3",
+        imgSrc: "",
+        itemLink: "",
     },
     {
-        name: "notes",
-        price: "$xx",
-        imgSrc: "https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-        itemLink: "https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        name: "bullet journal",
+        price: "$10",
+        imgSrc: "",
+        itemLink: "",
     },
-    {
-        name: "popsocket",
-        price: "$xx",
-        imgSrc: "https://images.unsplash.com/photo-1549298620-833e1e37670b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-        itemLink: "https://images.unsplash.com/photo-1549298620-833e1e37670b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-    },
+    
 ]
 
 
@@ -59,8 +50,9 @@ const merchItems = [
 const makeCards = (merchItems) => {
     let shop = document.getElementsByClassName('shop-items')[0];
     merchItems.map(item => {
-        const { name, price, imgSrc, itemLink } = item;
-
+        const { name, price } = item;
+        const imgSrc = item.imgSrc ? item.imgSrc : "../merch/maggie.png";
+        const itemLink = item.itemLink ? item.itemLink : imgSrc;
         let card = document.createElement("a");
         card.href=itemLink;
         card.target="_blank";
