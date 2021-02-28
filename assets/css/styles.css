@@ -134,7 +134,7 @@ h3 {
 #main-img-row {
   /* padding: 1rem, 0rem, 2rem, 0rem; */
   padding-bottom: 1rem;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -147,9 +147,10 @@ h3 {
   text-align: left;
 }
 
-#events-content-container .row {
+/* #events-content-container .row {
+  On small screens makes the events card extends off the right side of the screen when column width 100%
   flex-direction: column;
-}
+} */
 
 .events-card {
   /* display: flex; */
