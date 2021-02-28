@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="navbar/navbar.css">
-    <link rel="stylesheet" href="footer/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="./merch/merch.css">
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="./merch/merch.css" />
     <title>Merch Store</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div id='navbar'></div>
+      <div id="navbar"></div>
     </header>
     <div class="header">
-        <h1>Magnify Store</h1>
-        <h2>Please PayPal us with your <strong>Address, Name, and Phone Number</strong></h2>
-        <a href="#" target="_blank">PayPal<img src="./home-assets/arrow.svg" alt=""></a>
+      <h1>Magnify Store</h1>
+      <h2>
+        Please PayPal us with your
+        <strong>Address, Name, and Phone Number</strong>
+      </h2>
+      <!-- <a href="#" target="_blank"
+        >PayPal<img src="./home-assets/arrow.svg" alt=""
+      /></a> -->
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="business" value="MK543ZQYJUTJG" />
+        <input
+          type="hidden"
+          name="item_name"
+          value="Purchase store items for Non-Profit sustainability"
+        />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+          style="width: 120px"
+        >
+        <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
     </div>
     <main>
-        <div class="shop-items">
-            
-        </div>
+      <div class="shop-items"></div>
     </main>
 
     <footer class="footer">
-        <div id="footer"></div>
+      <div id="footer"></div>
     </footer>
-
-  
-</body>
-<script src="./merch/merch.js"></script>
-<script type="text/javascript">
-
+  </body>
+  <script src="./merch/merch.js"></script>
+  <script type="text/javascript">
     $(document).ready(function () {
-        // LOAD THE HEADER AND FOOTER
-        $('#navbar').load('/navbar/navbar.html');
-        $('#footer').load('/footer/footer.html');
-
-    })
-
-
-</script>
-
+      // LOAD THE HEADER AND FOOTER
+      $("#navbar").load("/navbar/navbar.html");
+      $("#footer").load("/footer/footer.html");
+    });
+  </script>
 </html>
