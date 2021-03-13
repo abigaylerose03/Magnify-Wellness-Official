@@ -3,14 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-#title {
+
+/* #title { // obsoleted by standardized h1 css
   margin-top: 3rem;
   margin-bottom: 100px;
   font-family: Montserrat, sans-serif;
   font-size: 64px;
   text-align: center;
   line-height: 78px;
-}
+} */
 a {
   text-decoration: none;
 }
@@ -18,10 +19,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+.big {
   padding: 3rem 0;
   text-align: center;
   font-size: 2.5rem;
+
+  /* h1-like styling*/
+  display: block;
+  /* margin-top: 0.67em;
+  margin-bottom: 0.67em; */
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 .app-container {
@@ -96,7 +105,7 @@ h1 {
   flex-direction: column;
 }
 
-.download-container .text h1 {
+.download-container .text big {
   font-weight: 500;
 }
 .button {
