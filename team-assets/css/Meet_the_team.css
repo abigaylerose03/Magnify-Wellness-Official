@@ -10,7 +10,7 @@
     height:3em;
     
 }
-.abby .abby-photo{
+.exec .exec-photo{
     width:16em;
     min-width: 16em;
     border-radius: 50%;
@@ -36,14 +36,14 @@
     font-style: italic;
 }
 
-.abby .big{
+.exec .big{
     margin-top:0em;
 }
 .col-card{
     margin-bottom: 2em;
 }
 @media only screen and (max-width:991px){
-    .abby-photo{
+    .exec-photo{
         margin-left:25%;
     }
     .Middle{
@@ -60,7 +60,7 @@
     }
 }
 @media only screen and (max-width:767px){
-    .abby-photo{
+    .exec-photo{
         margin-left:12%;
         width:50%;
     }
@@ -74,7 +74,7 @@
     }
 }
 /*@media only screen and (max-width:1200px){
-    .abby-photo{
+    .exec-photo{
         margin-left: 120%;
         
     }
