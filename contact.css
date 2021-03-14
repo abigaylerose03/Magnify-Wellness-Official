@@ -39,16 +39,6 @@ section .btn:hover{
   padding-bottom: 3rem;
 }
 
-/* h1{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 64px;
-line-height: 78px;
-align-items: center;
-text-align: center;
-} */
-
 #heading {
   display: flex;
   align-items: center;
