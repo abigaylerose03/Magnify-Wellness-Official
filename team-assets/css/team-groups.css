@@ -11,6 +11,10 @@
     font-size:1.9em;
     padding:10%;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 .bio{
     display:inline-block;
@@ -18,16 +22,7 @@
     padding-right:10%;
 }
 
-
-.Middle{
-    width: 100%;
-    text-align: center;
-    font-size:4em;
-    font-weight: 750;
-    margin-top: 1em;
-}
-
-.free-space{
+.free-space{ /* Delete this after you've fixed the h1 padding on all team pages */
     height:3em;
     
 }
@@ -40,7 +35,7 @@
 }
 .big{
     text-align: center;
-    font-size:300%;
+    font-size: 250%;
 }
 .bigitalic{
     text-align: center;
