@@ -1,4 +1,4 @@
-.image {
+.team-img {
     width: 100%;
     border-bottom: 3px solid rgba(0, 0, 0,0.2);
 }
@@ -26,7 +26,7 @@
     height:3em;
     
 }
-.abby .abby-photo{
+.exec .exec-photo{
     width:16em;
     min-width: 16em;
     border-radius: 50%;
@@ -46,7 +46,7 @@
     text-align: justify;
     font-size: 120%;
 }
-.abby .big{
+.exec .big{
     margin-top:0em;
     
 }
@@ -55,7 +55,7 @@
     
 }
 @media only screen and (max-width:991px){
-    .abby-photo{
+    .exec-photo{
         margin-left:30%;
     }
     .Middle{
@@ -64,7 +64,7 @@
     
 }
 @media only screen and (max-width:767px){
-    .abby-photo{
+    .exec-photo{
         margin-left:24%;
         width:50%;
     }
@@ -73,7 +73,7 @@
     }
 }
 /*@media only screen and (max-width:1200px){
-    .abby-photo{
+    .exec-photo{
         margin-left: 120%;
         
     }
