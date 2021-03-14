@@ -20,7 +20,7 @@
     z-index: 2;
     color:black;
 }
-.nopic:hover > .headshot{
+.nopic:hover > .image {
     content: url("team-assets/Headshots/headGold.png");
 }
 .kard:hover > .bio{
@@ -31,11 +31,7 @@
 .kard:hover > .name{
     color:black;
 }
-/*.headshot{
-    margin-left:28%;
-    border-radius: 50%;
-    width: 40%;
-}*/
+
 .bio{
     font-size: 1.3em;
     text-align: justify;
@@ -48,7 +44,7 @@
     text-align: center;
     color:white;
 }*/
-.headshot{
+.image {
     margin-left:28%;
     border-radius: 50%;
     width: 40%;
@@ -71,18 +67,18 @@ IMPORTANT:
 */
 
 @media only screen and (max-width:1200px){
-    .headshot{
+    .image {
         margin-top: 11%;
 }
 
 @media screen and (max-width:1140px){
-    .headshot{
+    .image {
         margin-top:10%;
     }
 }
 
 @media screen and (max-width:767px){
-    .headshot{
+    .image {
         width:35%;
         margin-left: 32%;
         margin-top:1.5%;
