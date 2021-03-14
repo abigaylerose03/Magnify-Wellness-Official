@@ -20,7 +20,7 @@
     z-index: 2;
     color:black;
 }
-.nopic:hover > .image {
+.nopic:hover > .team-member-img {
     content: url("team-assets/Headshots/headGold.png");
 }
 .kard:hover > .bio{
@@ -44,7 +44,7 @@
     text-align: center;
     color:white;
 }*/
-.image {
+.team-member-img {
     margin-left:28%;
     border-radius: 50%;
     width: 40%;
@@ -70,18 +70,18 @@ IMPORTANT:
 */
 
 @media only screen and (max-width:1200px){
-    .image {
+    .team-member-img {
         margin-top: 11%;
 }
 
 @media screen and (max-width:1140px){
-    .image {
+    .team-member-img {
         margin-top:10%;
     }
 }
 
 @media screen and (max-width:767px){
-    .image {
+    .team-member-img {
         width:35%;
         margin-left: 32%;
         margin-top:1.5%;
