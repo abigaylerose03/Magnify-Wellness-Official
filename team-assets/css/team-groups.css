@@ -26,7 +26,7 @@
     height:3em;
     
 }
-.exec .exec-photo{
+.officer .officer-photo{
     width:16em;
     min-width: 16em;
     border-radius: 50%;
@@ -46,7 +46,7 @@
     text-align: justify;
     font-size: 120%;
 }
-.exec .big{
+.officer .big{
     margin-top:0em;
     
 }
@@ -55,7 +55,7 @@
     
 }
 @media only screen and (max-width:991px){
-    .exec-photo{
+    .officer-photo{
         margin-left:30%;
     }
     .Middle{
@@ -64,7 +64,7 @@
     
 }
 @media only screen and (max-width:767px){
-    .exec-photo{
+    .officer-photo{
         margin-left:24%;
         width:50%;
     }
@@ -73,7 +73,7 @@
     }
 }
 /*@media only screen and (max-width:1200px){
-    .exec-photo{
+    .officer-photo{
         margin-left: 120%;
         
     }
