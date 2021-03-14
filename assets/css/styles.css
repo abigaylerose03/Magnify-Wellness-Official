@@ -5,22 +5,13 @@
 
 @include media-breakpoint-up(md);
 
-/* All of Katie's pages stuff */
-h1 {  /* remove after all other pages have been converted*/
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500; /* h1 default: stands out a little more on the page w/o being bold*/
-  font-size: 64px;
-  text-align: center;
-  line-height: 78px;
-}
+/* All of Katie's pages' stuff */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   #press-content-container h1 {
     margin-bottom: -1rem;
   }
-}
+} */
 
 h2 {
   font-family: Montserrat, sans-serif;
