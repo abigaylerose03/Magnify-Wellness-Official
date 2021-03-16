@@ -36,18 +36,7 @@ section .btn:hover{
 }
 
 .container{
-  padding: 20px;
   padding-bottom: 3rem;
-}
-
-h1{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 64px;
-line-height: 78px;
-align-items: center;
-text-align: center;
 }
 
 #heading {
@@ -97,7 +86,8 @@ h4 {
   font-size: 32px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: normal
+  font-weight: normal;
+  margin: 3rem 0 1rem 0;
 }
 
 .title{
@@ -108,7 +98,7 @@ h4 {
 }
 
 .title img{
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
   height: 50vh;
   /* width:auto; */
 
