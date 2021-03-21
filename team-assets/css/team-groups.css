@@ -1,4 +1,4 @@
-.headshot{
+.team-img {
     width: 100%;
     border-bottom: 3px solid rgba(0, 0, 0,0.2);
 }
@@ -11,6 +11,10 @@
     font-size:1.9em;
     padding:10%;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 .bio{
     display:inline-block;
@@ -18,20 +22,11 @@
     padding-right:10%;
 }
 
-
-.Middle{
-    width: 100%;
-    text-align: center;
-    font-size:4em;
-    font-weight: 750;
-    margin-top: 1em;
-}
-
-.free-space{
+.free-space{ /* Delete this after you've fixed the h1 padding on all team pages */
     height:3em;
     
 }
-.abby .abby-photo{
+.officer .officer-photo{
     width:16em;
     min-width: 16em;
     border-radius: 50%;
@@ -40,7 +35,7 @@
 }
 .big{
     text-align: center;
-    font-size:300%;
+    font-size: 250%;
 }
 .bigitalic{
     text-align: center;
@@ -51,7 +46,7 @@
     text-align: justify;
     font-size: 120%;
 }
-.abby .big{
+.officer .big{
     margin-top:0em;
     
 }
@@ -60,7 +55,7 @@
     
 }
 @media only screen and (max-width:991px){
-    .abby-photo{
+    .officer-photo{
         margin-left:30%;
     }
     .Middle{
@@ -69,7 +64,7 @@
     
 }
 @media only screen and (max-width:767px){
-    .abby-photo{
+    .officer-photo{
         margin-left:24%;
         width:50%;
     }
@@ -78,7 +73,7 @@
     }
 }
 /*@media only screen and (max-width:1200px){
-    .abby-photo{
+    .officer-photo{
         margin-left: 120%;
         
     }

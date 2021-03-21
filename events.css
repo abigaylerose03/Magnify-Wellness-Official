@@ -51,18 +51,6 @@ section .btn:hover{
     flex-direction: column;
 }
 
-
-h1{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 78px;
-    align-items: center;
-    text-align: center;
-}
 #banner{
     text-align: center;  
     margin-bottom: 30px;
