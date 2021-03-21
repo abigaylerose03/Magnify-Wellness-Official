@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Events Sign-In</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <!-- *******************************************************************************************
+       * TODO(DEVELOPER): Paste the initialization snippet from:
+       * Firebase Console > Overview > Add Firebase to your web app. *
+       ***************************************************************************************** -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyABr0g_VEOTMSBbkJl7mxozxUjYJPb3OYk",
+        authDomain: "magnify-wellness.firebaseapp.com",
+        databaseURL: "https://magnify-wellness-default-rtdb.firebaseio.com",
+        projectId: "magnify-wellness",
+        storageBucket: "magnify-wellness.appspot.com",
+        messagingSenderId: "524618892007",
+        appId: "1:524618892007:web:8e14c2e4ccbc92668f5842"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.7.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.1/firebase-ui-auth.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: 'loggedIn.html',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // tosUrl and privacyPolicyUrl accept either url string or a callback
+        // function.
+        // Terms of service url/callback.
+        tosUrl: 'https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view',   
+        // Privacy policy url/callback.
+        privacyPolicyUrl: function() {
+          window.location.assign('https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view');
+        }
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </head>
+  <body>
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+    <div id="firebaseui-auth-container" style="margin-top: 100px;"></div>
+  </body>
+</html>

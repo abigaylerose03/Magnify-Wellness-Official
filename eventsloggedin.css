@@ -1,0 +1,109 @@
+/* Import Heading 1 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Import Body */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+
+#title{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.00rem;
+    overflow-x: hidden;
+    text-align: center;
+    margin-top: -90px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 918px;
+      padding: 12px 24px 24px 24px;
+      margin: 48px 12px;
+      background: rgb(255, 255, 255);
+      border-radius: 25px;
+    
+  }
+
+input[type=text],input[type=date], input[type=time], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-color: #33cccc;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=date], input[type=time],:focus, textarea:focus {
+	border: 1px solid #33cccc;
+}
+
+/* Style 'hover' property */
+input[type=text]:hover,input[type=date], input[type=time],:hover, textarea:hover {
+	border-color: #00AAE4;
+}
+
+/* Add styles to the submit button */
+button[type=submit] {
+	background: #33cccc;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 5px 20px;
+	border-radius: 15px;
+	transition: all ease-in-out 0.1s;
+	display: inline-block;
+	text-align: center;
+  position: absolute;
+  left: 750px;
+  right: 10px;
+}
+
+/* Add styles for 'focus' property */
+button[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+button[type=submit]:hover {
+	background: #FFCC00;
+}
+
+input[type=join] {
+  background: #33cccc;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 1px;
+	border-radius: 15px;
+	transition: all ease-in-out 0.1s;
+	display: inline-block;
+	text-align: center;
+    
+}
+
+/* Add styles for 'focus' property */
+input[type=join]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+input[type=join]:hover {
+	background: #FFCC00;
+}
+
+hr.beautiful-line{
+	border-top: 1px solid #999; 
+ width: 90%;
+}

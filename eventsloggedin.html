@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events Sign-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="loggedIn.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <script>
+        // Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyABr0g_VEOTMSBbkJl7mxozxUjYJPb3OYk",
+            authDomain: "magnify-wellness.firebaseapp.com",
+            databaseURL: "https://magnify-wellness-default-rtdb.firebaseio.com",
+            projectId: "magnify-wellness",
+            storageBucket: "magnify-wellness.appspot.com",
+            messagingSenderId: "524618892007",
+            appId: "1:524618892007:web:8e14c2e4ccbc92668f5842"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Authentication Check
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in.
+            } else {
+                //User is not signed in.
+                window.location.replace('./add.html');
+            }
+        });
+    </script>
+
+    <p id="title">Add new event</p>
+
+    <center>
+        <div class="container">
+            <!-- Contact Form -->
+            <form action="#" name="contact_form">
+
+                <input id="titleform" type="text" required placeholder="Title" />
+                <input id="date" type="text" required placeholder="Date (December 10, 2021, January 5, 2021, etc.)" />
+                <br>
+                <input id="time" type="text" required placeholder="Time (1:00pm, 12:34am, etc.)" />
+                <input id="location" type="text" required placeholder="Location (Remote, Cities, etc.)" />
+                <input id="link" type="text" required placeholder="Sign Up Link (Link Only Please with https://)" />
+
+                <textarea id="description" cols="30" rows="10" required placeholder="Description ..."></textarea>
+                <div class="center">
+                    <button type="submit" onClick="onSubmit()" value="Send">Send</button>
+            </form>
+        </div>
+    </center>
+
+    <script>
+        // Triggers once new event is submitted
+        function onSubmit() {
+            // Get all values from textboxes
+            var title = document.getElementById('titleform').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+            var location = document.getElementById('location').value;
+            var link = document.getElementById('link').value;
+            var description = document.getElementById('description').value;
+            // Instantiate Database
+            var db = firebase.firestore();
+            // Add new document to database
+            db.collection("events").add({
+                title: title,
+                date: date,
+                time: time,
+                location: location,
+                link: link,
+                description: description,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(function (docRef) {
+                // Log to console
+                console.log("Document written with ID: ", docRef.id);
+                // Refresh the page
+                window.location.reload(true);
+            })
+                .catch(function (error) {
+                    // Log error to console
+                    console.error("Error adding document: ", error);
+                });
+
+
+        }
+
+
+    </script>
+    <!-- Start of Delete Existing Events -->
+    <p id="title">Delete Existing Events</p>
+    <div id=events>
+
+        <script>
+            // Triggers once delete button is pressed
+            function onDelete(id) {
+                // Delete event
+                eventsRef.doc(id).delete().then(function () {
+                    // Log to console
+                    console.log("Document successfully deleted!");
+                    // Refresh page
+                    window.location.reload(true);
+                }).catch(function (error) {
+                    // Log error to console
+                    console.error("Error removing document: ", error);
+                });
+            }
+            // Print Existing Events
+            var db = firebase.firestore();
+            var eventsRef = db.collection("events");
+            const events = document.querySelector("#events");
+            // Order events by timestamp (time created)
+            eventsRef.orderBy("timestamp", "asc").get().then(function (querySnapshot) {
+                querySnapshot.forEach(function (doc) {
+                    // Print all events
+                    events.innerHTML += "<div><p style='text-align: center'> Title: <span>" + doc.data().title + " </span> <br>" + " Date: <span>" + doc.data().date + " </span><br>" +
+                        "Time: <span>" + doc.data().time + " </span><br>" + "Location: <span>" + doc.data().location + " </span><br>" + "Description: <span>" + doc.data().description + " </span><br>" + 
+                        "Hyperlink: <span>" + doc.data().link + " </span> <button style='margin-bottom: -300px'type='submit' onClick='onDelete(\"" + doc.id + "\")' value='Delete' >Delete</button> </p> </div>" +
+                        "<hr class='beautiful-line'>";
+                    // Log to console
+                    console.log(doc.id, " => ", doc.data());
+
+                });
+            }).catch(function (error) {
+                // Log error to console
+                console.log("Error getting documents: ", error);
+            });
+        </script>
+    </div>
+</body>
+
+</html>
