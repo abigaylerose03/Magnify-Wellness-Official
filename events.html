@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="./home-assets/logo.png" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
 
     <title>Upcoming Events</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,7 +30,20 @@
   gtag('config', 'G-DHMLKFJKBE');
 </script>
 </head>
-
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyABr0g_VEOTMSBbkJl7mxozxUjYJPb3OYk",
+      authDomain: "magnify-wellness.firebaseapp.com",
+      databaseURL: "https://magnify-wellness-default-rtdb.firebaseio.com",
+      projectId: "magnify-wellness",
+      storageBucket: "magnify-wellness.appspot.com",
+      messagingSenderId: "524618892007",
+      appId: "1:524618892007:web:8e14c2e4ccbc92668f5842"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
 <!-- Problems: -->
 <!-- 1. when flexbox row, the image column is wider than the image and creates a gap between the image and the right side of the screen -->
 <!-- 2. Minor: on medium screens, the image column moves below the event description and stuff instead of staying in the same single row -->
@@ -86,6 +102,9 @@
                 <hr>
             </div>
         </div>
+        <div id="events">
+        </div>
+        <script src="events.js"></script>
         <!-- <div class="row flex-md-row">
             <div class="col events-card">
                 <h2>Time to Talk Day</h2>
@@ -109,9 +128,7 @@
         </div> -->
 
     </div>
-    <div id="events">
-    </div>
-    <script src="events.js"></script>
+    
     <!-- FOOTER CODE BELOW -->
     <footer class="footer">
         <div id="footer"></div>

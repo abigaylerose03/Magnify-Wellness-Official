@@ -7,9 +7,7 @@ const events = document.querySelector("#events");
 eventsRef.orderBy("timestamp", "asc").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         //Print all events
-        events.innerHTML += "<p style='text-align: left;'> <br><span style='font-size: 32px;'>" + doc.data().title + " </span> <br> <img src='./images/pin.svg' style='width: 15px; height: 20px; position: relative; top: 4px;'>" + "<span style='font-family: 'Montserrat', sans-serif; font-weight: 8;'>" + doc.data().location + "</span>" + 
-        "&nbsp;&nbsp;&nbsp; <span style='font-size:20px'> <img src='./images/clock.svg' style='width: 15px; height: 20px; position: relative; top: 4px;'> " + doc.data().date + " </span>" + "<span style='font-size:20px'>" + doc.data().time + " </span> <br>" + "<article style='width: 37em'><span >" + doc.data().description + " </article></span> " 
-         + "<button type='submit' onclick='document.location=\"" + doc.data().link + "\"'>Register</button> </span><br><br></p> <hr class='beautiful-line'>";
+        events.innerHTML += "<div class=\"row flex-md-row\"><div class=\"col events-card\"><h2>Event Name 1</h2><div class=\"row flex-lg-row\"><div class=\"col-auto\"><div><span><i class=\"fa fa-map-marker\"></i> Event Type</span></div></div><div class=\"col-auto\"><div><span><i class=\"fa fa-clock-o\"></i> Month Day, Year | Time</span></div></div></div><p class=\"event-card-description\">Descrip<br />tion<br /></p><div><a class=\"btn btn-primary justify-content-lg-center event-card-btn\" role=\"button\">Register</a></div></div><div class=\"col-auto img-col events-card\"><img src=\"assets/img/magnifyXcommunity.png\" /></div></div> <div class=\"row flex-md-row\"><div class=\"col\"><hr></div></div>";
         console.log(doc.id, " => ", doc.data());
     
     });
