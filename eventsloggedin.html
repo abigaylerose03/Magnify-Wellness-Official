@@ -35,7 +35,7 @@
                 // User is signed in.
             } else {
                 //User is not signed in.
-                window.location.replace('./add.html');
+                window.location.replace('./addevents.html');
             }
         });
     </script>
@@ -85,17 +85,16 @@
             }).then(function (docRef) {
                 // Log to console
                 console.log("Document written with ID: ", docRef.id);
+                alert("Your event has been added successfully");
                 // Refresh the page
                 window.location.reload(true);
             })
-                .catch(function (error) {
-                    // Log error to console
-                    console.error("Error adding document: ", error);
-                });
-
+            .catch(function (error) {
+                // Log error to console
+                console.error("Error adding document: ", error);
+            });
 
         }
-
 
     </script>
     <!-- Start of Delete Existing Events -->
