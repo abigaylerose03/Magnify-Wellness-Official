@@ -1,0 +1,104 @@
+.Middle{
+    width: 100%;
+    text-align: center;
+    font-size:4em;
+    font-weight: 750;
+    margin-top: 1em;
+}
+
+.free-space{
+    height:3em;
+    
+}
+.abby .abby-photo{
+    width:16em;
+    min-width: 16em;
+    border-radius: 50%;
+    border-color: rgb(142, 151, 150);
+    border-width: thick;
+}
+#header{ /* to be 0 on smaller screen sizes*/
+    margin-left: 10%;
+    margin-right:10%;
+}
+.small{
+    text-align: justify;
+    font-size: 120%;
+    margin-left: 10%; /* to be 0 on smaller screen sizes*/
+}/*
+.big{
+    text-align: center;
+    
+}*/
+.big {
+    text-align: left;
+    padding-left: 10%;
+    font-size:300%;
+}
+.bigitalic {
+    text-align: left;
+    padding-left: 10%;
+    font-size: 180%;
+}
+
+.abby .big{
+    margin-top:0em;
+}
+.col-card{
+    margin-bottom: 2em;
+}
+@media only screen and (max-width:991px){
+    .abby-photo{
+        margin-left:25%;
+        display:none;
+    }
+    .Middle{
+        font-size:300%;
+    }
+    /*#header{  to be 0 on smaller screen sizes
+        margin-left: 10%;
+        margin-right:10%;
+    }*/
+    .small{
+        text-align: justify;
+        font-size: 120%;
+        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
+    }
+    .bigitalic {
+        
+        padding-left: 0%;
+    }
+    .big {
+        text-align: left;
+        padding-left: 0%;
+    }
+}
+@media only screen and (max-width:767px){
+    .abby-photo{
+        margin-left:12%;
+        width:50%;
+    }
+    #header{  /*to be 0 on smaller screen sizes*/
+        margin-left: 0%;
+        margin-right:0%;
+    }
+    .small{
+        
+        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
+    }
+}
+/*@media only screen and (max-width:1200px){
+    .abby-photo{
+        margin-left: 120%;
+        
+    }
+    
+    .delete{
+        width:0px;
+        padding:0px;
+        height: 0px;
+    }
+    .text{
+        padding-top: 17em;
+    }
+}*/
