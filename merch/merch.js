@@ -18,32 +18,18 @@ const merchItems = [
     {
         name: "hoodie",
         price: "$30",
-        imgSrc: "",
+        imgSrc: "../merch/hoddie1.png",
         itemLink: "",
     },
     {
         name: "stickers",
         price: "1 for $2, 2 for $3",
-        imgSrc: "",
+        imgSrc: "../merch/stickers.jpg",
         itemLink: "",
     },
-    {
-        name: "bullet journal",
-        price: "$10",
-        imgSrc: "",
-        itemLink: "",
-    },
+   
     
 ]
-
-
-
-
-
-
-
-
-
 
 
 
