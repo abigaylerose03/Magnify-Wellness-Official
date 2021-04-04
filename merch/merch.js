@@ -27,7 +27,6 @@ const merchItems = [
         imgSrc: "../merch/stickers.jpg",
         itemLink: "",
     },
-   
     
 ]
 
