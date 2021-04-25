@@ -1,0 +1,65 @@
+.app {
+    width: 100%;
+}
+
+.text {
+    align-items: center;
+    text-align: left;
+    margin-top: 20%;
+    font-size: 2em;
+}
+
+.row-app {
+    background-color: #33cccc7a;
+    border: 0px solid #33cccc;
+    border-radius: 2%;
+    margin-bottom: 10%;
+}
+
+.downloadButton {
+    text-align: center;
+    align-items: center;
+    
+}
+
+.buttton {
+    background: #33cccc;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+    color:white;
+    text-align: center;
+    align-items: center;
+    
+    
+   
+}
+#maggiepic{
+    
+    width: 10rem;
+  }
+#downloadHeader{
+    text-align: center;
+    align-items: center;
+}
+
+.buttton:hover {
+    
+    background: #ffcc00;
+
+}
+
+@media only screen and (max-width:992px) {
+    .app {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    .text {
+        margin: 6%;
+    }
+}
