@@ -10,7 +10,7 @@
     height:3em;
     
 }
-.abby .abby-photo{
+.director .director-photo{
     width:16em;
     min-width: 16em;
     border-radius: 50%;
@@ -28,7 +28,7 @@
 }
 .big{
     text-align: center;
-    font-size:300%;
+    font-size: 250%;
 }
 .bigitalic{
     text-align: center;
@@ -36,14 +36,14 @@
     font-style: italic;
 }
 
-.abby .big{
+.director .big{
     margin-top:0em;
 }
 .col-card{
     margin-bottom: 2em;
 }
 @media only screen and (max-width:991px){
-    .abby-photo{
+    .director-photo{
         margin-left:25%;
     }
     .Middle{
@@ -60,7 +60,7 @@
     }
 }
 @media only screen and (max-width:767px){
-    .abby-photo{
+    .director-photo{
         margin-left:12%;
         width:50%;
     }
@@ -74,7 +74,7 @@
     }
 }
 /*@media only screen and (max-width:1200px){
-    .abby-photo{
+    .director-photo{
         margin-left: 120%;
         
     }
@@ -88,3 +88,8 @@
         padding-top: 17em;
     }
 }*/
+
+.team-description-blurb {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
