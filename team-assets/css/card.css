@@ -1,7 +1,4 @@
-*{
-    
-    font-family: 'Lora', serif;
-}
+
 .kard{
     display:block;
     width: 100%;
@@ -16,7 +13,7 @@
 }
 .kard:hover{
     background-color: #ffcc00;
-    height:600px;
+    height:auto;
     z-index: 2;
     color:black;
 }
@@ -36,7 +33,7 @@
     font-size: 1.3em;
     text-align: justify;
     color:white;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'Sans-Serif';
     display:none;
     padding: 10px;
 }

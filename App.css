@@ -108,21 +108,11 @@ body {
 .download-container .text big {
   font-weight: 500;
 }
-.button {
-  background: #000;
-  padding: 15px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.button a {
-  color: #fff;
-}
 
-.button:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
+
+
+
 .download-container img {
   height: 30vh;
 }

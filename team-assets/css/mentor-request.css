@@ -1,3 +1,61 @@
+.but {
+    width: 100%;
+}
+
+.mentor {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.team-member-info {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.mentor-name {
+    /* font-weight: 500 !important; */
+}
+
+.mentor-short-description {
+    font-weight: 500 !important;
+}
+
+.mentor-long-description {
+    /*text-align: left;  something is trying to align this text differently and idk what*/
+  
+}
+
+.director .director-photo {
+    border-radius: 10%;
+    float: left;
+    width: 120%;
+}
+
+
+
+
+
+.request {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: #33CCCC;
+    border-color: #33CCCC;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+}
+
+@media only screen and (max-width:991px) {
+    .request {
+        margin-left: 0%;
+    }
+
+    .director .director-photo {
+        display: none;
+    }
+}
+
 .Middle{
     width: 100%;
     text-align: center;
@@ -39,6 +97,7 @@
     text-align: left;
     padding-left: 10%;
     font-size: 180%;
+    
 }
 
 .abby .big{
@@ -47,6 +106,37 @@
 .col-card{
     margin-bottom: 2em;
 }
+
+.chip {
+    background-color: #3cc;
+    
+    padding: 0.3em;
+    width:fit-content;
+    height: 1.7em;
+    border-radius: 15px;
+    align-items: center;
+    display: inline-block;
+    
+}
+
+.maggie-chip {
+    height: 30px;
+    float: left;
+    
+}
+
+.spec {
+    margin-bottom: 0px;
+    
+    font-size: 20px;
+    color: white;
+}
+
+
+.space-chip{
+    margin-left: 30px;
+}
+
 @media only screen and (max-width:991px){
     .abby-photo{
         margin-left:25%;

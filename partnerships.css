@@ -15,6 +15,17 @@
     box-sizing: border-box;
     cursor:default;
 }
+.btn{
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+  margin: 3%;
+}
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
