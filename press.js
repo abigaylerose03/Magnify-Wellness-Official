@@ -10,6 +10,9 @@ $(document).ready(function () {
 
         // DO NOT EDIT THE LINE BELOW
         const cards = [
+			{"Type":"Feature","Organization":"Girl Genius","Title":"Girl Genius Magazine: Issue Five","Date":"March 9, 2021","Link":"https://issuu.com/girlgeniusmagazine/docs/gg_issue_v__5_"},
+			{"Type":"Feature","Organization":"The STEAM Foundation","Title":"Interview with Abigayle Peterson - Founder & CEO of Magnify Wellness","Date":"February 21, 2021","Link":"https://www.youtube.com/watch?v=fKr6-Tleky8"},
+			{"Type":"Feature","Organization":"Reinvented Magazine","Title":"Reinvented Magazine: Issue 7 Next Gen in STEM","Date":"February 18, 2021","Link":"https://www.reinventedmagazine.com/product-page/seventh-issue-print-magazine"},
 			{"Type":"Feature","Organization":"Western Washington University - Department of Computer Science","Title":"Finalists for the NCWIT Collegiate Award","Date":"January 20, 2021","Link":"https://cs.wwu.edu/finalists-ncwit-collegiate-award"},
 			{"Type":"Feature","Organization":"The Paris Project","Title":"Mental Health Heros: Story Telling with Abby from Magnify Wellness","Date":"January 17, 2021","Link":"https://open.spotify.com/episode/6HG8GtFpWlmAn8EctSlRXG?si=28jhVAkKR1mm8VzsbJ4L7A"},
 			{"Type":"Feature","Organization":"The Western Front Online","Title":"First-year Western Student Creates Mental Wellness App for Students","Date":"December 6, 2020","Link":"https://www.westernfrontonline.com/2020/12/06/mentalwellness/"},
@@ -26,8 +29,10 @@ $(document).ready(function () {
 			,
 			{"Type":"Workshop/Speaker","Organization":"Stemology","Title":"Magnify CEO Hosts AI Hacks II App Development Workshop","Date":"December 27, 2020","Link":"https://docs.google.com/presentation/d/1tgTKn69LekTrDeR-1FRFI9CaUwyy_Wo44MPZ9esJoF8/edit"},
 			{"Type":"Workshop/Speaker","Organization":"Saluburious Organization","Title":"Magnify CEO Hosts IOS Development Workshop","Date":"December 26, 2020","Link":"https://docs.google.com/presentation/d/1uzxXPeGZKtzD6C_tCEE-BCYgEHXL6pfUHNKQ55egkPU/edit#slide=id.g94c3a170b3_1_5"},
+			{"Type":"Workshop/Speaker","Organization":"Helloo World Hackathon","Title":"Code with Empathy Workshop","Date":"August 16, 2020","Link":"https://drive.google.com/file/d/17IWchn1O9RVLQw7f--BVjuZYRWWUBFqK/view?usp=sharing"},
 			{"Type":"Workshop/Speaker","Organization":"She Creates Makeathon","Title":"Magnify CEO Speaks at She Creates Makeathon: Creating the Future Starts with You","Date":"August 4, 2020","Link":"https://shecreates.carrd.co/#speakers"},
-			{"Type":"Workshop/Speaker","Organization":"UnsinkableYouth","Title":"Unsinkable Stories: Abigayle Peterson","Date":"July 23, 2020","Link":"https://weareunsinkable.com/leading-with-empathy-abigayle-peterson/"}
+			{"Type":"Workshop/Speaker","Organization":"UnsinkableYouth","Title":"Unsinkable Stories: Abigayle Peterson","Date":"July 23, 2020","Link":"https://weareunsinkable.com/leading-with-empathy-abigayle-peterson/"},
+			{"Type":"Workshop/Speaker","Organization":"CodeHers Collective","Title":"Start Up Engineer Panelist","Date":"April 5, 2021","Link":"https://codehers.co/?page_id=547"}
         ]//END
         //DO NOT EDIT THE LINE ABOVE
 
