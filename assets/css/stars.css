@@ -1,0 +1,31 @@
+.star{
+    color:rgb(230, 187, 0);
+    
+}
+.stars{
+    text-align: center;
+    display:block;
+}
+.review{
+    width:100%;
+    height:fit-content;
+    border:6px dotted #33cccc;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.summary{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 5%;
+    text-align: center;
+}
+.textreview{
+    text-align: center;
+    padding: 3%;
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+    .star{
+        size: 40px;
+    }
+}
