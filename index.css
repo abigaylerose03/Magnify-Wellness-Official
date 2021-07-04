@@ -1,4 +1,1 @@
-.body {
-  line-height: 3;
-  overflow-y: none;
-}
+body(overflow-y: none;) 
