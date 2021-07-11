@@ -308,14 +308,14 @@ section .btn:hover{
     column-gap: 60px;
 }
 
-#about h1, #press h1, #blog h1{
+#about h1, #press h1, #blog h1, #app-testimonials h1{
     margin: 8vh;
     text-align: center;
     font-size: 1.75rem;
     position: relative;
 }
 
-#about h1::before, #press h1::before, #blog h1::before{
+#about h1::before, #press h1::before, #blog h1::before, #app-testimonials h1::before{
     content: '';
     position: absolute;
     bottom: -20px;
@@ -326,7 +326,7 @@ section .btn:hover{
     transform: translateX(-50%);
 }
 
-#press h1::before, #blog h1::before{
+#press h1::before, #blog h1::before, #app-testimonials h1::before{
     width: 60px;
 }
 #about .feature{
