@@ -16,13 +16,9 @@
 <body>
 
 <div class="container">
-  <h1>Carousel Example</h2>
   <section id="appTestimonials">
-
     <div id="app-testimonials-carousel" class="carousel slide" data-ride="app-testimonials-carousel">
       <h1 id="app-testimonials-title">Why everyone loves Magnify Wellness</h1>
-
-      <div class="carousel-inner row" >
 
         <style>
           #app-testimonials-carousel {
@@ -33,82 +29,60 @@
           }
           
           #app-testimonials-title {
-            margin-top: 4rem;
+            margin: 0;
             display: inline-block;
             font-size: 1.75rem;
           }
 
-          .carousel-caption{
-            color: black !important;
-          }
-
-
           .carousel-content { 
-              display: flex;
-              flex-direction: column;
-              align-items: center; 
-              color: black !important;
-              margin: 2rem 15%;
-              /* align-self: center;
-              justify-self: center; */
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            color: black;
+            margin: 2rem 15%;
           }
 
-          .quote {
+          .quote , .quote-author {
             display: block;
-            font-size: 15px;
+            font-size: 1.25rem;
           }
 
           .carousel-inner {
-            /* height: 12rem; */
-            width: 100%;
-            background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%), rgba(51, 204, 204, 0.75);
+            /* background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%), rgba(51, 204, 204, 0.75); */
+            background: linear-gradient(rgb(51, 204, 204, 0.01), rgb(51, 204, 204, 1));
             margin: 0;
-            /* display: flex; */
-          }
-
-          .active {
-            /* display: flex !important;
-            flex-direction: row; */
+            display: flex;
+            align-items: center;
           }
           
-          #app-testimonials-carousel .space {
-            visibility: hidden;
-          }
 
           #app-testimonials-carousel #maggie {
             height: 4rem;
-            width: auto;
             align-self: flex-end;
             padding: 0 0.5rem;
           }
 
         </style>
 
-        <div class="carousel-item active col">
-          <div class="carousel-content">
-            <h2 class="quote">First slide label</h2>
-            <p class="quote-author">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-          <!-- <div class="col"> -->
-            
+      <div class="carousel-inner" >
 
-            <!-- <img id="maggie" src="home-assets/app-testimonials-maggie.png" class="d-block" alt=""> -->
-          <!-- </div> -->
-          
-          <!-- <img src="home-assets/app-testimonials-background.png" class="d-block w-100 space" alt=""> -->
-          <!-- <div class="space">.</div> -->
-        </div>
-        <div class="carousel-item col">
+        <div class="carousel-item active">
           <div class="carousel-content">
-            <h2 class="quote">Second slide label</h2>
-            <p class="quote-author">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="quote"></h2>
+            <p class="quote-author"></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <h2 class="quote"></h2>
+            <p class="quote-author"></p>
           </div>
         </div>
 
-        <div class="carousel-item col">
+        <div class="carousel-item">
           <div class="carousel-content">
-            <h2 class="quote">Second slide label</h2>
-            <p class="quote-author">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="quote"></h2>
+            <p class="quote-author"></p>
           </div>
         </div>
 
@@ -149,17 +123,11 @@
 
         // set text in carousel
         const quotes = [
-          "This app is amazing, I love how I can write down whatever's on my mind, I love the app overall and the best thing is that it's free. I love that this is a great tool for people who struggle with their mental health.",
-          "Having the app and the Magnify community at my disposal always made me feel a bit safer. I knew that if I ever felt really bad I could turn to the app or to other members of Magnify. It has also given me a positive environment to enjoy myself in. I have always felt loved and supported throughout my time at Magnify.",
-          "Magnify Wellness has helped me prioritize my mental health through the app's many helpful features such as journaling or talking to Maggie."
+          `"This app is amazing, I love how I can write down whatever's on my mind, I love the app overall and the best thing is that it's free. I love that this is a great tool for people who struggle with their mental health."`,
+          `"Having the app and the Magnify community at my disposal always made me feel a bit safer. I knew that if I ever felt really bad I could turn to the app or to other members of Magnify. It has also given me a positive environment to enjoy myself in. I have always felt loved and supported throughout my time at Magnify."`,
+          `"Magnify Wellness has helped me prioritize my mental health through the app's many helpful features such as journaling or talking to Maggie."`
         ];
-        const quoteAuthorText = 'Magnify Wellness App User';
-
-        // $('.quote').each(quotes,function(i, obj) {
-        //     console.log(i);
-        //     console.log(obj);
-        // //   obj.innerText = quotes[i];
-        // });
+        const quoteAuthorText = '-  Magnify Wellness App User';
 
         let quoteDivs = document.getElementsByClassName('quote');
         for (let i = 0; i<quoteDivs.length; i++) {
@@ -169,8 +137,6 @@
         for (let i = 0; i<authorDivs.length; i++) {
           authorDivs[i].innerText = quoteAuthorText;
         }
-
-        setCarouselHeight('#app-testimonials-carousel');
 
         function setCarouselHeight(id)
         {
@@ -187,9 +153,11 @@
             // set the slide's height
             $(id+' .carousel-inner').each(function()
             {
-                $(this).css('height',max+30+'px');
+                $(this).css('height',max+10+'px');
             });
         }
+
+        setCarouselHeight('#app-testimonials-carousel');
 
     })
 </script>
