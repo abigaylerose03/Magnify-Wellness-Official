@@ -15,8 +15,8 @@
 </head>
 <body>
 
-<div class="container">
-  <section id="appTestimonials">
+<section id="appTestimonials">
+  <div class="container">
     <div id="app-testimonials-carousel" class="carousel slide" data-ride="app-testimonials-carousel">
       <h1 id="app-testimonials-title">Why everyone loves Magnify Wellness</h1>
 
@@ -64,9 +64,9 @@
 
         </style>
 
-      <div class="carousel-inner" >
+      <div class="carousel-inner">
 
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item active">
           <div class="carousel-content">
             <h2 class="quote"></h2>
             <p class="quote-author"></p>
@@ -84,9 +84,9 @@
             <h2 class="quote"></h2>
             <p class="quote-author"></p>
           </div>
-        </div>
+        </div> -->
 
-        <img id="maggie" src="home-assets/app-testimonials-maggie.png" class="d-block" alt="">
+        <!-- <img id="maggie" src="home-assets/app-testimonials-maggie.png" class="d-block" alt=""> -->
         
       </div> 
 
@@ -106,8 +106,8 @@
       </a>
     </div>
 
-  </section> 
-</div>
+  </div>
+</section> 
 
 <script type="text/javascript">
 
@@ -121,22 +121,31 @@
         //     time: 1000
         // });
 
-        // set text in carousel
+        // set text + maggie in carousel
         const quotes = [
+          `"Magnify Wellness has helped me prioritize my mental health through the app's many helpful features such as journaling or talking to Maggie."`,
+          `"The journal on the app is really helpful just to write down my thoughts and process some emotions, and the game is really helpful to relax when I am stressed or overwhelmed."`,
           `"This app is amazing, I love how I can write down whatever's on my mind, I love the app overall and the best thing is that it's free. I love that this is a great tool for people who struggle with their mental health."`,
-          `"Having the app and the Magnify community at my disposal always made me feel a bit safer. I knew that if I ever felt really bad I could turn to the app or to other members of Magnify. It has also given me a positive environment to enjoy myself in. I have always felt loved and supported throughout my time at Magnify."`,
-          `"Magnify Wellness has helped me prioritize my mental health through the app's many helpful features such as journaling or talking to Maggie."`
+          `"Having the app and the Magnify community at my disposal always made me feel a bit safer. I knew that if I ever felt really bad I could turn to the app or to other members of Magnify. It has also given me a positive environment to enjoy myself in. I have always felt loved and supported throughout my time at Magnify."`
         ];
         const quoteAuthorText = '-  Magnify Wellness App User';
 
-        let quoteDivs = document.getElementsByClassName('quote');
-        for (let i = 0; i<quoteDivs.length; i++) {
-          quoteDivs[i].innerText = quotes[i];
+        for (let i = 0; i<quotes.length; i++) {
+          $('.carousel-inner').append(
+            `<div class="carousel-item">
+              <div class="carousel-content">
+                <h2 class="quote">${quotes[i]}</h2>
+                <p class="quote-author">${quoteAuthorText}</p>
+             </div>
+           </div>`
+          );
         }
-        let authorDivs = document.getElementsByClassName('quote-author');
-        for (let i = 0; i<authorDivs.length; i++) {
-          authorDivs[i].innerText = quoteAuthorText;
-        }
+
+        $('.carousel-inner').append(
+          '<img id="maggie" src="home-assets/app-testimonials-maggie.png" class="d-block" alt="2 Maggies holding hands">'
+        );
+
+        $(".carousel-item").first().addClass("active");
 
         function setCarouselHeight(id)
         {
