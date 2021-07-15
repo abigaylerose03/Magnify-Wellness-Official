@@ -315,6 +315,10 @@ section .btn:hover{
     position: relative;
 }
 
+#app-testimonials h1 {
+    margin-bottom: 0;
+}
+
 #about h1::before, #press h1::before, #blog h1::before, #app-testimonials h1::before{
     content: '';
     position: absolute;
@@ -368,6 +372,52 @@ section .btn:hover{
         display: none;
     }
 }
+
+/* -------------------------- APP TESTIMONIALS SECTION ---------------------------*/
+#app-testimonials {
+    padding: 0;
+}
+
+#app-testimonials-carousel {
+    /* height: 10rem; */
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%, 0), rgba(51, 204, 204, 0.75);
+    text-align: center;
+  }
+  
+  /* #app-testimonials-title {
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+  } */
+
+  #app-testimonials-carousel .carousel-inner {
+    /* background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%), rgba(51, 204, 204, 0.75); */
+    background: linear-gradient(rgb(51, 204, 204, 0.01), rgb(51, 204, 204, 1));
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  #app-testimonials-carousel .carousel-content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: black;
+    margin: 2rem 15%;
+  }
+
+  #app-testimonials-carousel .quote , #app-testimonials-carousel .quote-author {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  #app-testimonials-carousel #maggie {
+    height: 4rem;
+    align-self: flex-end;
+    padding: 0 0.5rem;
+  }
 
 /* -------------------------------- PRESS PAGE ------------------------------- */   
 

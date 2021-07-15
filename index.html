@@ -107,6 +107,30 @@
         <a href="App.html" class="btn">Learn More</a>
     </section>
 
+    <section id="app-testimonials">
+        <!-- <div class="container"> -->
+          <div id="app-testimonials-carousel" class="carousel slide" data-ride="app-testimonials-carousel">
+            <h1 id="app-testimonials-title">Why everyone loves Magnify Wellness</h1>
+      
+            <!-- content generated dynamically w/ javascript -->
+            <div class="carousel-inner"></div> 
+      
+            <ol class="carousel-indicators">
+            </ol>
+      
+            <a class="carousel-control-prev" href="#app-testimonials-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#app-testimonials-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          <!-- </div> -->
+      
+        </div>
+      </section> 
+
     <section id="press">
         <h1>Press</h1>
         <div class="articles-container">
@@ -212,6 +236,7 @@
 <script src="./home-assets/jquery.counterup.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="jquery.counterup.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -219,13 +244,62 @@
         $('#navbar').load('/navbar/navbar.html');
         $('#footer').load('/footer/footer.html');
 
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+        // $('.counter').counterUp({
+        //     delay: 10,
+        //     time: 1000
+        // });
 
         // set text in carousel
+        // set text + maggie in carousel
+        const quotes = [
+          `"Magnify Wellness has helped me prioritize my mental health through the app's many helpful features such as journaling or talking to Maggie."`,
+          `"The journal on the app is really helpful just to write down my thoughts and process some emotions, and the game is really helpful to relax when I am stressed or overwhelmed."`,
+          `"This app is amazing, I love how I can write down whatever's on my mind, I love the app overall and the best thing is that it's free. I love that this is a great tool for people who struggle with their mental health."`,
+          `"Having the app and the Magnify community at my disposal always made me feel a bit safer. I knew that if I ever felt really bad I could turn to the app or to other members of Magnify. It has also given me a positive environment to enjoy myself in. I have always felt loved and supported throughout my time at Magnify."`
+        ];
+        const quoteAuthorText = '-  Magnify Wellness App User';
 
+        for (let i = 0; i<quotes.length; i++) {
+            $('.carousel-indicators').append(
+                `<li class='indicator' data-target="#app-testimonials-carousel" data-slide-to="${i}"></li>`
+            );
+            $('.carousel-inner').append(
+                `<div class="carousel-item">
+                <div class="carousel-content">
+                    <h2 class="quote">${quotes[i]}</h2>
+                    <p class="quote-author">${quoteAuthorText}</p>
+                </div>
+            </div>`
+            );
+        }
+
+        $('.carousel-inner').append(
+          '<img id="maggie" src="home-assets/app-testimonials-maggie.png" class="d-block" alt="2 Maggies holding hands">'
+        );
+
+        $(".indicator").first().addClass("active");
+        $(".carousel-item").first().addClass("active");
+
+        function setCarouselHeight(id)
+        {
+            var slideHeight = [];
+            $(id+' .carousel-item').each(function()
+            {
+                // add all slide heights to an array
+                slideHeight.push($(this).height());
+            });
+
+            // find the tallest item
+            max = Math.max.apply(null, slideHeight);
+
+            // set the slide's height
+            $(id+' .carousel-inner').each(function()
+            {
+                $(this).css('height',max+10+'px');
+            });
+        }
+
+        setCarouselHeight('#app-testimonials-carousel');
     })
 </script>
 
