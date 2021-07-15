@@ -315,6 +315,10 @@ section .btn:hover{
     position: relative;
 }
 
+#app-testimonials h1 {
+    margin-bottom: 0;
+}
+
 #about h1::before, #press h1::before, #blog h1::before, #app-testimonials h1::before{
     content: '';
     position: absolute;
