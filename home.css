@@ -5,28 +5,30 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor:default;
+    cursor: default;
 }
 
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    
+
 }
-body section{
+
+body section {
     padding: 0 20px;
 }
+
 ul {
     list-style: none;
 }
-  
+
 
 a {
     text-decoration: none;
 }
 
-section .btn{
+section .btn {
     color: #fff;
     background: #33CCCC;
     width: 150px;
@@ -39,13 +41,13 @@ section .btn{
     transition: .3s;
 }
 
-section .btn:hover{
+section .btn:hover {
     box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
 }
 
 
 /* -------------------------------- LANDING PAGE ------------------------------- */
-#home{
+#home {
     position: relative;
     min-height: calc(100vh - 3.5rem);
     display: flex;
@@ -54,7 +56,7 @@ section .btn:hover{
     background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
 }
 
-#home .content{
+#home .content {
     display: flex;
     justify-content: space-between;
     padding: 0 3vw;
@@ -64,31 +66,32 @@ section .btn:hover{
     width: 100vw;
 }
 
-#home .content h1{
+#home .content h1 {
     color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 8rem;
     margin-bottom: -4.5rem;
-    
+
 }
 
-#home .content h2{
+#home .content h2 {
     color: #fff;
     text-transform: capitalize;
     font-size: 2.5rem;
     padding-left: 6px;
     letter-spacing: 2px;
-    
+
 }
 
-#home .content .text img{
+#home .content .text img {
     margin: 45px 0;
     width: 175px;
     padding-left: 6px;
     cursor: pointer;
 }
-#home .content p{
+
+#home .content p {
     color: #fff;
     padding: 30px 0;
     padding-left: 6px;
@@ -97,7 +100,8 @@ section .btn:hover{
     max-width: 550px;
 
 }
-#home .content .image{
+
+#home .content .image {
     margin-top: -1rem;
     width: 40vw;
     display: flex;
@@ -105,20 +109,23 @@ section .btn:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
-#home .content .image h3, #home .content .text h3{
+#home .content .image h3,
+#home .content .text h3 {
     padding-top: 1rem;
     font-size: 2rem;
     font-style: italic;
     font-weight: 600;
     color: #ffffff;
 }
-#home .content .text h3{
+
+#home .content .text h3 {
     display: none;
 }
-#home .content .image img{
+
+#home .content .image img {
     width: 30vw;
 }
 
@@ -130,7 +137,7 @@ section .btn:hover{
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    
+
 }
 
 .custom-shape-divider-bottom-1608227026 svg {
@@ -148,14 +155,14 @@ section .btn:hover{
 
 @media only screen and (max-width: 1100px) {
 
-    #home .content{
+    #home .content {
         flex-direction: column;
         margin-top: 0;
         padding-bottom: calc(max(10vw, 120px));
-       
+
     }
 
-    #home .content .text{
+    #home .content .text {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -166,27 +173,29 @@ section .btn:hover{
     }
 
 
-    #home .content p{
+    #home .content p {
         padding: 20px 0 0 0 0;
     }
 
-    #home .content .text img{
+    #home .content .text img {
         margin-top: 0;
     }
 
-    #home .content .image img{
+    #home .content .image img {
         width: 50vw;
         max-width: 350px;
     }
 
-    #home .content .image{
+    #home .content .image {
         margin: 0;
         width: 80vw;
     }
-    #home .content .image h3{
+
+    #home .content .image h3 {
         display: none;
     }
-    #home .content .text h3{
+
+    #home .content .text h3 {
         display: block;
         margin-top: -35px;
     }
@@ -195,38 +204,41 @@ section .btn:hover{
 
 
 @media only screen and (max-width: 650px) {
-    
-    #home .content{
+
+    #home .content {
         padding-bottom: 0;
     }
-    #home .content h1{
+
+    #home .content h1 {
         display: none;
-        
+
     }
 
-    #home .content .image{
-        margin-bottom: 30px; 
+    #home .content .image {
+        margin-bottom: 30px;
     }
 
-    
+
 
     .custom-shape-divider-bottom-1608227026 svg {
         height: 75px;
     }
 
-    #home .content .text h3{
+    #home .content .text h3 {
         display: none;
     }
-    #home .content .image h3{
+
+    #home .content .image h3 {
         display: block;
         order: 1;
         padding-bottom: 2rem;
         width: 90vw;
     }
-    #home .content .image img{
+
+    #home .content .image img {
         order: 2;
     }
-    
+
 }
 
 /* -------------------------------- MISSION STATEMENT PAGE ------------------------------- */
@@ -242,12 +254,12 @@ section .btn:hover{
     position: relative;
 }
 
-#mission h1{
+#mission h1 {
     font-size: 2.5rem;
     top: 20vh;
 }
 
-#mission h2{
+#mission h2 {
     padding-top: 4rem;
     font-size: 2rem;
     font-weight: 500;
@@ -255,9 +267,10 @@ section .btn:hover{
     max-width: 800px;
     line-height: 2.5rem;
 }
+
 /* -------------------------------- ABOUT PAGE ------------------------------- */
 
-#about{
+#about {
     min-height: 100vh;
     background-color: white;
     display: flex;
@@ -268,47 +281,52 @@ section .btn:hover{
 }
 
 
-#mag{
+#mag {
     position: absolute;
     width: 10vw;
     max-width: 150px;
     bottom: 50vh;
     right: 0;
-    z-index:2;
+    z-index: 2;
 }
 
-#blob{
+#blob {
     position: absolute;
     width: 30vw;
     max-width: 475px;
     min-width: 200px;
     bottom: 0;
     right: 0;
-    
+
 }
 
-@media only screen and (max-width: 400px){
-    #target{
+@media only screen and (max-width: 400px) {
+    #target {
         display: none;
     }
 }
-#target{
+
+#target {
     position: absolute;
     width: 15vw;
     max-width: 300px;
     min-width: 100px;
     top: 10vh;
     left: 0;
-    
+
 }
-#about .features-container{
+
+#about .features-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 40px;
     column-gap: 60px;
 }
 
-#about h1, #press h1, #blog h1, #app-testimonials h1{
+#about h1,
+#press h1,
+#blog h1,
+#app-testimonials h1 {
     margin: 8vh;
     text-align: center;
     font-size: 1.75rem;
@@ -319,7 +337,10 @@ section .btn:hover{
     margin-bottom: 0;
 }
 
-#about h1::before, #press h1::before, #blog h1::before, #app-testimonials h1::before{
+#about h1::before,
+#press h1::before,
+#blog h1::before,
+#app-testimonials h1::before {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -330,10 +351,13 @@ section .btn:hover{
     transform: translateX(-50%);
 }
 
-#press h1::before, #blog h1::before, #app-testimonials h1::before{
+#press h1::before,
+#blog h1::before,
+#app-testimonials h1::before {
     width: 60px;
 }
-#about .feature{
+
+#about .feature {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -343,32 +367,33 @@ section .btn:hover{
     text-align: center;
 }
 
-#about .feature img{
+#about .feature img {
     width: 70px;
 }
 
-#about .feature p{
+#about .feature p {
     color: rgba(0, 0, 0, 0.7);
     line-height: 1.5rem;
 }
 
-#about .btn{
+#about .btn {
     margin: calc(max(4vh, 30px));
 }
-@media only screen and (max-width: 850px){
-    #about .features-container{
+
+@media only screen and (max-width: 850px) {
+    #about .features-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media only screen and (max-width: 460px){
-    #about .features-container{
+@media only screen and (max-width: 460px) {
+    #about .features-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media only screen and (max-width: 700px){
-    #mag{
+@media only screen and (max-width: 700px) {
+    #mag {
         display: none;
     }
 }
@@ -383,45 +408,47 @@ section .btn:hover{
     width: 100%;
     background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%, 0), rgba(51, 204, 204, 0.75);
     text-align: center;
-  }
-  
-  /* #app-testimonials-title {
+}
+
+/* #app-testimonials-title {
     margin-top: 2rem;
     margin-bottom: -1.5rem;
     font-size: 2rem;
     font-weight: bold;
   } */
 
-  #app-testimonials-carousel .carousel-inner {
+#app-testimonials-carousel .carousel-inner {
     /* background: linear-gradient(180deg, #FFFFFF 0%, #33CCCC 100%), rgba(51, 204, 204, 0.75); */
     background: linear-gradient(rgb(51, 204, 204, 0.01), rgb(51, 204, 204, 1));
     margin: 0;
     display: flex;
     align-items: center;
-  }
+}
 
-  #app-testimonials-carousel .carousel-content { 
+#app-testimonials-carousel .carousel-content {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     color: black;
     margin: 2rem 15%;
-  }
+}
 
-  #app-testimonials-carousel .quote , #app-testimonials-carousel .quote-author {
+#app-testimonials-carousel .quote,
+#app-testimonials-carousel .quote-author {
     display: block;
     font-size: 1.25rem;
-  }
+}
 
-  #app-testimonials-carousel #maggie {
+#app-testimonials-carousel #maggie {
     height: 4rem;
     align-self: flex-end;
     padding: 0 0.5rem;
-  }
+}
 
-/* -------------------------------- PRESS PAGE ------------------------------- */   
+/* -------------------------------- PRESS PAGE ------------------------------- */
 
-#press, #blog{
+#press,
+#blog {
     min-height: 80vh;
     padding-bottom: 3.5rem;
     display: flex;
@@ -430,16 +457,18 @@ section .btn:hover{
 
 }
 
-#press .articles-container, #blog .articles-container{
+#press .articles-container,
+#blog .articles-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
-#press .article, #blog .article{
+#press .article,
+#blog .article {
     width: 275px;
-    
+
     height: 375px;
     display: flex;
     flex-direction: column;
@@ -453,40 +482,48 @@ section .btn:hover{
     transition: 0.3s;
 }
 
-#press .article:hover, #blog .article:hover{
+#press .article:hover,
+#blog .article:hover {
     transform: scale(1.05);
 }
 
-#press .article h2, #blog .article h2{
+#press .article h2,
+#blog .article h2 {
     font-size: 1.25rem;
 }
-#press .article .img-container, #blog .article .img-container{
+
+#press .article .img-container,
+#blog .article .img-container {
     max-width: 220px;
     height: 170px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#press .article .img-container img, #blog .article .img-container img{
+
+#press .article .img-container img,
+#blog .article .img-container img {
     max-width: 220px;
     max-height: 170px;
 }
 
-@media only screen and (max-width: 1060px){
-    #press{
+@media only screen and (max-width: 1060px) {
+    #press {
         margin-bottom: 50px;
     }
 }
 
-@media only screen and (max-width: 400px){
-    #press .article, #blog .article{
+@media only screen and (max-width: 400px) {
+
+    #press .article,
+    #blog .article {
         margin: 20px 0;
     }
 }
 
 /* -------------------------------- IMPACT/METRICS PAGE ------------------------------- */
 
-#impact{
+#impact {
     min-height: 400px;
     background: linear-gradient(297.34deg, #FFCC00 28.5%, rgba(255, 205, 7, 0.973958) 28.5%, #33CCCC 63.66%);
     position: relative;
@@ -496,15 +533,15 @@ section .btn:hover{
     margin: 3.5rem 0;
 }
 
-#impact .metrics-container{
+#impact .metrics-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* width: 80vw; */
     margin-top: 30px;
 }
 
-#impact .metric{
-    display:flex;
+#impact .metric {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -516,17 +553,18 @@ section .btn:hover{
     margin: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
 
-    
+
 }
 
-#impact .metric h2{
+#impact .metric h2 {
     font-weight: 400;
 }
-#impact .metric h2 span{
+
+#impact .metric h2 span {
     font-weight: 800;
 }
 
-.btn.blog-btn{
+.btn.blog-btn {
     margin: calc(max(5vh, 40px));
     color: #000;
     font-weight: 600;
@@ -537,10 +575,11 @@ section .btn:hover{
     height: 45px;
 }
 
-.btn.blog-btn:hover{
+.btn.blog-btn:hover {
     /* color: #33cccc; */
     /* background-color: #33CCCC; */
 }
+
 .custom-shape-divider-top-1608248637 {
     position: absolute;
     top: 0;
@@ -583,43 +622,44 @@ section .btn:hover{
     fill: #FFFFFF;
 }
 
-@media only screen and (max-width: 1000px){
-    #impact .metric{
+@media only screen and (max-width: 1000px) {
+    #impact .metric {
         transform: scale(0.8);
         margin: 0;
     }
 }
-@media only screen and (max-width: 800px){
-    #impact{
+
+@media only screen and (max-width: 800px) {
+    #impact {
         min-height: 500px;
         /* padding-top: 10px; */
     }
 
-    #impact .metrics-container{
+    #impact .metrics-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
 
-@media only screen and (max-width: 440px){
-    #impact{
+@media only screen and (max-width: 440px) {
+    #impact {
         min-height: 830px;
     }
 
-    #impact .metrics-container{
+    #impact .metrics-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 30px 0;
         padding-top: 40px;
     }
 
-    
+
 }
 
 /* -------------------------------- JOIN MAGNIFY MOVEMENT PAGE ------------------------------- */
 
-#join-us{
-    background-color:#FFCC00;
-    margin: 70px 0 ;
+#join-us {
+    background-color: #FFCC00;
+    margin: 70px 0;
     margin-bottom: 150px;
     padding: 30px;
     min-height: 300px;
@@ -631,38 +671,38 @@ section .btn:hover{
     position: relative;
 }
 
-#join-us h1{
+#join-us h1 {
     font-size: 2.75rem;
     max-width: 800px;
     margin-bottom: 50px;
     color: #fff;
 }
 
-.back-to-top i{
+.back-to-top i {
     position: fixed;
     right: 0px;
     bottom: 0px;
     background-color: #FFCC00;
     padding: 20px 10px;
     border-radius: 20px;
-    
+
 }
 
 /* -------------------------------------- FOOTER ATTRIBUTION ---------------------------------------- */
-.footer #attribution{
+.footer #attribution {
     font-size: 0.85rem;
     color: rgba(0, 0, 0, 0.7);
     padding-bottom: 30px;
     text-align: center;
 }
 
-.footer #attribution a{
+.footer #attribution a {
     color: #000;
     cursor: pointer;
 }
 
 /* ---------------------------------------- BACK TO TOP BUTTON --------------------------------------- */
-button i{
+button i {
     cursor: pointer;
 }
 
@@ -684,62 +724,83 @@ button i{
     transition-timing-function: ease-in-out;
     transition-property: background-color, color;
     z-index: 20000;
-    
-  }
-  #back-to-top-btn:hover, #back-to-top-btn:focus {
-    background-color: #333;
-    color: #fff; 
-    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.7);
-  }
 
-  @media(max-width: 992px) {
-   
-    #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
-  }
-  @media(max-width:768px) {
-    
-    #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 15px; right: 15px; }
-  }
-  
-  /* Animations */
-  .btnEntrance {
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.7);
+}
+
+@media(max-width: 992px) {
+
+    #back-to-top-btn {
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media(max-width:768px) {
+
+    #back-to-top-btn {
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Animations */
+.btnEntrance {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-name: btnEntrance;
-  }
-  
-  /* fadeInUp */
-  @keyframes btnEntrance {
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
     from {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
     }
+
     to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
-  }
-  
-  .btnExit {
+}
+
+.btnExit {
     animation-duration: 0.25s;
-    animation-fill-mode: both;  
+    animation-fill-mode: both;
     animation-name: btnExit;
-  }
-  /* fadeOutDown */
-  @keyframes btnExit {
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
     from {
-      opacity: 1;
+        opacity: 1;
     }
+
     to {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
     }
-  }
+}
 
 
-@media only screen and (min-height: 1024px){
-    #about, #press, #blog{
-        max-height: 1000px!important;
-       min-height: 800px!important;
+@media only screen and (min-height: 1024px) {
+
+    #about,
+    #press,
+    #blog {
+        max-height: 1000px !important;
+        min-height: 800px !important;
     }
 }
