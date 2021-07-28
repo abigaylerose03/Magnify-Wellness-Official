@@ -18,63 +18,76 @@
 <body>
   
     <div class="footer">
-      <div class="footer-container">
-        <div class="navigation">
-          <ul>
-            <li><a href="App.html">App</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="partners.html">Our Partners</a></li>
-          </ul>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div id="newsletter" class="col-sm-4 mb-5 text-center align-middle">
+            <h2>🔎 Subscribe to our newsletter</h2>
+            <p class="d-none d-sm-block">
+              <span>Receive monthly emails with amazing opportunities for high school
+              and college students to get involved in your community via
+              social impact, advice from top college students, new app updates,
+              mental health educational topics, and more!</span>
+            </p>
+            <form
+              action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe47un1ai3dJ3y1F_mAsJQQYOC1FBYaGGZGt6hNb7EL_kozaw/formResponse"
+              method="post"
+              target="_blank"
+            >
+              <input
+                autocomplete="email"
+                name="emailAddress"
+                placeholder="Email"
+                type="email"
+              /><button type="submit">Subscribe <img src="./home-assets/arrow.svg" alt=""></button>
+            </form>
+          </div>
+          <div id="middle-col" class="col-sm-4 text-center mb-5">
+            <div id="donate-and-buy" class="d-flex col order-sm-2 justify-content-around">
+              <div><a class="button" role="button" href="">Donate</a></div>
+              <div><a class="button" role="button" href="">Buy Merch</a></div>
+            </div>
+            <div id="footer-mission" class="order-sm-1 mt-5">
+              <div>Our Mission</div>
+              <div>Magnify Wellness is committed to ensuring that everyone gains equal access to mental health support.</div>
+            </div>
+          </div>
+          <div id="navigation" class="d-flex flex-row row-12 flex-sm-column justify-content-between text-center mb-5">
+            <!-- <ul> -->
+              <div><a href="App.html">App</a></div>
+              <div><a href="blog.html">Blog</a></div>
+              <div><a href="get-involved.html">Get Involved</a></div>
+              <div><a href="partners.html">Our Partners</a></div>
+            <!-- </ul> -->
+          </div>
+          <div class='d-none d-sm-block'>
+            <a href="https://apps.apple.com/in/app/magnify-wellness/id1526188573">
+              <img class="download" src="./home-assets/download.png" alt="download on ios"/>
+            </a>
+          </div>
+        </div>
+  
+        <div id="terms-copyright-policy" class="row justify-content-between col-sm-4 mb-5">
+          <!-- <ul> -->
+            <div class="col-xs-4 text-center">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view?usp=sharing"
+                >Terms and Conditions</a
+              >
+            </div>
+            <div class="col-xs-4 text-center">©2020 Magnify Wellness</div>
+            <div class="col-xs-4 text-center">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view?usp=sharing"
+                >Privacy Policy</a
+              >
+            </div>
+          <!-- </ul> -->
         </div>
 
-        <div class="newsletter">
-          <h2>🔎 Subscribe to our newsletter</h2>
-          <form
-            action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe47un1ai3dJ3y1F_mAsJQQYOC1FBYaGGZGt6hNb7EL_kozaw/formResponse"
-            method="post"
-            target="_blank"
-          >
-            <input
-              autocomplete="email"
-              name="emailAddress"
-              placeholder="Email"
-              type="email"
-            /><button type="submit">Subscribe <img src="./home-assets/arrow.svg" alt=""></button>
-          </form>
-          <p>
-            <span>Receive monthly emails with amazing opportunities for high school
-            and college students to get involved in your community via
-            social impact, advice from top college students, new app updates,
-            mental health educational topics, and more!</span>
-          </p>
-        </div>
-        <div>
-          <a href="https://apps.apple.com/in/app/magnify-wellness/id1526188573">
-            <img class="download" src="./home-assets/download.png" alt="download on ios"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="terms-copyright-policy">
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view?usp=sharing"
-              >Terms and Conditions</a
-            >
-          </li>
-          <li>©2020 Magnify Wellness</li>
-          <li>
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view?usp=sharing"
-              >Privacy Policy</a
-            >
-          </li>
-        </ul>
-      </div>
     </div>
+    
   </body>
 </html>
