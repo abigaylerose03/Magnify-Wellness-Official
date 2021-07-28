@@ -71,7 +71,7 @@
 } */
 .footer #newsletter form{
     position: relative;
-    width: 40vw;
+    /* width: 40vw; */
     margin-top: 20px;
 }
 .footer #newsletter input{
@@ -90,8 +90,8 @@
 
 .footer #newsletter form button{
     position: absolute;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     right: 8px;
     top: 50%;
@@ -107,11 +107,11 @@
     cursor: pointer;
     /* font-size: 16px; */
 }
-
+/* 
 .footer #newsletter form button img{
     padding-left: 8px;
     height: 9px;
-}
+} */
 textarea:focus, input:focus{
     outline: none;
 }
@@ -122,17 +122,18 @@ textarea:focus, input:focus{
     max-width: 55vw;
 }
 
-.button {
+.footer .button {
     font-family: 'Open Sans',sans-serif;
     color: white;
     background: #33CCCC;
     border-color: #33CCCC;
     border-radius: 25px;
-    padding-bottom: 10px;
-    width: fit-content;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
 }
   
-.button:hover {
+.footer .button:hover {
     color: white;
 }
 /* .footer .socials{
