@@ -69,6 +69,11 @@ footer #navigation{
 footer #newsletter h2{
     font-size: 20px;
 } */
+
+footer #newsletter-header {
+    font-weight: 500;
+    font-size: x-large;
+}
 footer #newsletter form{
     position: relative;
     /* width: 40vw; */
