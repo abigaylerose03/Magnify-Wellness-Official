@@ -6,7 +6,13 @@
     padding: 0;
     
 } */
-
+.borderr{
+   
+    border-top: 1px solid #000;
+    padding-top:20px;
+    
+    
+}
 footer #terms-copyright-policy a, footer #navigation a{
     text-decoration: none;
     cursor: pointer;
@@ -19,15 +25,17 @@ footer #terms-copyright-policy a:hover, footer #navigation a:hover{
 }
 
 .footer{
-    min-height: 300px;
+    min-height: 200px;
+    height:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    width: 100vw;
-    padding: 0 30px;
+    width: 100%;
+    
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
