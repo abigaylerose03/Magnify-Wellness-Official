@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="authors" content="Andrew Munteanu">
-    <title>Magnify Wellness</title>
+    <title>Meet the Tech Team</title>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://magnifywellness.org/Tech_team.html" />
@@ -33,7 +33,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHMLKFJKBE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-DHMLKFJKBE');
@@ -151,8 +154,17 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md col-card">
 
+            <div class="col-md col-card">
+                <div class="kard">
+                    <img src="./home-assets/logo.png" alt="head" class="team-member-img">
+                    <div class="name">Patrik Benczik</div>
+                    <p class="bio">
+                        My name is Patrik Benczik and I am a 15 year old web developer from Romania. I joined the
+                        Magnify
+                        Wellness team in order to help bring joy into peoples' lives and make the world a safer place.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -288,15 +300,12 @@
     </footer>
 </body>
 <script type="text/javascript">
-
     $(document).ready(function () {
         // LOAD THE HEADER AND FOOTER
         $('#navbar').load('./navbar/navbar.html');
         $('#footer').load('./footer/footer.html');
 
     })
-
-
 </script>
 
 </html>
