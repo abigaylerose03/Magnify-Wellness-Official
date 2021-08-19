@@ -75,6 +75,9 @@ section .btn:hover {
     margin-bottom: -4.5rem;
     padding-top: 0em;
     margin-bottom:0em;
+     align-items: center;
+        justify-content: center;
+        text-align: center;
 }
 
 #home .content h1 {
@@ -84,6 +87,7 @@ section .btn:hover {
     padding-left: 6px;
     padding-top: 0em;
     letter-spacing: 2px;
+    
 
 }
 
@@ -180,6 +184,9 @@ section .btn:hover {
 
     #home .content p {
         padding: 20px 0 0 0 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #home .content .text img {
@@ -189,11 +196,18 @@ section .btn:hover {
     #home .content .image img {
         width: 50vw;
         max-width: 350px;
+        display:none;
+    }
+    .svg:nth-child(4),.svg:nth-child(5),.svg:nth-child(6){
+        display:none;
     }
 
     #home .content .image {
         margin: 0;
         width: 80vw;
+         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #home .content .image h3 {
@@ -204,6 +218,7 @@ section .btn:hover {
         display: block;
         margin-top: -35px;
     }
+    
 
 }
 
@@ -838,6 +853,7 @@ button i {
   overflow:hidden;
   top:0px;
 }
+/* @media only screen and (max-width:1101) */
 
 
 
