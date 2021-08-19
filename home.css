@@ -75,9 +75,7 @@ section .btn:hover {
     margin-bottom: -4.5rem;
     padding-top: 0em;
     margin-bottom:0em;
-     align-items: center;
-        justify-content: center;
-        text-align: center;
+    
 }
 
 #home .content h1 {
