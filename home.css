@@ -821,6 +821,7 @@ button i {
         max-height: 1000px !important;
         min-height: 800px !important;
     }
+<<<<<<< HEAD
 }
 
 #store{
@@ -829,3 +830,6 @@ button i {
     z-index:2;
 }
 }
+=======
+}
+>>>>>>> parent of ed5b594 (updated for magnify 2.0)
