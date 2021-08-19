@@ -67,20 +67,22 @@ section .btn:hover {
     width: 100vw;
 }
 
-#home .content h1 {
-    color: rgba(255, 255, 255, 0.3);
+#home .content h2 {
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 3rem;
     margin-bottom: -4.5rem;
-
+    padding-top: 0em;
+    margin-bottom:0em;
 }
 
-#home .content h2 {
-    color: #fff;
+#home .content h1 {
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
     font-size: 2.5rem;
     padding-left: 6px;
+    padding-top: 0em;
     letter-spacing: 2px;
 
 }
@@ -99,6 +101,8 @@ section .btn:hover {
     line-height: 1.5rem;
     font-size: 1.25rem;
     max-width: 550px;
+    letter-spacing: 2px;
+    font-weight: bolder;
 
 }
 
@@ -811,7 +815,7 @@ button i {
     width:169px;
     z-index:2;
 }
-/* New Background */
+/* -------------------------Background Animations-------------------------------https://www.sliderrevolution.com/resources/css-animated-background/ */
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i';
 * {
   box-sizing: border-box;
@@ -986,74 +990,7 @@ button i {
   }
 }
 
-.svg:nth-child(7) {
-  left: 5%;
-  -webkit-animation: raise7 11s linear infinite;
-          animation: raise7 11s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  transform: scale(1.5) rotate(273deg);
-  z-index: 0;
-  filter: blur(1px);
-}
-@-webkit-keyframes raise7 {
-  to {
-    bottom: 150vh;
-    transform: scale(1.5) rotate(81deg);
-  }
-}
-@keyframes raise7 {
-  to {
-    bottom: 150vh;
-    transform: scale(1.5) rotate(81deg);
-  }
-}
 
-.svg:nth-child(8) {
-  left: 42%;
-  -webkit-animation: raise8 14s linear infinite;
-          animation: raise8 14s linear infinite;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  transform: scale(1.8) rotate(14deg);
-  z-index: 1;
-  filter: blur(2px);
-}
-@-webkit-keyframes raise8 {
-  to {
-    bottom: 150vh;
-    transform: scale(1.8) rotate(261deg);
-  }
-}
-@keyframes raise8 {
-  to {
-    bottom: 150vh;
-    transform: scale(1.8) rotate(261deg);
-  }
-}
-
-.svg:nth-child(9) {
-  left: -10%;
-  -webkit-animation: raise9 17s linear infinite;
-          animation: raise9 17s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  transform: scale(2.1) rotate(113deg);
-  z-index: 2;
-  filter: blur(3px);
-}
-@-webkit-keyframes raise9 {
-  to {
-    bottom: 150vh;
-    transform: scale(2.1) rotate(213deg);
-  }
-}
-@keyframes raise9 {
-  to {
-    bottom: 150vh;
-    transform: scale(2.1) rotate(213deg);
-  }
-}
 
 .svg:nth-child(10) {
   left: 99%;
