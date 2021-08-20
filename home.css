@@ -54,7 +54,7 @@ section .btn:hover {
     align-items: center;
     justify-content: center;
     z-index: 1;
-     background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
+    background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
 }
 
 #home .content {
@@ -74,8 +74,8 @@ section .btn:hover {
     font-size: 3rem;
     margin-bottom: -4.5rem;
     padding-top: 0em;
-    margin-bottom:0em;
-    
+    margin-bottom: 0em;
+
 }
 
 #home .content h1 {
@@ -85,7 +85,7 @@ section .btn:hover {
     padding-left: 6px;
     padding-top: 0em;
     letter-spacing: 2px;
-    
+
 
 }
 
@@ -194,16 +194,19 @@ section .btn:hover {
     #home .content .image img {
         width: 50vw;
         max-width: 350px;
-        display:none;
+        display: none;
     }
-    .svg:nth-child(4),.svg:nth-child(5),.svg:nth-child(6){
-        display:none;
+
+    .svg:nth-child(4),
+    .svg:nth-child(5),
+    .svg:nth-child(6) {
+        display: none;
     }
 
     #home .content .image {
         margin: 0;
         width: 80vw;
-         align-items: center;
+        align-items: center;
         justify-content: center;
         text-align: center;
     }
@@ -216,7 +219,7 @@ section .btn:hover {
         display: block;
         margin-top: -35px;
     }
-    
+
 
 }
 
@@ -593,11 +596,10 @@ section .btn:hover {
     height: 45px;
 }
 
-.btn.blog-btn:hover {
-    /* color: #33cccc; */
-    /* background-color: #33CCCC; */
-}
-
+/*.btn.blog-btn:hover {
+     color: #33cccc; 
+ background-color: #33CCCC; 
+*/
 .custom-shape-divider-top-1608248637 {
     position: absolute;
     top: 0;
@@ -821,15 +823,10 @@ button i {
         max-height: 1000px !important;
         min-height: 800px !important;
     }
-<<<<<<< HEAD
 }
 
-#store{
-    height:57.172px;
-    width:169px;
-    z-index:2;
+#store {
+    height: 57.172px;
+    width: 169px;
+    z-index: 2;
 }
-}
-=======
-}
->>>>>>> parent of ed5b594 (updated for magnify 2.0)
