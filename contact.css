@@ -18,7 +18,21 @@ a {
     text-decoration: none;
 }
 
-section .btn{
+.container button {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background: #33CCCC;
+  border-color: #33CCCC;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+.container button:hover {
+  color: white;
+}
+
+/* section .btn{
     color: #fff;
     background: #33CCCC;
     width: 150px;
@@ -33,7 +47,7 @@ section .btn{
 
 section .btn:hover{
     box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
-}
+} */
 
 .container{
   padding-bottom: 3rem;
@@ -48,17 +62,6 @@ section .btn:hover{
   height: 163px;
   left: 232px;
   top: 112px;
-}
-
-#maggie img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 185px;
-  height: 309px;
-  left: 296px;
-  top: 192px;
 }
 
 /*Contact Form CSS*/
@@ -97,15 +100,14 @@ h4 {
   align-items: center;
 }
 
-.title img{
-  padding: 0 0 4rem 0;
-  height: 50vh;
-  /* width:auto; */
-
+.container img{
+  padding-bottom: 1rem;
+  height: 5rem;
 }
 
-h2{
-  text-align: center;
+p{
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
 }
 .form-container{
   display: flex;
@@ -113,13 +115,15 @@ h2{
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 3rem 0;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 form{
- width: 50%;
- 
-position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 /* Add styles to 'label' selector */
@@ -129,77 +133,37 @@ label {
 }
 
 /* Add styles to 'input' and 'textarea' selectors */
-input[type=text],input[type=email], textarea {
+.input {
     width: 100%;
     padding: 12px;
+    margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 25px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
     border-color: #33cccc;
 }
 
 /* Add styles to show 'focus' of selector */
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
+.input:focus {
 	border: 1px solid #33cccc;
 }
 
 /* Style 'hover' property */
-input[type=text]:hover,input[type=email]:hover, textarea:hover {
+.input:hover {
 	border-color: #00AAE4;
 }
 
-/* Add styles to the submit button */
+/* Add styles to the buttons */
 button {
-	background: #33cccc;
-	margin: 0 auto;
-	outline: 0;
-	color: white;
-	border: 0;
-	padding: 12px 45px;
-	border-radius: 15px;
-	transition: all ease-in-out 0.1s;
+	/* margin: 0 auto; */
+	padding: 8px 32px;
 	display: inline-block;
   text-align: center;
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-  transform: translateY(50%)
-  
-  
+  border: 0;
 }
 
-/* Style 'hover' property */
-button:hover {
-	background: #FFCC00;
-}
-
-input[type=join] {
-  background: #33cccc;
-	margin: 0 auto;
-	outline: 0;
-	color: white;
-	border: 0;
-	padding: 12px 1px;
-	border-radius: 15px;
-	transition: all ease-in-out 0.1s;
-	display: inline-block;
-	text-align: center;
-  position: relative;
-}
-
-/* Add styles for 'focus' property */
-input[type=join]:focus {
-	background: #A5D6A7;
-	color: whitesmoke;
-}
-
-input[type=join]:hover {
-	background: #FFCC00;
-}
-  
+/* Style 'hover' property */  
 .slack{
   display: flex;
   flex-direction: column;
