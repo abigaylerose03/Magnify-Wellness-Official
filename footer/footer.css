@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
-
-
-/* footer ul {
-    list-style: none;
-    padding: 0;
-    
-} */
+#footer-mission-header {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
 .borderr{
-   
     border-top: 1px solid #000;
     padding-top:20px;
-    
-    
+    /* max-width: 80%; */
 }
 footer #terms-copyright-policy a, footer #navigation a{
     text-decoration: none;
@@ -80,12 +75,17 @@ footer #newsletter h2{
 
 footer #newsletter-header {
     font-weight: 500;
-    font-size: x-large;
+    font-size: large;
 }
 footer #newsletter form{
     position: relative;
-    /* width: 40vw; */
     margin-top: 20px;
+    width: 100%;
+}
+@media (min-width: 500px) and (max-width: 992px) {
+    footer #newsletter form{
+        width: 75%;
+    }
 }
 footer #newsletter input{
     position: relative;
@@ -213,9 +213,6 @@ footer #terms-copyright-policy {
 
     footer #newsletter{
         margin: 30px 0;
-    }
-    footer #newsletter form{
-        width: 80vw;
     }
 
     footer #newsletter p{
