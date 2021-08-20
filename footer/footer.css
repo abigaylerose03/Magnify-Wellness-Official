@@ -8,17 +8,13 @@
     padding-top:20px;
     /* max-width: 80%; */
 }
-footer #terms-copyright-policy a, footer #navigation a{
-    text-decoration: none;
+footer .button {
+    text-decoration: none !important;
+}
+footer #terms-copyright-policy a, footer #navigation a, footer #terms-copyright-policy a:hover, footer #navigation a:hover{
     cursor: pointer;
     color: #212529;
 }
-
-footer #terms-copyright-policy a:hover, footer #navigation a:hover{
-    text-decoration: none;
-    color: #000;
-}
-
 .footer{
     min-height: 200px;
     height:auto;
