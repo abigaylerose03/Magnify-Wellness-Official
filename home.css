@@ -81,7 +81,7 @@ section .btn:hover {
 #home .content h1 {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     padding-left: 6px;
     padding-top: 0em;
     letter-spacing: 2px;
@@ -90,7 +90,7 @@ section .btn:hover {
 }
 
 #home .content .text img {
-    margin: 45px 0;
+    /* margin: 45px 0; */
     width: 175px;
     padding-left: 6px;
     cursor: pointer;
@@ -165,10 +165,13 @@ section .btn:hover {
     #home .content {
         flex-direction: column;
         margin-top: 0;
-        padding-bottom: calc(max(10vw, 120px));
+        /* padding-bottom: calc(max(10vw, 120px)); */
 
     }
-
+    #home .content .text img {
+         margin: 45px 0;
+        
+    }
     #home .content .text {
         display: flex;
         flex-direction: column;
@@ -218,6 +221,7 @@ section .btn:hover {
     #home .content .text h3 {
         display: block;
         margin-top: -35px;
+        margin-bottom: 40px;
     }
 
 
@@ -231,6 +235,11 @@ section .btn:hover {
     }
 
     #home .content h1 {
+       font-size: 2.4em;
+       width:90vw;
+
+    }
+    #home .content h3 {
         display: none;
 
     }
@@ -245,12 +254,10 @@ section .btn:hover {
         height: 75px;
     }
 
-    #home .content .text h3 {
-        display: none;
-    }
+    
 
     #home .content .image h3 {
-        display: block;
+        display: none;
         order: 1;
         padding-bottom: 2rem;
         width: 90vw;
