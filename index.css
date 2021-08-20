@@ -5,3 +5,12 @@ body {
 #home {
     padding-top: 4rem;
 }
+
+.spacer {
+    aspect-ratio: 1300/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./wave.svg");
+}
