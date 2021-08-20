@@ -1,1 +1,7 @@
-body(overflow-y: none;) 
+body {
+    overflow-y: none;
+}
+
+#home {
+    padding-top: 1.25rem;
+}
