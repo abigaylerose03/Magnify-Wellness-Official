@@ -4,6 +4,7 @@
 }
 
 .stars {
+
     margin-bottom: 3rem;
     text-align: center;
     display: block;
@@ -38,9 +39,14 @@
 
 /* ! MEDIA QUERIES */
 
+.fas {
+    width: 3rem;
+    height: 1rem;
+}
+
 @media only screen and (max-width: 1400px) {
     .card {
-        width: 19rem;
+        width: 21rem;
         height: 27rem;
         overflow: hidden;
     }
@@ -49,6 +55,7 @@
 
 @media only screen and (max-width: 1200px) {
     .card {
+        width: 20rem;
         height: 26rem;
         overflow: hidden;
     }
