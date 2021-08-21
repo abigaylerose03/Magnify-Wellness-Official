@@ -15,6 +15,10 @@ body {
 
 }
 
+#title-team {
+    text-align: center;
+}
+
 body section {
     padding: 0 20px;
 }

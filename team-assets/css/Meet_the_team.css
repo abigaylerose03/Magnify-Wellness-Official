@@ -1,78 +1,113 @@
-.Middle{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.Middle {
     width: 100%;
     text-align: center;
-    font-size:4em;
+    font-size: 4em;
     font-weight: 750;
     margin-top: 1em;
 }
 
-.free-space{
-    height:3em;
-    
+.free-space {
+    height: 3em;
+
 }
-.director .director-photo{
-    width:16em;
+
+.director .director-photo {
+    width: 16em;
     min-width: 16em;
     border-radius: 50%;
     border-color: rgb(142, 151, 150);
     border-width: thick;
 }
-#header{ /* to be 0 on smaller screen sizes*/
+
+#header {
+    /* to be 0 on smaller screen sizes*/
     margin-left: 10%;
-    margin-right:10%;
+    margin-right: 10%;
 }
-.smalll{
+
+.smalll {
     text-align: justify;
     font-size: 120%;
-    margin-left: 14%; /* to be 0 on smaller screen sizes*/
+    margin-left: 14%;
+    /* to be 0 on smaller screen sizes*/
 }
-.big{
+
+.big {
     text-align: center;
     font-size: 250%;
 }
-.bigitalic{
+
+.bigitalic {
     text-align: center;
     font-size: 150%;
     font-style: italic;
 }
 
-.director .big{
-    margin-top:0em;
+.director .big {
+    margin-top: 0em;
 }
-.col-card{
+
+.col-card {
     margin-bottom: 2em;
 }
-@media only screen and (max-width:991px){
-    .director-photo{
-        margin-left:25%;
+
+@media only screen and (max-width:991px) {
+    .director-photo {
+        margin-left: 25%;
     }
-    .Middle{
-        font-size:300%;
+
+    .Middle {
+        font-size: 300%;
     }
+
     /*#header{  to be 0 on smaller screen sizes
         margin-left: 10%;
         margin-right:10%;
     }*/
-    .small{
+    .small {
         text-align: justify;
         font-size: 120%;
-        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
-    }
-}
-@media only screen and (max-width:767px){
-    .director-photo{
-        margin-left:12%;
-        width:50%;
-    }
-    #header{  /*to be 0 on smaller screen sizes*/
         margin-left: 0%;
-        margin-right:0%;
-    }
-    .small{
-        
-        margin-left: 0%;  /*to be 0 on smaller screen sizes*/
+        /*to be 0 on smaller screen sizes*/
     }
 }
+
+@media only screen and (max-width:767px) {
+    .director-photo {
+        margin-left: 12%;
+        width: 50%;
+    }
+
+    #header {
+        /*to be 0 on smaller screen sizes*/
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .small {
+
+        margin-left: 0%;
+        /*to be 0 on smaller screen sizes*/
+    }
+}
+
 /*@media only screen and (max-width:1200px){
     .director-photo{
         margin-left: 120%;

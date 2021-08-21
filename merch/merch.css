@@ -2,11 +2,12 @@
     these values are hardcoded and the images get cropped. 
     These specific values can be changed as needed, but if they are greater than 400px, increase the cardWidth variable above.
 */
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,24 +22,16 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.header h1 {
-  margin-top: 3rem;
-  margin-bottom: .5rem;
-  font-size: 64px;
-  text-align: center;
-  line-height: 78px;
-  font-weight: 500;
-}
 
 .header h2 {
   font-size: 1.5rem;
@@ -62,24 +55,24 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header a:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
-          box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
+  box-shadow: 0px 0px 10px rgba(51, 204, 204, 0.7);
 }
 
 .header a:hover img {
   -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  transform: translateX(2px);
 }
 
 .header a img {
@@ -94,14 +87,14 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .shop-items {
@@ -110,7 +103,7 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   justify-items: center;
   gap: 80px 100px;
   padding: 80px 20px;
@@ -127,20 +120,20 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   border-radius: 10px;
 }
 
@@ -150,10 +143,10 @@ main {
   height: 100%;
   position: absolute;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -161,11 +154,12 @@ main {
 
 .shop-items .shop-items__item .shop-items__item__img img:hover {
   -webkit-transform: scale(1.2) translateY(-40%);
-          transform: scale(1.2) translateY(-40%);
+  transform: scale(1.2) translateY(-40%);
 }
 
 .shop-items .shop-items__item .shop-items__item__text {
   margin: 10px 0;
   text-transform: capitalize;
 }
+
 /*# sourceMappingURL=merch.css.map */
