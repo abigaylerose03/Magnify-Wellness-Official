@@ -6,8 +6,9 @@ body {
     padding-top: 4rem;
 }
 
+/* ! CSS for curve div */
 .spacer {
-    aspect-ratio: 1300/300;
+    aspect-ratio: 1060/300;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
