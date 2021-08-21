@@ -6,36 +6,39 @@
     padding: 0;
     
 } */
-.borderr{
-   
+.borderr {
+
     border-top: 1px solid #000;
-    padding-top:20px;
-    
-    
+    padding-top: 20px;
+
+
 }
-footer #terms-copyright-policy a, footer #navigation a{
+
+footer #terms-copyright-policy a,
+footer #navigation a {
     text-decoration: none;
     cursor: pointer;
     color: #212529;
 }
 
-footer #terms-copyright-policy a:hover, footer #navigation a:hover{
+footer #terms-copyright-policy a:hover,
+footer #navigation a:hover {
     text-decoration: none;
     color: #000;
 }
 
-.footer{
+.footer {
     min-height: 200px;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: relative;
     width: 100%;
-    
+
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 
@@ -47,7 +50,7 @@ footer #terms-copyright-policy a:hover, footer #navigation a:hover{
     margin: 0;
 } */
 
-.footer::before{
+.footer::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -56,9 +59,10 @@ footer #terms-copyright-policy a:hover, footer #navigation a:hover{
     /* background-color: #000; */
 }
 
-footer #navigation{
+footer #navigation {
     margin-bottom: 1rem;
 }
+
 /* footer #navigation ul li a{
     font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
@@ -82,12 +86,14 @@ footer #newsletter-header {
     font-weight: 500;
     font-size: x-large;
 }
-footer #newsletter form{
+
+footer #newsletter form {
     position: relative;
     /* width: 40vw; */
     margin-top: 20px;
 }
-footer #newsletter input{
+
+footer #newsletter input {
     position: relative;
     width: 100%;
     height: 36px;
@@ -101,7 +107,7 @@ footer #newsletter input{
 }
 
 
-footer #newsletter form button{
+footer #newsletter form button {
     position: absolute;
     /* display: flex;
     justify-content: space-between; */
@@ -120,23 +126,25 @@ footer #newsletter form button{
     cursor: pointer;
     /* font-size: 16px; */
 }
+
 /* 
 footer #newsletter form button img{
     padding-left: 8px;
     height: 9px;
 } */
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 
-footer #newsletter p{
+footer #newsletter p {
     font-style: italic;
     margin-top: 20px;
     max-width: 55vw;
 }
 
 footer .button {
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     background: #33CCCC;
     border-color: #33CCCC;
@@ -145,10 +153,11 @@ footer .button {
     width: auto;
     display: inline-block;
 }
-  
+
 footer .button:hover {
     color: white;
 }
+
 /* footer .socials{
     padding: 0;
     display: flex;
@@ -178,10 +187,10 @@ footer .download-btn{
     justify-content: flex-end;
 }
 */
-footer .download{
+footer .download {
     width: 150px;
     cursor: pointer;
-    
+
 }
 
 footer #terms-copyright-policy {
@@ -192,17 +201,19 @@ footer #terms-copyright-policy {
     /* padding-bottom: 20px; */
 
 }
+
 /* footer a{
     color: #000;
     cursor: pointer;
 } */
 
-@media only screen and (max-width: 850px){
-    .footer{
+@media only screen and (max-width: 850px) {
+    .footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     /* footer #navigation ul{
         display: flex;
         justify-content: space-between;
@@ -211,24 +222,28 @@ footer #terms-copyright-policy {
 
     } */
 
-    footer #newsletter{
+    footer #newsletter {
         margin: 30px 0;
     }
-    footer #newsletter form{
+
+    footer #newsletter form {
         width: 80vw;
     }
 
-    footer #newsletter p{
+    footer #newsletter p {
         max-width: 80vw;
     }
-    footer #newsletter p span{
+
+    footer #newsletter p span {
         display: none;
     }
-    footer #newsletter p:before{
+
+    footer #newsletter p:before {
         content: "Receive monthly emails with amazing opportunities for high school and college students, advice, app updates, mental health news, and more!";
     }
 
 }
+
 /* @media only screen and (max-width: 750px){
     .footer{
         grid-template-columns: repeat(1, 1fr);
@@ -256,3 +271,42 @@ footer #terms-copyright-policy {
 
 } */
 
+
+#footer-mission h1::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    height: 4px;
+    background-color: #33CCCC;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#footer-mission h1::before {
+    width: 60px;
+}
+
+#footer-mission {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#footer-mission h1 {
+    font-size: 2.5rem;
+}
+
+#footer-mission h2 {
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    max-width: 800px;
+    line-height: 2.5rem;
+}

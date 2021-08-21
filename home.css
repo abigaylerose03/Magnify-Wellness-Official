@@ -168,10 +168,12 @@ section .btn:hover {
         /* padding-bottom: calc(max(10vw, 120px)); */
 
     }
+
     #home .content .text img {
-         margin: 45px 0;
-        
+        margin: 45px 0;
+
     }
+
     #home .content .text {
         display: flex;
         flex-direction: column;
@@ -235,10 +237,11 @@ section .btn:hover {
     }
 
     #home .content h1 {
-       font-size: 2.4em;
-       width:90vw;
+        font-size: 2.4em;
+        width: 90vw;
 
     }
+
     #home .content h3 {
         display: none;
 
@@ -254,7 +257,7 @@ section .btn:hover {
         height: 75px;
     }
 
-    
+
 
     #home .content .image h3 {
         display: none;
@@ -284,7 +287,6 @@ section .btn:hover {
 
 #mission h1 {
     font-size: 2.5rem;
-    top: 20vh;
 }
 
 #mission h2 {
@@ -351,6 +353,7 @@ section .btn:hover {
     column-gap: 60px;
 }
 
+#mission h1,
 #about h1,
 #press h1,
 #blog h1,
@@ -365,6 +368,7 @@ section .btn:hover {
     margin-bottom: 0;
 }
 
+#mission h1::before,
 #about h1::before,
 #press h1::before,
 #blog h1::before,
@@ -379,6 +383,7 @@ section .btn:hover {
     transform: translateX(-50%);
 }
 
+#mission h1::before,
 #press h1::before,
 #blog h1::before,
 #app-testimonials h1::before {
