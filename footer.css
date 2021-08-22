@@ -7,6 +7,10 @@ footer h4 {
     color: black;
 }
 
+#button-submit {
+    margin-top: 2.5rem;
+}
+
 footer {
     background: #fff;
     color: white;

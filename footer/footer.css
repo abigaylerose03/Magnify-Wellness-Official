@@ -1,10 +1,17 @@
 /*FOOTER*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
     font-family: "Montserrat", sans-serif;
 }
 
 #copyright-magnify {
     color: black;
+}
+
+.fa {
+    color: gray;
+    margin-right: 1rem;
 }
 
 footer {
@@ -19,16 +26,18 @@ footer a {
     color: #fff;
     font-size: 14px;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 footer a:hover {
-    color: #FA944B;
+    color: black !important;
     text-decoration: none;
 }
 
 .copy {
     font-size: 12px;
     padding: 10px;
+    margin-top: 10px;
     border-top: 1px solid #FFFFFF;
 }
 
@@ -55,67 +64,112 @@ ul.social-network li {
 }
 
 
-/* footer social icons */
 
-.social-network a.icoFacebook:hover {
-    background-color: #3B5998;
+footer #newsletter-header {
+    font-weight: 500;
+    font-size: large;
 }
 
-.social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-    color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-    color: #44BCDD;
-}
-
-.social-circle li a {
-    display: inline-block;
+footer #newsletter form {
     position: relative;
-    margin: 0 auto 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
+    margin-top: 20px;
+    width: 100%;
 }
 
-.social-circle li i {
+@media (min-width: 500px) and (max-width: 992px) {
+    footer #newsletter form {
+        width: 75%;
+    }
+}
+
+footer #newsletter input {
+    position: relative;
+    width: 10rem;
+    height: 36px;
+    /* background: #FFFFFF; */
+    border: 2px solid #33CCCC;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 0 10px;
+    cursor: text;
     margin: 0;
-    line-height: 30px;
-    text-align: center;
 }
 
-.social-circle li a:hover i,
-.triggeredHover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
+footer #newsletter form button {
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    background: #33CCCC;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    height: 24px;
+    padding: 0 12px;
+    font-weight: 300;
+    cursor: pointer;
 }
 
-.social-circle i {
-    color: #595959;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
 
-.social-network a {
-    background-color: #F9F9F9;
+footer #newsletter p {
+    font-style: italic;
+    margin-top: 20px;
+    max-width: 55vw;
+}
+
+footer .button {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: #33CCCC;
+    border-color: #33CCCC;
+    border-radius: 25px;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+footer .button:hover {
+    color: white;
+}
+
+footer .download {
+    width: 150px;
+    cursor: pointer;
+
+}
+
+footer #terms-copyright-policy {
+    font-weight: 500;
+    font-size: .85rem;
+
+}
+
+@media only screen and (max-width: 850px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer #newsletter {
+        margin: 30px 0;
+    }
+
+    footer #newsletter p {
+        max-width: 80vw;
+    }
+
+    footer #newsletter p span {
+        display: none;
+    }
+
+    footer #newsletter p:before {
+        content: "Receive monthly emails with amazing opportunities for high school and college students, advice, app updates, mental health news, and more!";
+    }
+
 }
