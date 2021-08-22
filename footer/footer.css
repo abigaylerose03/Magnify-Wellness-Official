@@ -76,12 +76,6 @@ footer #newsletter form {
     width: 100%;
 }
 
-@media (min-width: 500px) and (max-width: 992px) {
-    footer #newsletter form {
-        width: 75%;
-    }
-}
-
 footer #newsletter input {
     position: relative;
     width: 10rem;
@@ -149,27 +143,23 @@ footer #terms-copyright-policy {
 
 }
 
-@media only screen and (max-width: 850px) {
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+#description {
+    color: black;
+}
+
+.footer-pad {
+    margin-left: 7rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 20rem;
     }
 
-    footer #newsletter {
-        margin: 30px 0;
+    .footer-pad {
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
-
-    footer #newsletter p {
-        max-width: 80vw;
-    }
-
-    footer #newsletter p span {
-        display: none;
-    }
-
-    footer #newsletter p:before {
-        content: "Receive monthly emails with amazing opportunities for high school and college students, advice, app updates, mental health news, and more!";
-    }
-
 }
