@@ -4,8 +4,10 @@ h1 {
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-family: Montserrat, sans-serif;
-    font-weight: 500; /* h1 default: stands out a little more on the page w/o being bold*/
+    font-weight: 500;
+    /* h1 default: stands out a little more on the page w/o being bold*/
     font-size: 64px;
     text-align: center;
     line-height: 78px;
+    padding: 2.5rem 0;
 }
