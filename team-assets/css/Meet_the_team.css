@@ -15,6 +15,11 @@ body {
 
 }
 
+.fix {
+    padding-top: 0;
+    padding-bottom: 1.25rem;
+}
+
 .Middle {
     width: 100%;
     text-align: center;
