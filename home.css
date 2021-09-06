@@ -58,17 +58,18 @@ section .btn:hover {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
+    background: linear-gradient(0.84deg, #FFCC00 20.72%, #ffcd07f8 20.73%, #33CCCC 93.75%);
 }
 
 #home .content {
     display: flex;
     justify-content: space-between;
     padding: 0 3vw;
-    margin-top: -3.5rem;
+    margin-top: -1.5rem;
     align-items: center;
     position: relative;
     width: 100vw;
+    height: 45rem;
 }
 
 #home .content h2 {

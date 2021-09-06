@@ -5,3 +5,13 @@ body {
 #home {
     padding-top: 4rem;
 }
+
+/* ! CSS for curve div */
+.spacer {
+    aspect-ratio: 1060/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./wave.svg");
+}
