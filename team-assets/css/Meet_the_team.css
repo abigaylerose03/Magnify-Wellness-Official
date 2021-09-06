@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
-* {
-    padding: 0;
-    margin: auto;
-    box-sizing: border-box;
-    cursor: default;
-    text-align: center;
+.name {
+    color: black;
 }
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -28,9 +24,13 @@ body {
 
 }
 
+.director {
+    display: flex;
+}
+
 .director .director-photo {
-    width: 16em;
-    min-width: 16em;
+    width: 100%;
+    max-width: 15em;
     border-radius: 50%;
     border-color: rgb(142, 151, 150);
     border-width: thick;
@@ -38,8 +38,9 @@ body {
 
 #header {
     /* to be 0 on smaller screen sizes*/
-    margin: auto;
-    margin-right: 10%;
+    /* margin: auto; */
+    margin-bottom: 5em;
+    /* margin-right: 10%; */
 }
 
 .smalll {
@@ -66,6 +67,8 @@ body {
 
 .col-card {
     margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width:991px) {
@@ -97,8 +100,9 @@ body {
 
     #header {
         /*to be 0 on smaller screen sizes*/
-        margin: auto;
-        margin-right: 0%;
+        margin-bottom: 5em;
+        /* margin: auto;
+        margin-right: 0%; */
     }
 
     .small {
