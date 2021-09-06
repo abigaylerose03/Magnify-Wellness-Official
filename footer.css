@@ -14,28 +14,25 @@ input:focus {
 }
 
 #footer-mission h1 {
-    margin: 8vh;
     text-align: center;
     font-size: 1.75rem;
-    position: relative;
+    padding: 0;
+    /* position: relative; */
 }
 
 #app-testimonials h1 {
     margin-bottom: 0;
 }
 
-#footer-mission h1::before {
+#footer-mission #underline {
     content: '';
-    position: absolute;
-    bottom: -1.25rem;
+    align-self: center;
+    margin-bottom: 0.5rem;
     height: 0.25rem;
     background-color: #33CCCC;
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-
+    width: 60px;
 }
 
-#footer-mission h1::before {
-    width: 60px;
+#newsletter {
+    margin: 0;
 }
