@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="icon" href="home-assets/logo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://magnifywellness.org/merch.html" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+    <link rel="stylesheet" href="assets/css/h1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <meta name="twitter:card" content="Magnify Wellness | Merch" />
+    <link rel="stylesheet" href="./merch/merch.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Merch</title>
+    <!-- google adsense script that lets it put ads wherever it thinks it's fine on the page -->
+    <script
+      data-ad-client="ca-pub-8468284461769741"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
 
-<head>
-  <link rel="icon" href="home-assets/logo.png">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://magnifywellness.org/merch.html" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="navbar/navbar.css" />
-  <link rel="stylesheet" href="footer/footer.css" />
-  <link rel="stylesheet" href="assets/css/h1.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
-  <meta name="twitter:card" content="Magnify Wellness | Merch">
-  <link rel="stylesheet" href="./merch/merch.css" />
-  <title>Merch</title>
-  <!-- google adsense script that lets it put ads wherever it thinks it's fine on the page -->
-  <script data-ad-client="ca-pub-8468284461769741" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-<body>
-  <header>
-    <div id="navbar"></div>
-  </header>
-  <div class="header">
-    <h1>Magnify Store</h1>
-    <h2>
-      If you wish to make a purchase
-      <strong>Click Below</strong>
-    </h2>
-    <!-- <a href="#" target="_blank"
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+    <div class="header">
+      <h1>Magnify Store</h1>
+      <h2>
+        If you wish to make a purchase
+        <strong>Click Below</strong>
+      </h2>
+      <!-- <a href="#" target="_blank"
         >PayPal<img src="./home-assets/arrow.svg" alt=""
       /></a> -->
-    <div class="btn-div">
-      <a class="btn" role="button"
-        href="https://docs.google.com/forms/d/e/1FAIpQLScbT24kYiZjANXza-rRJ_i8X9tWKrx_vMRGB7TUWz8sx9mBvA/viewform">
-        <font size="2">Magnify Wellness Purchase Form</font>
-      </a>
+      <div class="btn-div">
+        <a
+          class="btn"
+          role="button"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScbT24kYiZjANXza-rRJ_i8X9tWKrx_vMRGB7TUWz8sx9mBvA/viewform"
+        >
+          <font size="2">Magnify Wellness Purchase Form</font>
+        </a>
+      </div>
     </div>
-  </div>
-  <main>
-    <div class="shop-items"></div>
-  </main>
+    <main>
+      <div class="shop-items"></div>
+    </main>
 
-  <footer class="footer">
-    <div id="footer"></div>
-  </footer>
-</body>
-<script src="./merch/merch.js"></script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    // LOAD THE HEADER AND FOOTER
-    $("#navbar").load("/navbar/navbar.html");
-    $("#footer").load("/footer/footer.html");
-  });
-</script>
-
+    <footer class="footer">
+      <div id="footer"></div>
+    </footer>
+  </body>
+  <script src="./merch/merch.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // LOAD THE HEADER AND FOOTER
+      $("#navbar").load("/navbar/navbar.html");
+      $("#footer").load("/footer/footer.html");
+    });
+  </script>
 </html>
