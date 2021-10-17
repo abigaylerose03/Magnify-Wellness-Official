@@ -1,31 +1,88 @@
-.star{
-    color:rgb(230, 187, 0);
-    
-}
-.stars{
-    text-align: center;
-    display:block;
-}
-.review{
-    width:100%;
-    height:fit-content;
-    border:6px dotted #33cccc;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.summary{
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 5%;
-    text-align: center;
-}
-.textreview{
-    text-align: center;
-    padding: 3%;
+.star {
+    color: rgb(230, 187, 0);
+
 }
 
-@media (min-width:1200px) and (max-width:1400px){
-    .star{
-        size: 40px;
+.stars {
+
+    margin-bottom: 3rem;
+    text-align: center;
+    display: block;
+}
+
+
+.reviews-container {
+    margin: auto;
+    width: 80%;
+}
+
+.card {
+    word-wrap: break-word;
+    border-radius: 50px !important;
+    border: 3px solid #33cccc !important;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-text b {
+    line-height: 2.5rem;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/* ! MEDIA QUERIES */
+
+.fas {
+    width: 3rem;
+    height: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .card {
+        width: 21rem;
+        height: 27rem;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 20rem;
+        height: 26rem;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card {
+        width: 13rem;
+        height: 37.50rem;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 16rem;
+        height: 28.50rem;
+        overflow: hidden;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+        height: 32.50rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
     }
 }

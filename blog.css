@@ -7,62 +7,67 @@
 @import url("/footer/footer.css");
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    padding-bottom: 30px;
-    width: 100%;
-    height: auto;
-    z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 2rem;
+  border-radius: .3125rem;
+  padding-bottom: 1.875rem;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 
-  }
+}
 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+#writers .row {
+  margin-top: 2em;
+}
 
-  /*Abigayle feature*/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .abby-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    padding-bottom: 30px;
-  }
+/*Abigayle feature*/
 
-  .abby-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+.abby-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
 
-  .abby-card img {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-  }
+.abby-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .container {
-    padding-top: 15px;
-    padding-bottom: 0px;
-    font-family: "Open Sans", sans-serif;
-  }
+.abby-card img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
-  /* read more button (top only) */
-  .button {
-    border-radius: 10px;
-    border: 2px solid #33CCCC;
-    background-color: white;
-    font-family: "Open Sans", sans-serif;
-    color: #000000;
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    padding: 3px;
-  }
+.container {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+}
 
-  .button:hover {
-    background-color: #33CCCC;
-    text-decoration: none;
-  }
+/* read more button (top only) */
+.button {
+  border-radius: 10px;
+  border: 2px solid #33CCCC;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.button:hover {
+  background-color: #33CCCC;
+  text-decoration: none;
+}
 
 /* continue reading buttons */
 
@@ -132,3 +137,9 @@ h2 {
   font-weight: 500;
   font-size: 2.5rem !important;
 }
+
+/* @media only screen and (max-width: 768) {
+  #writers .card {
+    margin-top: 2rem;
+  }
+} */

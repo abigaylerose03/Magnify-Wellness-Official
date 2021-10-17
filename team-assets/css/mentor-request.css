@@ -38,12 +38,11 @@
 
 .request {
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    background: #33CCCC;
-    border-color: #33CCCC;
-    border-radius: 25px;
+    color: white !important;
+    background: #33CCCC !important;
+    border-color: #33CCCC !important;
+    border-radius: 25px !important;
     padding-bottom: 10px;
-    margin-left: 30%;
 }
 
 @media only screen and (max-width:991px) {
@@ -76,13 +75,12 @@
     border-width: thick;
 }
 #header{ /* to be 0 on smaller screen sizes*/
-    margin-left: 10%;
     margin-right:10%;
 }
 .small{
     text-align: justify;
-    font-size: 120%;
-    margin-left: 10%; /* to be 0 on smaller screen sizes*/
+    font-size: 120%; 
+    /* to be 0 on smaller screen sizes*/
 }/*
 .big{
     text-align: center;
@@ -90,12 +88,10 @@
 }*/
 .big {
     text-align: left;
-    padding-left: 10%;
     font-size:300%;
 }
 .bigitalic {
     text-align: left;
-    padding-left: 10%;
     font-size: 180%;
     
 }
@@ -146,7 +142,7 @@
         font-size:300%;
     }
     /*#header{  to be 0 on smaller screen sizes
-        margin-left: 10%;
+
         margin-right:10%;
     }*/
     .small{

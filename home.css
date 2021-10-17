@@ -15,6 +15,10 @@ body {
 
 }
 
+#title-team {
+    text-align: center;
+}
+
 body section {
     padding: 0 20px;
 }
@@ -53,6 +57,7 @@ section .btn:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     background: linear-gradient(0.84deg, #FFCC00 20.72%, rgba(255, 205, 7, 0.973958) 20.73%, #33CCCC 93.75%);
 }
 
@@ -66,26 +71,30 @@ section .btn:hover {
     width: 100vw;
 }
 
-#home .content h1 {
-    color: rgba(255, 255, 255, 0.3);
+#home .content h2 {
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 3rem;
     margin-bottom: -4.5rem;
+    padding-top: 0em;
+    margin-bottom: 0em;
 
 }
 
-#home .content h2 {
-    color: #fff;
+#home .content h1 {
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     padding-left: 6px;
+    padding-top: 0em;
     letter-spacing: 2px;
+
 
 }
 
 #home .content .text img {
-    margin: 45px 0;
+    /* margin: 45px 0; */
     width: 175px;
     padding-left: 6px;
     cursor: pointer;
@@ -98,6 +107,8 @@ section .btn:hover {
     line-height: 1.5rem;
     font-size: 1.25rem;
     max-width: 550px;
+    letter-spacing: 2px;
+    font-weight: bolder;
 
 }
 
@@ -158,7 +169,12 @@ section .btn:hover {
     #home .content {
         flex-direction: column;
         margin-top: 0;
-        padding-bottom: calc(max(10vw, 120px));
+        /* padding-bottom: calc(max(10vw, 120px)); */
+
+    }
+
+    #home .content .text img {
+        margin: 45px 0;
 
     }
 
@@ -175,6 +191,9 @@ section .btn:hover {
 
     #home .content p {
         padding: 20px 0 0 0 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #home .content .text img {
@@ -184,11 +203,21 @@ section .btn:hover {
     #home .content .image img {
         width: 50vw;
         max-width: 350px;
+        display: none;
+    }
+
+    .svg:nth-child(4),
+    .svg:nth-child(5),
+    .svg:nth-child(6) {
+        display: none;
     }
 
     #home .content .image {
         margin: 0;
         width: 80vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #home .content .image h3 {
@@ -198,7 +227,9 @@ section .btn:hover {
     #home .content .text h3 {
         display: block;
         margin-top: -35px;
+        margin-bottom: 40px;
     }
+
 
 }
 
@@ -210,6 +241,12 @@ section .btn:hover {
     }
 
     #home .content h1 {
+        font-size: 2.4em;
+        width: 90vw;
+
+    }
+
+    #home .content h3 {
         display: none;
 
     }
@@ -224,12 +261,10 @@ section .btn:hover {
         height: 75px;
     }
 
-    #home .content .text h3 {
-        display: none;
-    }
+
 
     #home .content .image h3 {
-        display: block;
+        display: none;
         order: 1;
         padding-bottom: 2rem;
         width: 90vw;
@@ -256,7 +291,6 @@ section .btn:hover {
 
 #mission h1 {
     font-size: 2.5rem;
-    top: 20vh;
 }
 
 #mission h2 {
@@ -323,6 +357,7 @@ section .btn:hover {
     column-gap: 60px;
 }
 
+#mission h1,
 #about h1,
 #press h1,
 #blog h1,
@@ -337,6 +372,7 @@ section .btn:hover {
     margin-bottom: 0;
 }
 
+#mission h1::before,
 #about h1::before,
 #press h1::before,
 #blog h1::before,
@@ -351,6 +387,7 @@ section .btn:hover {
     transform: translateX(-50%);
 }
 
+#mission h1::before,
 #press h1::before,
 #blog h1::before,
 #app-testimonials h1::before {
@@ -575,11 +612,10 @@ section .btn:hover {
     height: 45px;
 }
 
-.btn.blog-btn:hover {
-    /* color: #33cccc; */
-    /* background-color: #33CCCC; */
-}
-
+/*.btn.blog-btn:hover {
+     color: #33cccc; 
+ background-color: #33CCCC; 
+*/
 .custom-shape-divider-top-1608248637 {
     position: absolute;
     top: 0;
@@ -803,4 +839,10 @@ button i {
         max-height: 1000px !important;
         min-height: 800px !important;
     }
+}
+
+#store {
+    height: 57.172px;
+    width: 169px;
+    z-index: 2;
 }
