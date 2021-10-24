@@ -48,14 +48,9 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-#search-outer-div {
+#search-width-div {
     width: 30%;
     min-width: 325px;
-    margin: 0.5rem 0;
-}
-
-#search-bar-label {
-    margin-right: 1rem;
 }
 
 footer #newsletter-header {
