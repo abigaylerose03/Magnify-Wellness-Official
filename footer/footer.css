@@ -51,11 +51,16 @@ footer {
 #search-outer-div {
     width: 30%;
     min-width: 325px;
+    margin: 0.5rem 0;
+}
+
+#search-bar-label {
+    margin-right: 1rem;
 }
 
 footer #newsletter-header {
     font-weight: 500;
-    font-size: x-large;
+    font-size: large;
 }
 
 footer #newsletter form {
