@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* FOOTER ATTRIBUTION */
+footer #attribution {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: rem;
+    text-align: center;
+}
+
+footer #attribution a {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Other footer stuff */
 #footer-mission-header {
     font-size: 24px;
     margin-bottom: 0;
 }
 
-.borderr {
+.footer-border {
     border-top: 1px solid #000;
     padding-top: 20px;
 }
@@ -22,7 +36,7 @@ footer #navigation a:hover {
     color: #212529;
 }
 
-.footer {
+footer {
     min-height: 200px;
     height: auto;
     display: flex;
@@ -31,9 +45,12 @@ footer #navigation a:hover {
     justify-content: space-around;
     position: relative;
     width: 100%;
-
     font-family: 'Montserrat', sans-serif;
+}
 
+#search-width-div {
+    width: 30%;
+    min-width: 325px;
 }
 
 footer #newsletter-header {
@@ -124,7 +141,7 @@ footer #terms-copyright-policy {
 }
 
 @media only screen and (max-width: 850px) {
-    .footer {
+    footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link rel="stylesheet" href="./footer.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHMLKFJKBE"></script>
-  <script>
+  
+  <head>
+    <link rel="stylesheet" href="./footer.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHMLKFJKBE"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -23,68 +23,77 @@
 </head>
 
 <body>
-  <div class="container-fluid borderr">
-    <div class="row justify-content-between">
-      <!-- Left column -->
-      <div id="newsletter"
-        class="d-flex flex-column col-lg-3 align-items-center align-items-lg-left mb-4 text-center text-lg-left">
-        <div id='newsletter-header' class="d-block">🔎 Subscribe to our newsletter</div>
-        <form
-          action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe47un1ai3dJ3y1F_mAsJQQYOC1FBYaGGZGt6hNb7EL_kozaw/formResponse"
-          method="post" target="_blank" class="d-block">
-          <input autocomplete="email" name="emailAddress" placeholder="Email" type="email" /><button
-            type="submit">Subscribe <img src="./home-assets/arrow.svg" alt=""></button>
-        </form>
-      </div>
-      <!-- Middle column -->
-      <div id="middle-col" class="col-lg-4 align-items-stretch text-center">
-        <div id="donate-and-buy" class="d-flex col justify-content-around mb-4">
-          <div><a class="button" role="button" href="donate.html">Donate</a></div>
-          <div><a class="button" role="button" href="merch.html">Buy Merch</a></div>
+  <div class="container-fluid d-flex justify-content-center footer-border">
+    <div id="footer-content" class="col-xl-10">
+      
+        <!-- 3 columns -->
+        <div class="row justify-content-between mb-3">
+          <!-- Left column -->
+          <div id="newsletter" class="d-flex flex-column col-lg-3 align-items-center align-items-lg-left text-center text-lg-left">
+            <div id='newsletter-header'>🔎 Subscribe to our newsletter</div>
+            <form
+            action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe47un1ai3dJ3y1F_mAsJQQYOC1FBYaGGZGt6hNb7EL_kozaw/formResponse"
+            method="post" target="_blank" class="d-block">
+              <input autocomplete="email" name="emailAddress" placeholder="Email" type="email" /><button
+              type="submit">Subscribe <img src="./home-assets/arrow.svg" alt=""></button>
+            </form>
+          </div>
+          <!-- Middle column -->
+          <div id="middle-col" class="col-lg-5 col-xl-4 align-items-stretch text-center">
+            <div id="donate-and-buy" class="d-flex col justify-content-around mt-4">
+              <div><a class="button" role="button" href="donate.html">Donate</a></div>
+              <div><a class="button" role="button" href="merch.html">Buy Merch</a></div>
+            </div>
+            <div id="navigation"
+              class="d-flex col justify-content-between text-center">
+              <div class="mt-3 mb-3"><a href="App.html">App</a></div>
+              <div class="mt-3 mb-3"><a href="blog.html">Blog</a></div>
+              <div class="mt-3 mb-3"><a href="get-involved.html">Get Involved</a></div>
+              <div class="mt-3 mb-3"><a href="partners.html">Our Partners</a></div>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div id="right-col" class="col-lg-3 mt-2 mt-lg-0">
+            <div id="footer-mission" class="d-flex flex-column justify-content-center text-center">
+              <h4>Our Mission</h4>
+              <div id="underline" class="align-self-center"></div>
+              Magnify Wellness is committed to ensuring that everyone gains equal access to mental health support.
+            </div>
+          </div>
         </div>
-        <div id="navigation"
-          class="d-flex col justify-content-between justify-content-md-around text-center text-md-right mb-4">
-          <div class="mt-3 mb-3"><a href="App.html">App</a></div>
-          <div class="mt-3 mb-3"><a href="blog.html">Blog</a></div>
-          <div class="mt-3 mb-3"><a href="get-involved.html">Get Involved</a></div>
-          <div class="mt-3 mb-3"><a href="partners.html">Our Partners</a></div> <br>
+        
+        <!-- Bottom-most columns -->
+          <!-- Website Search Bar -->
+        <div class="row flex-column flex-md-row justify-content-center align-items-center">
+          <h4 id="search-bar-label" class="mr-md-1">Search Magnify Wellness</h4>
+          <div id="search-width-div" class="mb-2">
+            <div class="gcse-search"></div>
+          </div>
+        </div>
+        <p id="attribution">
+          Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </p>
+        <div id="terms-copyright-policy" class="row justify-content-between mb-4">
+          <div class="col-3 text-center">
+            <a target="_blank"
+            href="https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view?usp=sharing">Terms and
+            Conditions</a>
+          </div>
+          <div class="col-4 text-center">©2021 Magnify Wellness</div>
+          <div class="col-3 text-center">
+            <a target="_blank"
+            href="https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view?usp=sharing">Privacy Policy</a>
+          </div>
+        </div>
 
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div id="right-col" class="col-lg-3 mb-4">
-        <div id="footer-mission" class="d-flex flex-column justify-content-center text-center">
-          <h1>Our Mission</h1>
-          <div id="underline" class="align-self-center"></div>
-          <p>Magnify Wellness is committed to ensuring that everyone gains equal access to mental health support.
-          </p>
-        </div>
       </div>
     </div>
+    
 
-    <div id="terms-copyright-policy" class="row justify-content-between mb-4">
-      <div class="col-3 text-center">
-        <a target="_blank"
-          href="https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view?usp=sharing">Terms and
-          Conditions</a>
-      </div>
-      <div class="col-4 text-center">©2021 Magnify Wellness</div>
-      <div class="col-3 text-center">
-        <a target="_blank"
-          href="https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view?usp=sharing">Privacy Policy</a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-4">
-      <div class="col-5">
-        <h4 style="text-align: center;">
-          Search Magnify Wellness
-        </h4>
-        <script async src="https://cse.google.com/cse.js?cx=7457dbde9acbe3377"></script>
-<div class="gcse-search"></div>
-      </div>
-
-    </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Search bar JS -->
+  <script async src="https://cse.google.com/cse.js?cx=7457dbde9acbe3377"></script>
 </body>
 
 </html>
