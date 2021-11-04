@@ -1,0 +1,46 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: #33CCCC;
+}
+
+/* Dropdown Nav CSS */
+.dropdown {
+    overflow: hidden;
+    margin: 0 0.5rem;
+    margin-top: 4px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #33CCCC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.top_item {
+    margin: 0 0.5rem;
+    margin-top: 4px;
+}
+
+.top_item:hover {
+    transform: scale(1.1);
+}
+
+/* End of Dropdown Nav CSS */
+
+.links {
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    order: 2;
+}
