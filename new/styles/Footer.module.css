@@ -1,0 +1,39 @@
+/* Footer CSS */
+
+.footer_header {
+    font-weight: bold;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+}
+
+.footer_item {
+    display: inline-block;
+    margin-top: 1.3rem;
+    font-size: 0.8rem;
+}
+
+.footer_item:hover {
+    cursor: pointer;
+}
+
+.footer_social_item {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+/* sm: 640px */
+@media (min-width: 640px) { 
+
+}
+
+/* md: 768px */
+@media (min-width: 768px) { 
+    .footer_social_item {
+        margin-right: 0rem;
+    }
+
+    .footer_right {
+        display: flex;
+        width: 30rem;
+    }
+}
