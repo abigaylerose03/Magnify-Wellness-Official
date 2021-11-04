@@ -1,8 +1,11 @@
 import styles from "../styles/Nav.module.css";
 import Link from "next/link";
 import Image from "next/Image";
+import { useState } from "react";
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <nav className="flex pt-2 pb-4">
@@ -14,10 +17,10 @@ function Nav() {
 
         {/* Links */}
         <div className={styles.links}>
-          <div class="block md:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <div className="block md:hidden">
+            <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" onClick = {() => setIsOpen(!isOpen)} >
               <svg
-                class="fill-current h-3 w-3"
+                className="fill-current h-3 w-3"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -27,7 +30,12 @@ function Nav() {
             </button>
           </div>
 
-          <ul className="flex hidden md:block">
+          { isOpen && 
+            <>
+            </>
+          }
+
+          <ul className="md:flex hidden">
             <p href="/" className={styles.top_item}>
               <Link href="/">App</Link>
             </p>
