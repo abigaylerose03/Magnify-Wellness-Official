@@ -49,14 +49,14 @@ function Blog({ image_path, press_name, article_link, hei, wid }) {
 // Metric
 function Metric({ num, sign, action }) {
   return (
-    <div className={styles.metric}>
-      <div className = "text-center align-middle mt-10">
+    <div className= "flex justify-center items-center w-36 h-36 md:h-40 md:w-40 lg:w-52 lg:h-52 bg-white m-2.5 p-4 text-center rounded-full">
+      <div className = "">
         <div className="flex justify-center">
-          <p className="font-extrabold text-3xl">{num}</p>
-          <p className="font-extrabold text-3xl">{sign}</p>
+          <p className="font-extrabold text-2xl lg:text-3xl">{num}</p>
+          <p className="font-extrabold text-2xl lg:text-3xl">{sign}</p>
           <br />
         </div>
-        <p className="text-3xl">{action}</p>
+        <p className="text-2xl lg:text-3xl">{action}</p>
       </div>
     </div>
   );

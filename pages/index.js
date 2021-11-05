@@ -225,7 +225,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className={styles.metrics_container}>
+          <div className= "grid grid-cols-2 md:grid-cols-4 mt-8">
             <Metric num="1000" sign="+" action="users" />
             <Metric num="54" sign="k+" action="youth impacted" />
             <Metric num="100" sign="+" action="active leaders" />

@@ -125,22 +125,6 @@
     align-items: center;
 }
 
-.metrics_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* width: 80vw; */
-    margin-top: 30px;
-}
-
-.metric {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
-}
-
 .custom_shape_top {
     position: absolute;
     top: 0;
