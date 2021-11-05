@@ -1,6 +1,6 @@
 import styles from "../styles/Nav.module.css";
 import Link from "next/link";
-import Image from "next/Image";
+import Image from "next/image";
 import { useState } from "react";
 
 function Nav() {
