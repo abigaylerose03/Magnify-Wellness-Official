@@ -1,4 +1,7 @@
 /* Footer CSS */
+.bg_primary {
+    background-color: #ecf5f5;
+}
 
 .footer_header {
     font-weight: bold;

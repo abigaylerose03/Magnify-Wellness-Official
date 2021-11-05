@@ -1,11 +1,17 @@
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="border-t p-12 md:flex md:justify-center">
+    <footer className={`${styles.bg_primary} p-12 md:flex md:justify-center`}>
       <div className="md:w-64 pt-12 lg:w-96">
-        <p>Magnify Wellness Logo</p>
+        {/* Logo */}
+        <div className="flex pt-1">
+          <Image src="/img/logo.png" height="40" width="40" />
+          <p className="mt-1 font-bold text-lg">Magnify Wellness</p>
+        </div>
+        
         <p className="hidden md:block md:mt-44 md:text-xs">
           &copy; 2021 Magnify Wellness. All rights reserved.
         </p>

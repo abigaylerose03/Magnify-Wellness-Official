@@ -2,6 +2,7 @@
     position: sticky;
     top: 0px;
     background-color: #33CCCC;
+    z-index: 1;
 }
 
 /* Dropdown Nav CSS */
