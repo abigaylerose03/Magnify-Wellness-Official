@@ -26,7 +26,7 @@ export default function GettingInvolved({ data }) {
           {/* Image */}
           <div className="md:w-2/6">
             <Image
-              src={`/img/getting_involved/${item.Image}`}
+              src={`/img/getting_involved/${item.image}`}
               height="250"
               width="250"
             />
@@ -34,14 +34,14 @@ export default function GettingInvolved({ data }) {
 
           {/* Content */}
           <div className="md:w-4/6">
-            <h2 className="text-3xl">{item.Name}</h2>
-            <p className="text-2xl mt-4">{item.Description}</p>
+            <h2 className="text-3xl">{item.name}</h2>
+            <p className="text-2xl mt-4">{item.description}</p>
 
             {/* Loop through buttons (if more than 1) */}
-            {item.Buttons.map((button) => (
+            {item.buttons.map((button) => (
               <>
                 <div className={`${styles.button} mt-4 text-center w-44`}>
-                  <Link href="/">{button.Name}</Link>
+                  <Link href= {button.path}>{button.name}</Link>
                 </div>
               </>
             ))}
