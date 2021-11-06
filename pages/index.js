@@ -94,6 +94,9 @@ export default function Home() {
             Our mission is to ensure that everyone gains equal access to mental
             health support through outreach programs and technology.
           </h2>
+          <div className={`${styles.button} mt-12 text-center`}>
+            <Link href="/">Get Involved</Link>
+          </div>
         </section>
 
         {/* About */}
@@ -149,18 +152,6 @@ export default function Home() {
         {/* Testimonials */}
         <section>
           <Carousel />
-        </section>
-
-        {/* Get Involved */}
-        <section
-          className={`${styles.bg_secondary} relative text-center py-12`}
-        >
-          <h1 className="text-white font-bold text-5xl px-4 max-w-2xl md:max-w-5xl m-auto">
-            More than just an app...Join the Magnify Movement!
-          </h1>
-          <div className={`${styles.button} mt-12`}>
-            <Link href="/">Get Involved</Link>
-          </div>
         </section>
 
         {/* Press */}
