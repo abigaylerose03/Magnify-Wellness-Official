@@ -11,7 +11,7 @@ function Footer() {
           <Image src="/img/logo.png" height="40" width="40" />
           <p className="mt-1 font-bold text-lg">Magnify Wellness</p>
         </div>
-        
+
         <p className="hidden md:block md:mt-44 md:text-xs">
           &copy; 2021 Magnify Wellness. All rights reserved.
         </p>
@@ -81,10 +81,33 @@ function Footer() {
         <div className="md:px-5">
           <p className={styles.footer_header}>Social</p>
           <div className="flex md:block">
-            <p className={styles.footer_social_item}>F</p>
-            <p className={styles.footer_social_item}>T</p>
-            <p className={styles.footer_social_item}>L</p>
-            <p className={styles.footer_social_item}>I</p>
+            {/* Facebook */}
+            <div className={styles.footer_social_item}>
+              <Link href="">
+                <Image src="/icon/facebook.png" height="25" width="25"></Image>
+              </Link>
+            </div>
+
+            {/* Twitter */}
+            <div className={styles.footer_social_item}>
+              <Link href="">
+                <Image src="/icon/twitter.png" height="25" width="25"></Image>
+              </Link>
+            </div>
+
+            {/* LinkedIn */}
+            <div className={styles.footer_social_item}>
+              <Link href="">
+                <Image src="/icon/linkedin.png" height="25" width="25"></Image>
+              </Link>
+            </div>
+
+            {/* Instagram */}
+            <div className={styles.footer_social_item}>
+              <Link href="">
+                <Image src="/icon/instagram.png" height="25" width="25"></Image>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
