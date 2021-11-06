@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Link from "next/link";
 
-import { get_involved } from "../data/press_data";
+import { press } from "../data/press_data";
 
 // Fetch data on client side
 export async function getStaticProps() {
