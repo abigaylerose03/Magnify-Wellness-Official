@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import styles from "../styles/GetInvolved.module.css";
 
 // Data
-import { get_involved } from "../utils/getting_involved_data";
+import { get_involved } from "../data/getting_involved_data";
 
 // Fetch data on client side
 export async function getStaticProps() {
