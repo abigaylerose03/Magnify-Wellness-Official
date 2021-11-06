@@ -33,7 +33,7 @@ function Footer() {
             <p className={styles.footer_item}>Buy Merch</p>
           </Link>
           <br />
-          <Link href="/blog">
+          <Link href="https://magnifywellnessblog.wordpress.com/">
             <p className={styles.footer_item}>Blog</p>
           </Link>
           <br />

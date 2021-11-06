@@ -52,7 +52,7 @@ function Nav() {
                   <Link href="/events">Events</Link>
                 </p>
                 <p>
-                  <Link href="/blog">Blog</Link>
+                  <Link href="https://magnifywellnessblog.wordpress.com/">Blog</Link>
                 </p>
                 <p>
                   <Link href="/press">Press</Link>
