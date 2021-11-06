@@ -1,7 +1,7 @@
 // Add another object, copy and paste below
 // When adding image path. Just add the name of the file, don't need to add complete path
 
-const get_involved = [
+export const get_involved = [
   // First Object
   {
     Name: "Mental Health Changemakers Program",

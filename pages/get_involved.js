@@ -1,6 +1,20 @@
-import get_involved from "../utils/getting_involved_data";
+import Head from "next/head";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 
-export default function GettingInvolved() {
+// Data
+import { get_involved } from "../utils/getting_involved_data";
+
+// Fetch data on client side
+export async function getStaticProps() {
+  return {
+    props: {
+      data: get_involved,
+    },
+  };
+}
+
+export default function GettingInvolved({ data }) {
   return (
     <div>
       <Head>
@@ -9,11 +23,11 @@ export default function GettingInvolved() {
       </Head>
       <Nav />
       <main>
-        {get_involved.map((item) => (
-          <>
-            {item.Name}
-          </>
-        ))}
+        {/* {data.map( item => (
+            <>
+                {item.Name}
+            </>
+        ))} */}
       </main>
       <Footer />
     </div>

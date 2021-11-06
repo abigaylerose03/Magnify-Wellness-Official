@@ -21,7 +21,7 @@ function Footer() {
         {/* Resources */}
         <div className="md:px-5">
           <p className={styles.footer_header}>Resources</p>
-          <Link href="app">
+          <Link href="/app">
             <p className={styles.footer_item}>App</p>
           </Link>
           <br />
@@ -33,11 +33,11 @@ function Footer() {
             <p className={styles.footer_item}>Buy Merch</p>
           </Link>
           <br />
-          <Link href="blog">
+          <Link href="/blog">
             <p className={styles.footer_item}>Blog</p>
           </Link>
           <br />
-          <Link href="get_involved">
+          <Link href="/get_involved">
             <p className={styles.footer_item}>Get Involved</p>
           </Link>
           <br />
@@ -67,11 +67,11 @@ function Footer() {
         {/* Contact */}
         <div className="md:px-5">
           <p className={styles.footer_header}>Contact</p>
-          <Link href="contact">
+          <Link href="/contact">
             <p className={styles.footer_item}>Contact Us</p>
           </Link>
           <br />
-          <Link href="team">
+          <Link href="/team">
             <p className={styles.footer_item}>Join the Team</p>
           </Link>
           <br />
@@ -83,30 +83,30 @@ function Footer() {
           <div className="flex md:block">
             {/* Facebook */}
             <div className={styles.footer_social_item}>
-              <Link href="">
-                <Image src="/icon/facebook.png" height="25" width="25"></Image>
-              </Link>
+              <a href="/">
+                <Image src="/icon/facebook.png" height="25" width="25"/>
+              </a>
             </div>
 
             {/* Twitter */}
             <div className={styles.footer_social_item}>
-              <Link href="">
-                <Image src="/icon/twitter.png" height="25" width="25"></Image>
-              </Link>
+              <a href="/">
+                <Image src="/icon/twitter.png" height="25" width="25"/>
+              </a>
             </div>
 
             {/* LinkedIn */}
             <div className={styles.footer_social_item}>
-              <Link href="">
-                <Image src="/icon/linkedin.png" height="25" width="25"></Image>
-              </Link>
+              <a href="/">
+                <Image src="/icon/linkedin.png" height="25" width="25"/>
+              </a>
             </div>
 
             {/* Instagram */}
             <div className={styles.footer_social_item}>
-              <Link href="">
-                <Image src="/icon/instagram.png" height="25" width="25"></Image>
-              </Link>
+              <a href="/">
+                <Image src="/icon/instagram.png" height="25" width="25"/>
+              </a>
             </div>
           </div>
         </div>

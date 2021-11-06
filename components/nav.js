@@ -37,11 +37,11 @@ function Nav() {
 
           <ul className="md:flex hidden">
             <div className={styles.top_item}>
-              <Link href="app">App</Link>
+              <Link href="/app">App</Link>
             </div>
 
             <div className={styles.top_item}>
-              <Link href="get_involved">Get Involved</Link>
+              <Link href="/get_involved">Get Involved</Link>
             </div>
 
             {/* News Dropdown */}
@@ -49,13 +49,13 @@ function Nav() {
               <button>News</button>
               <div className={styles.dropdown_content}>
                 <p>
-                  <Link href="events">Events</Link>
+                  <Link href="/events">Events</Link>
                 </p>
                 <p>
-                  <Link href="blog">Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </p>
                 <p>
-                  <Link href="press">Press</Link>
+                  <Link href="/press">Press</Link>
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ function Nav() {
               <button>Company</button>
               <div className={styles.dropdown_content}>
                 <div>
-                  <Link href="team">Team</Link>
+                  <Link href="/team">Team</Link>
                 </div>
                 <div>
                   <Link href="/">Careers</Link>
@@ -79,7 +79,7 @@ function Nav() {
             {/* End of Company Dropdown */}
 
             <div className={styles.top_item}>
-              <Link href="contact">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </div>
 
             <div className={styles.top_item}>
