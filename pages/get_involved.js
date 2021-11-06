@@ -20,6 +20,7 @@ export default function GettingInvolved({ data }) {
     <Layout title="Get Involved">
       <h1 className="text-center text-5xl">Get Involved</h1>
 
+      {/* Loop through each item */}
       {data.map((item) => (
         <div className="px-4 mt-12 sm:max-w-3xl sm:m-auto md:flex md:max-w-5xl sm:mt-12">
           {/* Image */}
@@ -36,6 +37,7 @@ export default function GettingInvolved({ data }) {
             <h2 className="text-3xl">{item.Name}</h2>
             <p className="text-2xl mt-4">{item.Description}</p>
 
+            {/* Loop through buttons (if more than 1) */}
             {item.Buttons.map((button) => (
               <>
                 <div className={`${styles.button} mt-4 text-center w-44`}>
