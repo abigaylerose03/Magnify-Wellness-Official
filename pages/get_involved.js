@@ -18,7 +18,7 @@ export async function getStaticProps() {
 export default function GettingInvolved({ data }) {
   return (
     <Layout title="Get Involved">
-      <h1 className="text-center text-5xl">Get Involved</h1>
+      <h1 className="text-center text-5xl pt-12">Get Involved</h1>
 
       {/* Loop through each item */}
       {data.map((item) => (
