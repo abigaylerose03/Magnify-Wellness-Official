@@ -150,7 +150,8 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section>
+        <section className = "relative py-36">
+          <h1 className={styles.home_header}>Testimonials</h1>
           <Carousel />
         </section>
 
@@ -216,7 +217,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className= "grid grid-cols-2 md:grid-cols-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-8">
             <Metric num="1000" sign="+" action="users" />
             <Metric num="54" sign="k+" action="youth impacted" />
             <Metric num="100" sign="+" action="active leaders" />
