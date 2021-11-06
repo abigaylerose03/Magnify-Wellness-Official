@@ -21,7 +21,7 @@ function Footer() {
         {/* Resources */}
         <div className="md:px-5">
           <p className={styles.footer_header}>Resources</p>
-          <Link href="app.js">
+          <Link href="app">
             <p className={styles.footer_item}>App</p>
           </Link>
           <br />
@@ -33,11 +33,11 @@ function Footer() {
             <p className={styles.footer_item}>Buy Merch</p>
           </Link>
           <br />
-          <Link href="blog.js">
+          <Link href="blog">
             <p className={styles.footer_item}>Blog</p>
           </Link>
           <br />
-          <Link href="get_involved.js">
+          <Link href="get_involved">
             <p className={styles.footer_item}>Get Involved</p>
           </Link>
           <br />
@@ -67,11 +67,11 @@ function Footer() {
         {/* Contact */}
         <div className="md:px-5">
           <p className={styles.footer_header}>Contact</p>
-          <Link href="contact.js">
+          <Link href="contact">
             <p className={styles.footer_item}>Contact Us</p>
           </Link>
           <br />
-          <Link href="team.js">
+          <Link href="team">
             <p className={styles.footer_item}>Join the Team</p>
           </Link>
           <br />

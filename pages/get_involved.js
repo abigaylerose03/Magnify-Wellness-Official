@@ -4,12 +4,16 @@ export default function GettingInvolved() {
   return (
     <div>
       <Head>
-        <title>Magnify Wellness</title>
+        <title>Get Involved</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Nav />
       <main>
-          
+        {get_involved.map((item) => (
+          <>
+            {item.Name}
+          </>
+        ))}
       </main>
       <Footer />
     </div>
