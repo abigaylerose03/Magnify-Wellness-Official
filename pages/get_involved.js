@@ -1,3 +1,5 @@
+import get_involved from "../utils/getting_involved_data";
+
 export default function GettingInvolved() {
   return (
     <div>
@@ -6,7 +8,9 @@ export default function GettingInvolved() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Nav />
-      <main></main>
+      <main>
+          
+      </main>
       <Footer />
     </div>
   );
