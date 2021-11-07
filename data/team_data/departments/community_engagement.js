@@ -1,4 +1,4 @@
-export const team = [
+export const community = [
   {
     departmentName: "Community Engagement",
     departmentDescription:

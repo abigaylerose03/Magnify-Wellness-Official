@@ -1,4 +1,17 @@
 import Layout from "../../components/layout";
+import { art } from "../../data/team_data/departments/art";
+import { community } from "../../data/team_data/departments/community_engagement";
+import { events } from "../../data/team_data/departments/events";
+import { finance } from "../../data/team_data/departments/finance";
+import { logistics } from "../../data/team_data/departments/logistics";
+import { marketing } from "../../data/team_data/departments/marketing";
+import { mental } from "../../data/team_data/departments/mental_health_changemakers";
+import { mentorship } from "../../data/team_data/departments/mentorship";
+import { partnership } from "../../data/team_data/departments/partnerships";
+import { research } from "../../data/team_data/departments/research_and_development";
+import { social } from "../../data/team_data/departments/social_media";
+import { tech } from "../../data/team_data/departments/tech";
+import { writing } from "../../data/team_data/departments/writing";
 
 export async function getStaticPaths() {
   return {
@@ -25,26 +38,66 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-//   const data = await fetch(`../../data/team_data/departments/${params.department}.js`);
-  const data = `../../data/team_data/departments/${params.department}.js`
-//   const data = await res.json();
+    // TODO: Hacky way of doing this, I was trying to dynamically import the folders. Figure out how to do this cleanly
+  const val = params.department.split("_")[0]
+  var object = "";
 
-console.log(data);
+  switch (val) {
+    case "art":
+      object = art;
+      break;
+    case "community":
+      object = community;
+      break;
+    case "events":
+      object = events;
+      break;
+    case "finance":
+      object = finance;
+      break;
+    case "logistics":
+      object = logistics;
+      break;
+    case "marketing":
+      object = marketing;
+      break;
+    case "mental":
+      object = mental;
+      break;
+    case "mentorship":
+      object = mentorship;
+      break;
+    case "partnerships":
+      object = partnerships;
+      break;
+    case "research":
+      object = research;
+      break;
+    case "social":
+      object = social;
+      break;
+    case "tech":
+      object = tech;
+      break;
+    case "writing":
+      object = writing;
+      break;
+  }
+
+  console.log(object);
 
   return {
-    props: { data },
-    // Re-generate the data at most once per second
-    // if a request comes in
-    revalidate: 1,
+    props: {
+      data: object,
+    },
   };
 }
 
 export default function Department({ data }) {
-
   return (
     <Layout title="App">
       {data.map((section) => (
-          <div>{section.departmentName}</div>
+        <div>{section.departmentName}</div>
       ))}
     </Layout>
   );

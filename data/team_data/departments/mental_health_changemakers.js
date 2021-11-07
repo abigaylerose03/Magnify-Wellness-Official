@@ -1,4 +1,4 @@
-export const team = [
+export const mental = [
   {
     departmentName: "Mental Health Changemakers",
     departmentDescription:

@@ -1,4 +1,4 @@
-export const team = [
+export const research = [
     {
       departmentName: "Research and Development",
       departmentDescription:
