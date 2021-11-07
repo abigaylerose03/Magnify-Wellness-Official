@@ -21,47 +21,58 @@ export const team = [
     departments: [
         {
             departmentName: "Tech",
-            departmentImage: "tech.png"
+            departmentImage: "tech.png",
+            path: "tech"
         },
         {
             departmentName: "Mental Health Changemakers",
-            departmentImage: "mental_health_changemakers.png"
+            departmentImage: "mental_health_changemakers.png",
+            path: "mental_health_changemakers"
         },
         {
             departmentName: "Art",
-            departmentImage: "art.png"
+            departmentImage: "art.png",
+            path: "art"
         },
         {
             departmentName: "Finance",
-            departmentImage: "finance.png"
+            departmentImage: "finance.png",
+            path: "finance"
         },
         {
             departmentName: "Partnerships",
-            departmentImage: "partnership.png"
+            departmentImage: "partnership.png",
+            path: "partnerships"
         },
         {
             departmentName: "Marketing",
-            departmentImage: "marketing.png"
+            departmentImage: "marketing.png",
+            path: "marketing"
         },
         {
             departmentName: "Events",
-            departmentImage: "events.png"
+            departmentImage: "events.png",
+            path: "events"
         },
         {
             departmentName: "Social Media",
-            departmentImage: "social_media.png"
+            departmentImage: "social_media.png",
+            path: "social_media"
         },
         {
             departmentName: "Writing",
-            departmentImage: "writing.png"
+            departmentImage: "writing.png",
+            path: "writing"
         },
         {
             departmentName: "Mentorship",
-            departmentImage: "mentorship.png"
+            departmentImage: "mentorship.png",
+            path: "mentorship"
         },
         {
             departmentName: "Research and Development",
-            departmentImage: "research.png"
+            departmentImage: "research.png",
+            path: "research_and_development"
         },
         {
             departmentName: "Logistics",
@@ -69,7 +80,8 @@ export const team = [
         },
         {
             departmentName: "Community Engagement",
-            departmentImage: "community_engagement.png"
+            departmentImage: "community_engagement.png",
+            path: "community_engagement"
         },
     ],
   },
