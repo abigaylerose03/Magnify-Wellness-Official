@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
 
-import { team } from "../data/team_data/team_home";
+import { team } from "../../data/team_data/team_home";
 
 // Fetch data on client side
 export async function getStaticProps() {
