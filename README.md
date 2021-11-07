@@ -25,3 +25,10 @@ Have 2 initiatives:
 
 1. Using ReactJS library and NextJS framework
 2. Using TailwindCSS
+
+## TODOs
+
+1. Get nav working (make it look better on drop down menus and responsive to open on click, use state)
+2. `[department].js` is hacky. Fix this to be more dynamic. Maybe use next/dynamic
+3. Add all images for people
+4. Consolidate code components. For example featured can probably be a card (since we use it on two pages)

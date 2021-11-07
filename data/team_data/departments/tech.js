@@ -11,7 +11,7 @@ export const tech = [
         jobTitle: "Director of Tech",
         description:
           "I'm a huge advocate of Web development and also for Mental Health, which is why I love my position here. As a Microsoft certified web developer, I am always looking forward to new opportunities. I'm from Romania and the best part is that I get to work here with the nicest people on the planet!",
-        image: "",
+        image: "andrei_munteanu.jpg",
       },
     ],
 

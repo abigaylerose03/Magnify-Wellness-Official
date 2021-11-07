@@ -1,4 +1,5 @@
 import Layout from "../../components/layout";
+import Image from "next/image";
 import { art } from "../../data/team_data/departments/art";
 import { community } from "../../data/team_data/departments/community_engagement";
 import { events } from "../../data/team_data/departments/events";
@@ -38,8 +39,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    // TODO: Hacky way of doing this, I was trying to dynamically import the folders. Figure out how to do this cleanly
-  const val = params.department.split("_")[0]
+  // TODO: Hacky way of doing this, I was trying to dynamically import the folders. Figure out how to do this cleanly
+  const val = params.department.split("_")[0];
   var object = "";
 
   switch (val) {
@@ -95,10 +96,76 @@ export async function getStaticProps({ params }) {
 
 export default function Department({ data }) {
   return (
-    <Layout title="App">
+    <>
       {data.map((section) => (
-        <div>{section.departmentName}</div>
+        <Layout title={`Meet the ${section.departmentName} Team`}>
+          <h1 className="font-bold text-4xl text-center pt-24 md:text-5xl">
+            Meet the {section.departmentName} Team
+          </h1>
+          <p className="mt-12 text-center px-6 sm:px-16 md:max-w-5xl md:m-auto md:mt-12">
+            {section.departmentDescription}
+          </p>
+
+          {/* Featured */}
+          {section.featured.map((person) => (
+            <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
+              {/* Image */}
+              <div className="lg:mr-6 lg:mt-12">
+                {person.image == "" ? (
+                  <Image
+                    src={`/img/team/members/no_image.png`}
+                    width="200"
+                    height="200"
+                    className="rounded-full"
+                  />
+                ) : (
+                  <Image
+                    src={`/img/team/members/${person.image}`}
+                    width="200"
+                    height="200"
+                    className="rounded-full"
+                  />
+                )}
+              </div>
+
+              {/* Content */}
+              <div className="mt-4 md:max-w-xl md:m-auto md:mt-4 lg:m-0 lg:mt-4 lg:max-w-2xl">
+                <h1 className="text-4xl">{person.name}</h1>
+                <p className="italic text-2xl mt-2">{person.jobTitle}</p>
+                <p className="text-lg mt-2">{person.description}</p>
+              </div>
+            </div>
+          ))}
+
+          {/* Rest of Team */}
+          <div className = "mt-12 md:grid md:grid-cols-2 md:gap-4 md:max-w-xl md:m-auto md:mt-12 lg:grid-cols-3 lg:max-w-4xl">
+            {section.team.map((person) => (
+              <div className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4">
+                {person.image == "" ? (
+                  <Image
+                    src={`/img/team/members/no_image.png`}
+                    width="100"
+                    height="100"
+                    className="rounded-full"
+                  />
+                ) : (
+                  <Image
+                    src={`/img/team/members/${person.image}`}
+                    width="100"
+                    height="100"
+                    className="rounded-full"
+                  />
+                )}
+                <p className = "mt-4 font-bold text-lg">{person.name}</p>
+
+                <div className = "hidden">
+                    {person.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </Layout>
       ))}
-    </Layout>
+    </>
   );
 }
